@@ -10,6 +10,7 @@ header_tagline_paragraph: "Yes, we are glad you made it here. In fact, the only 
 teaser_image: "images/teaser.jpg"
 
 ---
+{{<twitch>}}
 
 # Conference
 
