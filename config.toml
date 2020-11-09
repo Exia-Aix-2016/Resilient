@@ -9,7 +9,7 @@ defaultContentLanguage = "en"
 theme = "hugo-product-launch"
 
 # The "title" of your website
-title = "Builders Of The Future, Inc."
+title = "Conférence sur la resilience "
 
 # Render line-breaks in .md-files as line-breaks in HTML.
 # This is e.g. useful for rendering a multi-line address.
@@ -21,7 +21,7 @@ title = "Builders Of The Future, Inc."
 [params]
     # A "copyright"-line to be added at the bottom of the page.
     # Hint: Markdown is supported in here as well. So you may e.g. add a link to your legal imprint-page.
-    copyright = "© Builders Of The Future, Inc."
+    copyright = "© Conférence sur la resilience."
 
     # The "description" of your website. This is used in the meta data of your generated html.
     description = "You don't even know what we can do for you!"
