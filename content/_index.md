@@ -42,6 +42,6 @@ Disponible le 14 Janvier
 {{< figure src="/images/HV.png" title="Hugo Renard" width="200rem" class="text-center m-6">}}
 {{< figure src="/images/LG.png" title="Ludovic Grech" width="200rem" class="text-center m-6">}}
 {{< figure src="/images/MV.png" title="Mandel Vaubourg" width="200rem" class="text-center m-6">}}
-{{< figure src="/images/BF.png" title="Quentin Champault" width="200rem" class="text-center m-6">}}
+{{< figure src="/images/QC.png" title="Quentin Champault" width="200rem" class="text-center m-6">}}
 {{< figure src="/images/LV.png" title="Luc Van de Velde" width="200rem" class="text-center m-6">}}
 {{< /flex >}}
