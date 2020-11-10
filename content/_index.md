@@ -9,7 +9,11 @@ teaser_image: "images/teaser.jpg"
 
 
 ---
+# Vous Inscrire
 
+{{<subscribe>}}
+
+---
 
 # Conference
 
