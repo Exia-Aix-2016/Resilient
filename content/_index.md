@@ -32,6 +32,8 @@ Le travail présenté dans lors de cette conférence a été réalisé dans le c
 
 Lors de cette conférence nous vous présenteront deux sujets. Le premier etant comment la résilience d’une ville peut-elle être renforcée par la technique. Ensuite nous vos présenterons comment construire un système informatique résilient pour nos communautés.
 
+{{< figure src="/images/Flyers.jpg" title="Flyers" class="text-center ">}}
+
 ---
 
 # Nous Contacter
