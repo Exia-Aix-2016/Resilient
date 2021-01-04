@@ -2,6 +2,9 @@
 header_brand: "Livre blanc"
 header_tagline_paragraph: "Une ville et une technologie résiliente pour un avenir durable au service de tous."
 # teaser_image: "/images/teaser.jpg"
+header_button_cta:
+  url: ".."
+  title: "Page d'Accueil"
 ---
 
 ## Introduction à la résilience
