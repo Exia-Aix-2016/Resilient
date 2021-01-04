@@ -1,6 +1,9 @@
 ---
 header_brand: "Une ville et une technologie résiliente pour un avenir durable au service de tous."
 header_tagline_paragraph: "Une vue d’ensemble de l’implication de la technologie dans la capacité d’adaptation d’une ville suivie d’une projection vers une technologie plus résiliente pour sensibiliser et orienter toute personne intéressée dans la construction d’un avenir plus durable."
+header_button_cta:
+  url: "/livre-blanc"
+  title: "Libre Blanc"
 
 teaser_image: "images/teaser.jpg"
 
@@ -44,11 +47,6 @@ Avez vous besoin de nous contacter ?
 
 {{< contact_form id="contact-form" placeholder_name="Name" placeholder_email="Email Address" placeholder_message="Message" button_label="Send ✉️">}}
 
----
-
-# Livre Blanc
-
-Disponible le 14 Janvier
 
 ---
 
