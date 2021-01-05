@@ -6,7 +6,11 @@ module.exports = {
     standardFontWeights: true,
   },
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'print': {'raw': 'print'},
+      },
+    },
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],

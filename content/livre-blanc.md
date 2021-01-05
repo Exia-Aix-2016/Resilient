@@ -5,6 +5,10 @@ header_tagline_paragraph: "Une ville et une technologie résiliente pour un aven
 header_button_cta:
   url: ".."
   title: "Page d'Accueil"
+
+# header_button_more:
+#   url: "/PDF/CCF20102020.pdf"
+#   title: "PDF"
 ---
 
 ## Introduction à la résilience
