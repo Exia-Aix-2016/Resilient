@@ -26,6 +26,10 @@ header_button_cta:
 - [Mise en avant du ou des problèmes que cela soulève](#5-mise-en-avant-du-ou-des-problèmes-que-cela-soulève)
 - [Une solution : la décentralisation](#6-une-solution-la-décentralisation)
 - [Proposition : l’informatique hébergé au niveau la ville ou de la région](#7-proposition-linformatique-hébergé-au-niveau-la-ville-ou-de-la-région)
+  * [Solution maisons](71-solution-maisons)
+  * [Pour nos villes](72-pour-nos-villes)
+  * [Assodev](73-assodev)
+  * [Chatons](74-chatons)
 - [Conclusion](#8-conclusion)
 
 
@@ -132,6 +136,40 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 
 # 7. Proposition : l’informatique hébergé au niveau la ville ou de la région
 
+Pour vous utilisateur, la localisation en France de votre hébergement de données à proximité vous assure de bénéficier d’une infrastructure réseau en excellent état, à la fiabilité maximale.
+
+Elle se traduit aussi par une meilleure circulation de votre trafic informatique, avec une nette amélioration de la latence (le temps de réponse) et une diminution importante du risque de perte de fichiers. La faible distance entre le datacenter et les différents sites de votre entreprise rend en effet inutile de passer par de longues liaisons internationales (à la qualité plus aléatoire que celles à caractère local) pour convoyer vos données.
+
+Grâce à un hébergement local domicilié en France, vous êtes certain que les dispositions contractuelles signées avec votre prestataire relèvent entièrement des législations hexagonales : la garantie d’une bien moindre incertitude juridique que lorsque vos données se trouvent sauvegardées à l’étranger. Vous pouvez en effet vous appuyer sur des démarches claires et bien balisées en cas de litige. Et si celui-ci se poursuit devant les tribunaux, vous avez la capacité de réellement faire valoir vos droits en choisissant librement vos conseils ou vos avocats.
+La solution de la proximité vous assure aussi que vos données et vos applications ne se voient pas exposées à des réglementations intrusives (« Patriot Act » américain…) qui peuvent entraîner la confiscation et l’analyse de vos informations sensibles par des autorités étrangères. Avec un hébergement de données en Nouvelle-Aquitaine ou dans le reste de la France, vous bénéficiez de la protection de la réglementation européenne, qui interdit le transfert du contenu de vos serveurs ou de votre cloud hors de l’UE. Un argument de poids – notamment en termes de respect de la vie privée.
+
+Et ces pour cela que dans cette partie nous allons vous proposer différents exemples de solution que nous trouvons intéressant.
+
+## 7.1. Solution maisons
+
+### LOLA
+{{< img_float url="/images/livre-blanc/lola.jpg" alt="Lola, Mon datacenter a la maison" title="Lola" class="float-right pl-4">}}
+Stocker ses données chez-soi, plutôt que sur le nuage de données, exploité par les géants de l’internet, tout en réduisant l’impact environnemental et en louant les espaces inutilisés, c’est l’idée de la startup Sonora Labs installée au sein de la pépinière d’entreprises « Cleantech »  à Aix en Provence. Une idée qui fait l’objet d’une triple innovation comme le rappelle Julien Tournier, son fondateur : «  elle libère les données des datacenters, préserve l’environnement et rémunère celui qui met à disposition son espace inutilisé ». Le principe même de l’économie collaborative appliquée à l’informatique, qui permet au passage de rendre internet plus vertueux.
+
+LOLA ™, c'est une solution de stockage de données innovante et révolutionnaire à domicile. Totalement sécurisée, cette box offre des services de pointe (Cloud personnel, media center et pilotage vocal.) Il s’agit d'un datacenter décentralisé dédié au stockage permettant de réduire la consommation énergétique d’Internet. 
+En devenant fournisseur de services informatiques, il va alors être possible de gagner jusqu’à 50 € par mois ou encore d’obtenir des avantages (réductions) sur des services (VOD, plateformes musicales etc.)
+
+
+## 7.2. Pour nos villes
+En plus des solutions possible a la maison il existe des solutions mis a disposition par les villes pour les entreprise et les particulier qui voudrait avoir leur donné hebergé en france sans avoir a si connaitre en informatique.
+
+### Paris
+La Mairie de Paris a décidé de reprendre la souveraineté des données des Parisiens. Pour ce faire, elle a ouvert en 2019 son propre Data Center situé en sous-sol dans le 18ème arrondissement.
+Pour réduire l’empreinte environnementale du Data Center, plusieurs mesures ont été prises par la Mairie de Paris. Ainsi, la chaleur dégagée par le centre sera utilisée pour alimenter le réseau de chauffage des bâtiments aux alentours. Une initiative similaire à celle prise par la ville de Bordeaux, où des HLM sont chauffés grâce aux données.
+
+De plus la ville de Paris compte laisser d’autres services publics et des particuliers payer pour y installer leurs serveurs, et donc avoir un hebergement plus proche et decentraliser.
+
+
+## 7.3. Assodev
+
+### Marsnet
+
+## 7.4. Chatons
 
 # 8. Conclusion
 
