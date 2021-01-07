@@ -13,20 +13,20 @@ header_button_cta:
 
 
 # Table des matières
-1. [Introduction à la résilience](#1-introduction-à-la-résilience)
-2. [La résilience d’une ville](#2-la-résilience-dune-ville)
-  1. [Les différents axes](#21-les-différents-axes)
-    1. [Urbanisation](#211-urbanisation)
-    2. [Alimentation](#212-alimentation)
-    3. [Energies](#213-energies)
-    4. [Transport](#214-transport)
-  2. [Vers une résilience informatique](#22.-vers-une-résilience-informatique)
-3. [Description des usages communs de l’informatique](#3-description-des-usages-communs-de-linformatique)
-4. [Explication de la pseudo résilience de l’infrastructure type cloud](#4-explication-de-la-pseudo-résilience-de-linfrastructure-type-cloud)
-5. [Mise en avant du ou des problèmes que cela soulève](#5-mise-en-avant-du-ou-des-problèmes-que-cela-soulève)
-6. [Une solution : la décentralisation](#6-une-solution-la-décentralisation)
-7. [Proposition : l’informatique hébergé au niveau la ville ou de la région](#7-proposition-linformatique-hébergé-au-niveau-la-ville-ou-de-la-région)
-8. [Conclusion](#8-conclusion)
+- [Introduction à la résilience](#1-introduction-à-la-résilience)
+- [La résilience d’une ville](#2-la-résilience-dune-ville)
+  * [Les différents axes](#21-les-différents-axes)
+    - [Urbanisation](#211-urbanisation)
+    - [Alimentation](#212-alimentation)
+    - [Energies](#213-energies)
+    - [Transport](#214-transport)
+  * [Vers une résilience informatique](#22.-vers-une-résilience-informatique)
+- [Description des usages communs de l’informatique](#3-description-des-usages-communs-de-linformatique)
+- [Explication de la pseudo résilience de l’infrastructure type cloud](#4-explication-de-la-pseudo-résilience-de-linfrastructure-type-cloud)
+- [Mise en avant du ou des problèmes que cela soulève](#5-mise-en-avant-du-ou-des-problèmes-que-cela-soulève)
+- [Une solution : la décentralisation](#6-une-solution-la-décentralisation)
+- [Proposition : l’informatique hébergé au niveau la ville ou de la région](#7-proposition-linformatique-hébergé-au-niveau-la-ville-ou-de-la-région)
+- [Conclusion](#8-conclusion)
 
 
 
