@@ -11,7 +11,26 @@ header_button_cta:
 #   title: "PDF"
 ---
 
-## Introduction à la résilience
+
+# Table des matières
+1. [Introduction à la résilience](#1-introduction-à-la-résilience)
+2. [La résilience d’une ville](#2-la-résilience-dune-ville)
+  1. [Les différents axes](#21-les-différents-axes)
+    1. [Urbanisation](#211-urbanisation)
+    2. [Alimentation](#212-alimentation)
+    3. [Energies](#213-energies)
+    4. [Transport](#214-transport)
+  2. [Vers une résilience informatique](#22.-vers-une-résilience-informatique)
+3. [Description des usages communs de l’informatique](#3-description-des-usages-communs-de-linformatique)
+4. [Explication de la pseudo résilience de l’infrastructure type cloud](#4-explication-de-la-pseudo-résilience-de-linfrastructure-type-cloud)
+5. [Mise en avant du ou des problèmes que cela soulève](#5-mise-en-avant-du-ou-des-problèmes-que-cela-soulève)
+6. [Une solution : la décentralisation](#6-une-solution-la-décentralisation)
+7. [Proposition : l’informatique hébergé au niveau la ville ou de la région](#7-proposition-linformatique-hébergé-au-niveau-la-ville-ou-de-la-région)
+8. [Conclusion](#8-conclusion)
+
+
+
+# 1. Introduction à la résilience
 
 La résilience est un concept ayant plusieurs facette possible.
 
@@ -46,11 +65,11 @@ Nous avons choisi d’illustrer ce concept moderne de la résilience autour de 2
 - L’informatique et ses multiples risques dont le cyber terrorisme 
  Comment construire un système informatique résilient pour nos communautés?
 
-## La résilience d’une ville
+# 2. La résilience d’une ville
 
-### Les différents axes
+## 2.1. Les différents axes
 
-#### Urbanisation
+### 2.1.1. Urbanisation
 
 On peut définir l'urbanisation comme l'augmentation de la population et l'aménagement de la ville. À la différence des villes traditionnelles, la ville durable est pensée pour durer dans le temps. Ses agglomérations, du nom d’écoquartiers, combinent à la fois l'aspect économique, social et environnemental.
 En effet, économiquement, cela requiert l’accès à des logements de qualités à moindre coût. Socialement, en permettant aux populations de bénéficier d’un cadre de vie de qualité. Environnementalement, en respectant des normes écologiques à travers la mise en place de politiques de protection de l’environnement.
@@ -66,7 +85,7 @@ L’essentiel des éléments cartographiés se résume en six catégories au sei
 * Les surfaces en eau
 Il a été démontré que plus la biodiversité d'un endroit est résiliente et riche, plus elle est capable de résister aux chocs. De ce fait, il est important de s'approprier le territoire naturel des villes pour pouvoir garantir une stabilité dans la vie de nos utilisateurs.
 
-#### Alimentation
+### 2.1.2. Alimentation
 
 L'alimentation et la gestion d'eau sont des enjeux majeurs de la résilience dans les villes, car elles représentent nos apports primaux en resources vitales. Or, l’eau douce ne représente seulement 2,5% de l’eau disponible sur la planète. Pour répondre à cette problématique, il y a plusieurs réponses possibles, parmis lesquels la permaculture et les panneaux hydrauliques, comme le projet Zero Mass Water, qui vise à capter l'eau présente dans l'atmosphère pour la convertir sous forme d'eau liquide.
 C'est en effet le projet conduit par l'entrepise SOURCE, entreprise innovante qui vient des Etats-Unis, et qui apporte un apport en eau renouvelable grâce à l'energie solaire. Leur solution consiste à faire tourner des ventilateurs pour aspirer l'air ambiant : l'air est ensuite aspiré à travers une surface hygroscopique (surface retenant l'humidité de l'air), pour capturer l'eau en suspension de l'air. Ainsi, l'eau va ensuite pouoir être extraite pour lui permettre de se condenser dans un réservoir. Des minéraux sont ensuite rajoutés à l'eau pour lui donner un meilleur goût et les nutriments que l'on retrouve normalement dans l'eau de source. Cette solution est très économique, et durable dans le sens où c'est uniquement l'énergie du soleil qui sert à alimenter les panneaux. Il suffit ensuite de relier le système à un robinet de la maison pour que qu'il soit en place.
@@ -79,40 +98,40 @@ Au niveau technologique, et à une échelle plus réduite, on a un autre projet,
 
 ![alt text](https://www.kanpai.fr/sites/default/files/styles/big_header_sm/public/uploads/2015/10/pasona-asakusa-1.jpg "Ferme à étages")
 
-#### Energies
+### 2.1.3. Energies
 
 Une solution innovatrice face au problème d'énergie est le projet Smart Grid. C'est un nouveau modèle de réseau qui émerge récemment, qui est en opposition avec le modèle dit traditionnel, celui utilisé historiquement. Le principe du modèle directionnel est très simple : il est centralisé autour du producteur, qui n'a que peu d'informations sur les consommateurs, et va donc leur donner toujours le même niveau d'énergie. Il est possible d'adapter le niveau d'énergie fournit, mais pas de façon flexible, ou brusque. Par exemple, en fonction de la météo, on va changer le niveau de consommation d'énergie. Mais ce modèle ne permet pas d'adapter l'énergie fournie. Le modèle Smart Grid est un modèle réparti et bi-directionnel. C'est à dire que tout les acteurs sur le réseau, à savoir les producteurs, intermédiaires et consommateurs d'énergie, vont tous communiquer entre eux. La production d'énergie n'est plus centralisée. Il peut y avoir plusieurs sources d'énergie et le modèle fonctionnera parfaitement. Un tel changement de modèle implique de modifier la manière de concevoir et de piloter ces réseaux. Le pilotage du système électrique devient, avec ces nouvelles technologies, plus flexible. 
 Cette adaptation ne peut se faire qu’en intégrant de nouvelles fonctionnalités issues des nouvelles technologies de l’information. Ces fonctionnalités permettent aux producteurs de prendre en compte beaucoup plus facilement les actions de l’ensemble des acteurs présent sur le réseau. C’est le cas notamment avec les compteurs intelligents. Avec les Smart Grids, les consommateurs d’électricité communiquent des informations essentielles aux producteurs. Ces derniers peuvent dès lors ajuster plus facilement et rapidement la production d’énergie. Un tel modèle de réseau permet de faire du consommateur un véritable acteur au sein du réseau. Son rôle n’est plus passif comme il l’est avec un système électrique traditionnel. 
 
-![alt text](/images/livre-blanc/smart-grid.png  "Ferme à étages")
+![alt text](/images/livre-blanc/smart_grid.png  "Ferme à étages")
 
 Au niveau de l'énergie, il y a beaucoup de solutions résilientes qui ont été crées et implémentées, ainsi que beaucoup de projets en cours de financement. On pourra par exemple citer les panneaux solaires, une source d'énergie pseudo-infinie. Un projet récent de financement participatif a permis à un supermaché de récolter 100 000€ pour pouvoir faire un pas dans cette direction. Le projet consiste à construire des panneaux solaires sur le toit du magasin et du parking, afin de réduire sa dépendance électrique aux énergies à base de charbon (et énergie non-durable de la sorte) afin de rendre le magasin plus durable.
 
-#### Transport
+### 2.1.4. Transport
 
 La mobilité résiliente est un enjeu pour la ville de demain. Comme on l'a vu durant la crise récente qu'est la COVID-19, les transports furent quasi-inexistants. En effet, au-delà de la nécessité du maintien du service minimum en temps de crise, tous nos systèmes de transport doivent faire l’objet d’une réflexion collective incluant les entreprises et les communautés pour trouver des solutions plus adaptatives et soucieuses de l’environnement. Il est absolument fondamental de prendre du recul et de s’alimenter en propositions venant des populations. Le grand gagnant de cette crise profonde est la mobilité douce, composé des moyen de locomotions propres, tels que la marche ou le vélo. Tandis que la mobilité partagée a subi une baisse d’utilisation, conséquence logique pour limiter la propogation du virus. Ce que l'on a aussi pu noter, c’est la nécessité de booster la logistique urbaine pour un meilleur acheminement des besoins et parfois des aides matérielles.
 Pour arriver à rendre la mobilité résiliente, il faut donc rendre les moyens de transport inclusif : l’inclusion active consiste à permettre à chaque citoyen, y compris aux plus défavorisés, de participer pleinement à la société. La ville, dans sa dimension inclusive, doit permettre d’intégrer les citoyens, de se déplacer librement et s’adapter aux besoins de ses usagers. L'idée est de placer le citoyen au centre des usages, en le rendant responsable de ses besoins, on lui permet de s'impliquer pleinement dans la vie active de sa ville et de son environnement.
 
 Pour permettre à ces domaines de changer et d'évoluer, on fait appel aujourd'hui à des outils informatiques pour développer des solutions informatiques. Ces outils bien différents permettent de rendre la ville résiliente à leur maniere.
 
-### Vers une résilience informatique
+## 2.2. Vers une résilience informatique
 
 Comme présenté précédemment, il existe de nombreux axes et domaines qui traitent de la ville et de ses habitants. Cette liste non exhaustive ne décrit qu'en surface les problèmatiques qui ont été soulevées durant ces dernières années. Ces enjeux de taille se pressent de plus en plus à nos portes. Pour leur faire fasse, les hommes modernes ont développer des outils pour les aider : les solutions informatiques. En effet, quoi de plus pratique d'être capable de gérer et d'être assisté en temps réel dans nos actions du quotidient, le tout à portée de main constante ? Malgré le côté presque miracle de la solution, un des principaux enjeux de cette solution sera de placer l'individu au centre des problématiques, et non de rejeter la responsabilité de son avenir à quelque chose d'autre. Car après tout, ne pas se laisser dépasser par les évènements et les moyens est soit une forme de résilience, non ?
 
-## Description des usages communs de l’informatique
+# 3. Description des usages communs de l’informatique
 
 
-## Explication de la pseudo résilience de l’infrastructure type cloud
+# 4. Explication de la pseudo résilience de l’infrastructure type cloud
 
 
-## Mise en avant du ou des problèmes que cela soulève
+# 5. Mise en avant du ou des problèmes que cela soulève
 
 
-## Une solution : la décentralisation
+# 6. Une solution : la décentralisation
 
 
-## Proposition : l’informatique hébergé au niveau la ville ou de la région
+# 7. Proposition : l’informatique hébergé au niveau la ville ou de la région
 
 
-## Conclusion
+# 8. Conclusion
 
