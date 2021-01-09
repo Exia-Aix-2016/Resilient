@@ -189,14 +189,45 @@ Il existe deux type de scalabilité l'horizontal et la vertical.
 
 **Scalabilité horizontal**
 
+La scalabilité horizontale, est de multiplier les nœuds de calcul au niveau le plus bas de l’infrastructure, c'est-à-dire l'ajout pure et simple de nouveau serveur ou d'une instance applicative. Cela coûte financièrement.
+
+**Scalabilité vertical**
+
+Cette fois-ci l'idée est d'augmenter la capacité de calcul d'un nœud, c'est-à-dire ajouté de la mémoire, un meilleurs processeur, etc... à un serveur ou bien multiplié les modules d'une application.
+
+Dans un premier temps, les entreprises abordaient le problème via la première approche, multiplier les serveurs, et chaque serveur disposait d'une instance de l'application, cette approche n'été pas faisable sans l'utilisation de ce que l'on nomme un loadbalancer, un repartisseur de charge.
+
+#### **4.2.1.2. répartition de charge de charge - loadbalancing**
+
+Après avoir multiplier ses serveurs, pour soutenir la charge, il faut qu'ils soit tous accessible pour les utilisateurs, pour ce faire ils existent plusieurs approches pour répartir les utilisateurs entre les différents serveurs.
+
+**Utiliser les DNS**
+Pour rappel le DNS est un système permettant de traduire une adresse IP en un nom de domaine. Example :
+```
+google.com -> 172.217.18.206
+```
+Le DNS est simplement un fichier texte qui contient des entrées noms de "domaine ip".
+
+La première approche consiste à faire correspondre le nom du serveur avec plusieurs ordinateurs en modifiant continuellement les tables de correspondance du service DNS. La distribution par le DNS ne tient cependant pas compte de l'état des serveurs, en particulier de la disponibilité et des pannes éventuelles. Les demandes peuvent alors être envoyées à des serveurs qui sont déjà 100 % occupés, ou à des serveurs en panne.
+
+**Utiliser un proxy**
+Un proxy est un composant logiciel informatique qui joue le rôle d'intermédiaire entre deux hôte. Dans ce cas-ci, on souhaite rendre accessible nos serveurs via internet par le biais d'un proxy (qui s'occupera aussi de répartir la charge) :
+
+![](https://i.imgur.com/BNQAC2I.png)
+
+le proxy est accessible via internet par l'adresse exemple.com, les utilisateurs ne se préocupe pas de connaitre le serveur qui leur sera attribué.
+
+Cette technique permet de mieux répartir la charge, car le proxy à connaissance de l'état de chaque serveur. 
+
+
+
 
 
 
 **Reminder :**
 
- 4.2. Scalabilité (Mise à l'échelle) 
 
- 4.2 Repartition de charge 
+utilisation des cdn
 
  4.2 Architecture en grappe (cluster)
 
@@ -210,7 +241,7 @@ Il existe deux type de scalabilité l'horizontal et la vertical.
  4.2. DevOps
  Déploiement continue & intégration continue
  Infrastructure as code
- 
+
 **end reminder**
 
 
