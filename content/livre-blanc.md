@@ -254,7 +254,9 @@ En 1960 la firme IBM créer le premier système de virtualisation de serveur, au
 * Allocation dynamique de ressources allouée aux systèmes virtualisés.
 
 
-### **4.2.3. Grappe serveur - Clusterisation**
+### 4.2.3. Containeurisation - Vers le service
+
+### **4.2.4. Grappe serveur - Clusterisation**
 
 Très vite, les entreprises on du faire face à la gestion de leur parc informatique, énormément de serveur à administrer, la configuration est manuelle, la gestion compliquée. Dès la fin des année 1980 les ingénieurs développent un multi-ordinateur, l'idée est de fusionner les ressources fournit par plusieurs ordinateurs pour en former qu'un (virtuellement) c'est ce qu'on appel une grappe serveur ou un cluster...
 
