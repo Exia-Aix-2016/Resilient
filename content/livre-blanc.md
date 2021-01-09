@@ -245,7 +245,7 @@ En 1960 la firme IBM créer le premier système de virtualisation de serveur, au
 
 * Installation, déploiement, migration facilité des applications du système d'information.
 
-* Economie métériel et énergétique en mutualisant les ressources.
+* Economie matériel et énergétique en mutualisant les ressources.
 
 * Permet de mettre en place des environnement de tests pour les équipes de développement, ce qui améliore la qualité.
 
@@ -254,19 +254,7 @@ En 1960 la firme IBM créer le premier système de virtualisation de serveur, au
 * Allocation dynamique de ressources allouée aux systèmes virtualisés.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-### **4.2.2. Prémice du cloud computing - cluster**
+### **4.2.3. Grappe serveur - Clusterisation**
 
 Très vite, les entreprises on du faire face à la gestion de leur parc informatique, énormément de serveur à administrer, la configuration est manuelle, la gestion compliquée. Dès la fin des année 1980 les ingénieurs développent un multi-ordinateur, l'idée est de fusionner les ressources fournit par plusieurs ordinateurs pour en former qu'un (virtuellement) c'est ce qu'on appel une grappe serveur ou un cluster...
 
@@ -286,12 +274,21 @@ La puissance de calcul qui découle du regroupement d’ordinateurs, cumulée au
 
 L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutées au cluster.
 
-#### **4.2.2.1. Système de fichier**
+
+#### **4.2.2.1. Système de fichier distribué (DFS)**
+Avec la technologie de clusteurisation vient de nouvelle oportunités comme la capacité de répartir les données sur l'ensemble du cluster. On parle alors de système de fichier distribué.
 
 
 #### **4.2.2.2. La virtualisation dans un cluster**
 
+Comme sur un serveur traditionnel, on peut virtualiser au sein d'un cluster, cette approche offre les possibilités suivantes :
+
+ * **Cluster de basculement** : Est une technologie permettant d'automatiser la reprise d'une application ou d'un service sur un autre serveur (nœud).
+  
+* **La migration à chaud** : En virtualisation, la migration de machines virtuelles consiste à déplacer l'état d'une machine virtuelle, d'un hôte physique à un autre. 
+
 #### **4.2.2.2. Orchestration**
+
 
 
 
