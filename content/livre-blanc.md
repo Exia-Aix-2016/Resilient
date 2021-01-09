@@ -125,7 +125,40 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 # 3. Description des usages communs de l’informatique
 
 
-# 4. Explication de la pseudo résilience de l’infrastructure type cloud
+# 4. la résilience à l'ère du cloud computing
+
+## 4.1 Pour la petite histoire
+**Début d'une grande histoire**
+
+Le point de départ d'internet fut la naissance d'Arpanet en 1969, après plusieurs années de recherche. Ce réseau comprenait quatre ordinateur mis en service à l'université de Los Angeles en Californie. Dans les années qui ont suivi de plus en plus d'université et d'institut de recherche ont rejoints le réseau.
+
+Entre 1972 et 1976 sont réalisées les premières spécifications des protocoles internet (TCP, Telnet, UCP, FTP).
+
+En 1979 est crée à l'université de Caroline du Nord et à l'université de Duke, Usenet (Unix user network), un système de réseau de forums. L'utilisateur accéde au forums via un logiciel communément appelé un lecteur de nouvelles.
+Usenet, à l'origine indépendant, a rapidement été connecté à ARPAnet, le futur Internet.
+
+**La naissance d'internet**
+
+En 1973 est publié à la conférence de l'INWG la suite de protocoles TCP/IP (Transfert Control Protocol - Internet Protocol), puis en 1983 Arpanet adopte cette suite de protocoles, c'est la naissance d'internet, grâce à ces protocoles les réseaux peuvent s'interconnecter. Finalement Arpanet est intégré au NSFNET (réseau de la National Science Foundation) en 1990. Ce réseau est le point de départ d'Internet.
+
+**Un croissance fulgurante**
+
+Depuis 1990 des millions de particuliers et entreprise rejoignent Internet, cette aflux massif à permis aux gens à travers le monde d'échanger et aux entreprise d'être mieux vue. Très rapidement les besoins d'internet se multiplie, du simple échanges d'information, nous passons par du streamings de média, l'utilisateur d'internet comme place de marché, comme outils pour nos transaction bancaire, et bien d'autre... 
+ 
+Aujourd'hui internet est utilisé partout dans le monde par 4.39 milliards d'individu qui y passe six heures en moyenne par jour...
+
+**Un problème d'échelle**
+
+Cependant, cet aflux massif d'individu que se soit des particuliers ou des organisations et l'utilisation grandissante d'internet pour des systèmes de plus en plus critique à mis en lumière des problématiques d'ordre technologiques des infrastructure suportant internet ou fournissant des services via celui-ci.
+
+
+
+
+
+
+
+
+
 
 
 # 5. Mise en avant du ou des problèmes que cela soulève
