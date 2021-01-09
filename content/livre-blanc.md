@@ -237,7 +237,7 @@ L'ensemble de ces techniques peuvent être utilisé séparément ou ensemble, se
 
 ### 4.2.2. Virtualisation
 
-Il faut comprendre que dans les débuts de l'informatique les applications avait une architecture monolithique, is était donc difficile de les déployers rapidement et efficacement sur nos serveurs, de plus avec la monté en puissance d'internet, de plus en plus d'entreprise voit leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle, et de déployers efficacement sur leur infrastructure. 
+Il faut comprendre que dans les débuts de l'informatique les applications étaient monolithique, is était donc difficile de les déployers rapidement et efficacement sur nos serveurs, de plus avec la monté en puissance d'internet, de plus en plus d'entreprise voit leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle, et de déployers efficacement sur leur infrastructure. 
 
 En 1960 la firme IBM créer le premier système de virtualisation de serveur, au cours des années 80-90 l'appararitions de l'architecture processeur x86 démocratise le principe, ce qui vient répondre aux problématiques cité ci-dessus. La virtualisation consiste, à exécuter sur une machine hôte, dans un environnement isolé, des systèmes d'exploitation — on parle alors de virtualisation système.
 
@@ -292,6 +292,8 @@ L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds a
 
 
 #### **4.2.2.2. La virtualisation dans un cluster**
+
+#### **4.2.2.2. Orchestration**
 
 
 
