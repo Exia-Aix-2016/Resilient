@@ -135,7 +135,7 @@ Le point de départ d'internet fut la naissance d'Arpanet en 1969, après plusie
 Entre 1972 et 1976 sont réalisées les premières spécifications des protocoles internet (TCP, Telnet, UCP, FTP).
 
 En 1979 est crée à l'université de Caroline du Nord et à l'université de Duke, Usenet (Unix user network), un système de réseau de forums. L'utilisateur accéde au forums via un logiciel communément appelé un lecteur de nouvelles.
-Usenet, à l'origine indépendant, a rapidement été connecté à ARPAnet, le futur Internet.
+Usenet, à l'origine indépendant, a rapidement été connecté à ARPAnet.
 
 **La naissance d'internet**
 
@@ -143,13 +143,29 @@ En 1973 est publié à la conférence de l'INWG la suite de protocoles TCP/IP (T
 
 **Un croissance fulgurante**
 
-Depuis 1990 des millions de particuliers et entreprise rejoignent Internet, cette aflux massif à permis aux gens à travers le monde d'échanger et aux entreprise d'être mieux vue. Très rapidement les besoins d'internet se multiplie, du simple échanges d'information, nous passons par du streamings de média, l'utilisateur d'internet comme place de marché, comme outils pour nos transaction bancaire, et bien d'autre... 
+Depuis 1990 des millions de particuliers et entreprise rejoignent Internet, cette aflux massif à permis aux gens à travers le monde d'échanger et aux entreprises de faire évolué leur business. Très rapidement les besoins d'internet se multiplie :
+* La recherche d'information.
+* Echange d'information via mail, forum, chat.
+* Téléphonie.
+* Jeu en ligne.
+* Commerce électronique.
+* Echange boursier.
+* Réseau sociaux.
+* et dans le futur l'internet des objets...
+
+On le comprends plus internet grandit, plus les usages s'accroîtrent.
  
 Aujourd'hui internet est utilisé partout dans le monde par 4.39 milliards d'individu qui y passe six heures en moyenne par jour...
 
-**Un problème d'échelle**
+**Un problème d'échelle et de criticité**
 
 Cependant, cet aflux massif d'individu que se soit des particuliers ou des organisations et l'utilisation grandissante d'internet pour des systèmes de plus en plus critique à mis en lumière des problématiques d'ordre technologiques des infrastructure suportant internet ou fournissant des services via celui-ci.
+
+En effet il aura fallut aux ingénieurs et aux chercheurs trouver des solutions pour rendre les systèmes capables de répondre d'une part à cette demande intense et d'une autre part puisque internet s'utilisait de plus en plus pour des utilisations critique, rendre ces systèmes plus robuste face à des événements perturbateurs. 
+
+## 4.2 Evolution des technologies et avénement du cloud
+
+
 
 
 
