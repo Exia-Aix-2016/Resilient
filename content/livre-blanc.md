@@ -127,7 +127,9 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 
 # 4. la résilience à l'ère du cloud computing
 
-## 4.1 Pour la petite histoire
+
+
+## 4.1 l'histoire d'internet
 **Début d'une grande histoire**
 
 Le point de départ d'internet fut la naissance d'Arpanet en 1969, après plusieurs années de recherche. Ce réseau comprenait quatre ordinateur mis en service à l'université de Los Angeles en Californie. Dans les années qui ont suivi de plus en plus d'université et d'institut de recherche ont rejoints le réseau.
@@ -159,13 +161,63 @@ Aujourd'hui internet est utilisé partout dans le monde par 4.39 milliards d'ind
 
 **Un problème d'échelle et de criticité**
 
-Cependant, cet aflux massif d'individu que se soit des particuliers ou des organisations et l'utilisation grandissante d'internet pour des systèmes de plus en plus critique à mis en lumière des problématiques d'ordre technologiques des infrastructure suportant internet ou fournissant des services via celui-ci.
+Cependant, cet aflux massif d'individu que se soit des particuliers ou des organisations et l'utilisation grandissante d'internet pour des systèmes de plus en plus critique à mis en lumière des problématiques d'ordre technologiques des infrastructures suportant internet ou fournissant des services via celui-ci.
 
-En effet il aura fallut aux ingénieurs et aux chercheurs trouver des solutions pour rendre les systèmes capables de répondre d'une part à cette demande intense et d'une autre part puisque internet s'utilisait de plus en plus pour des utilisations critique, rendre ces systèmes plus robuste face à des événements perturbateurs. 
-
-## 4.2 Evolution des technologies et avénement du cloud
+En effet il aura fallut aux ingénieurs et aux chercheurs trouver des solutions pour rendre les systèmes capables de répondre d'une part à cette demande intense et d'une autre part, puisque internet s'utilisait de plus en plus pour des utilisations critique, rendre ces systèmes plus robuste face à des événements perturbateurs.
 
 
+## 4.2. Les Technologies et techniques
+ Au cours des années qui ont suivi la création d'internet, les entreprises on fait face à des obstacles quand il s'agissait de répondre à la demande grandissante ou bien pour protéger efficacement leur système d'information. Au cours de ces années des technologies plus innovante les unes que les autres on vue le jours dans le but de répondre à des problèmes d'ordre de résilience :
+ 
+ ![](https://i.imgur.com/590o6Zi.png)
+
+On distingue deux parties les conditions et les événements : 
+* Les conditions défavorables sont des états internes ou externes au système qui peuvent perturber ou conduire à la perturbation des capacités critiques.
+
+* Les événements indésirables sont des incidents qui perturbent les capacités critiques en causant des dommages aux biens associés.
+
+Les différentes technologies présentée si dessous permettent de répondre à ces classes de risques.
+
+### 4.2.1. Répondre à la demande
+
+Un des premier obstacle rencontré à été de répondre à la demande grandissante pour un service donné, pensez aux moteurs de recherche, aux site d'achat, de streaming, le nombre d'utilisateur n'a cesser d'augmenter, cette augmentation implique d'utiliser de plus en plus de ressource pour y répondre. 
+
+#### **4.2.1.1. Scalabilité**
+
+La première notion à aborder lorsqu'on parle de "répondre à la demande" et le principe de scalabilité, (mise à l'échelle), cette notion regroupe les techniques utilisées pour faire en sorte qu'un système d'information ait les ressources nécessaire afin de répondre efficacement à un nombre d'utilisateur donné. 
+Il existe deux type de scalabilité l'horizontal et la vertical.
+
+**Scalabilité horizontal**
+
+
+
+
+**Reminder :**
+
+ 4.2. Scalabilité (Mise à l'échelle) 
+
+ 4.2 Repartition de charge 
+
+ 4.2 Architecture en grappe (cluster)
+
+ 4.2 Virtualisation 
+
+ 4.2. Containeurisation
+
+ 4.2 Orchestration
+
+ 4.2. Système de fichier distribué
+ 4.2. DevOps
+ Déploiement continue & intégration continue
+ Infrastructure as code
+ 
+**end reminder**
+
+
+
+
+
+## 4.3. Le cloud
 
 
 
