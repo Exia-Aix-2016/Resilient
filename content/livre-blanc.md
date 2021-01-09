@@ -180,7 +180,7 @@ Les différentes technologies présentée si dessous permettent de répondre à 
 
 ### 4.2.1. Répondre à la demande
 
-Un des premier obstacle rencontré à été de répondre à la demande grandissante pour un service donné, pensez aux moteurs de recherche, aux site d'achat, de streaming, le nombre d'utilisateur n'a cesser d'augmenter, cette augmentation implique d'utiliser de plus en plus de ressource pour y répondre. 
+la première approche utilisée par les entreprise consistait à centraliser le stockage et le traitement des données dans un serveur central.  Un des premier obstacle rencontré était de répondre à la demande grandissante pour un service donné, pensez aux moteurs de recherche, aux site d'achat, de streaming, le nombre d'utilisateur n'a cesser d'augmenter, cette augmentation implique d'utiliser de plus en plus de ressource pour y répondre. Un seul serveur ne suffisait plus...
 
 #### **4.2.1.1. Scalabilité**
 
@@ -220,7 +220,78 @@ le proxy est accessible via internet par l'adresse exemple.com, les utilisateurs
 Cette technique permet de mieux répartir la charge, car le proxy à connaissance de l'état de chaque serveur. 
 
 
+**Geographic load balancing**
 
+Bien que les latences est drastiquement diminuée au fil des années via nottament la démocratisation de la fibre optique, on ne peut pas défier les lois de la physique, un signal qu'il soit guidé (câble, fibre optique) ou non-guidé (sans fils) à une vitesse propre :
+* Dans l'air cette vitesse sera de 299 700 km/s
+* Dans une fibre optique ou câble ce sera 70 à 75% de la vitesse de la lumière dans le vide.
+
+à cela il faut rajouté les temps de traitement du signal à chaque noeud du réseau. Par exemple la latence entre l'est des Etats-Unis l'ouest de l'europe est de ~80 millisecondes (pour chaque packet de données, une page web par exemple va necessité des centaines d'échange pour être affichée).
+
+Rapidement les entreprises on fait face à cette problèmatiques, il fallait donc avoir des serveurs proche des clients, tout en étant accessible via le même nom de domaine. Pour cela ils utilise des techniques d'équilibrage basé sur la géolocalisation.
+
+Tout d'abord, le proxy obtient l'adresse IP du client et analyse les informations sur l'emplacement du client. Simultanément, le serveur effectue des contrôles de santé pour évaluer les performances et la réactivité des serveurs en temps réel. Enfin, le serveur maître transmet la demande au serveur local le plus proche géographiquement ou ayant le temps de réponse le plus court.
+
+
+L'ensemble de ces techniques peuvent être utilisé séparément ou ensemble, sellon les besoins.
+
+### 4.2.2. Virtualisation
+
+Il faut comprendre que dans les débuts de l'informatique les applications avait une architecture monolithique, is était donc difficile de les déployers rapidement et efficacement sur nos serveurs, de plus avec la monté en puissance d'internet, de plus en plus d'entreprise voit leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle, et de déployers efficacement sur leur infrastructure. 
+
+En 1960 la firme IBM créer le premier système de virtualisation de serveur, au cours des années 80-90 l'appararitions de l'architecture processeur x86 démocratise le principe, ce qui vient répondre aux problématiques cité ci-dessus. La virtualisation consiste, à exécuter sur une machine hôte, dans un environnement isolé, des systèmes d'exploitation — on parle alors de virtualisation système.
+
+Les avantages offert par la virtualisation sont multiple :
+
+* Utilisation optimal des ressources du parc informatique.
+
+* Installation, déploiement, migration facilité des applications du système d'information.
+
+* Economie métériel et énergétique en mutualisant les ressources.
+
+* Permet de mettre en place des environnement de tests pour les équipes de développement, ce qui améliore la qualité.
+
+* Sécurisation des systèmes grâce à l'isolation des système hôte et des réseaux.
+
+* Allocation dynamique de ressources allouée aux systèmes virtualisés.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### **4.2.2. Prémice du cloud computing - cluster**
+
+Très vite, les entreprises on du faire face à la gestion de leur parc informatique, énormément de serveur à administrer, la configuration est manuelle, la gestion compliquée. Dès la fin des année 1980 les ingénieurs développent un multi-ordinateur, l'idée est de fusionner les ressources fournit par plusieurs ordinateurs pour en former qu'un (virtuellement) c'est ce qu'on appel une grappe serveur ou un cluster...
+
+Cette approche va de pair avec les techniques visant à mieux répartir la charge mais pas que. En effet Cela permet d'augmenter la disponibilité, de mieux gérer la scalabilité et facilité la gestions des ressources (processeur, mémoire vive, stockage, bande passante...).
+
+Ici on change de paradigme, les serveurs ne répondent pas individuellement au requêtes mais forme un tout qui y répondra, le calcule est divisé entre les noeuds du cluster.
+
+Les avantages sont multiples :
+
+* **Baisse des coûts** : Le coût d’acquisition et de maintenance d’un cluster est plus faible que le coût d’acquisition d’un serveur central sur le long terme. En d’autres termes, il revient moins chère à une entreprise d’ajouter un nœud à un cluster (scalabilité horizontale) que d’ajouter des capacités supplémentaires à un serveur central (scalabilité vertical)
+
+* **La scalabilité horizontale** : Le regroupement d’ordinateurs en architecture distribuée possède une caractéristique très intéressante sur les clusters : la scalabilité horizontale. L’ajout d’un ordinateur supplémentaire dans un cluster augmente de façon plus que proportionnelle la performance du cluster.
+
+* **La haute disponibilité ou tolérance aux pannes** : le regroupement d’ordinateurs en clusters permet de distribuer le traitement entre ceux-ci, ce qui offre la capacité au système de continuer à fonctionner malgré les défaillances, ce qui n’est pas le cas dans les architectures centralisées dans lesquelles la disponibilité de tout le système repose entièrement sur un point : le serveur central (Single point of failure)
+
+La puissance de calcul qui découle du regroupement d’ordinateurs, cumulée aux effets d’échelle massifs engendrés par ces avantages, font des architectures distribuées, le moteur infrastructurel parfait pour la gestion de la plupart des problèmes de calcul intensif ou des problèmes de traitement massivement parallèle.
+
+L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutées au cluster.
+
+#### **4.2.2.1. Système de fichier**
+
+
+#### **4.2.2.2. La virtualisation dans un cluster**
 
 
 
@@ -229,7 +300,6 @@ Cette technique permet de mieux répartir la charge, car le proxy à connaissanc
 
 utilisation des cdn
 
- 4.2 Architecture en grappe (cluster)
 
  4.2 Virtualisation 
 
