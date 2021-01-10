@@ -237,7 +237,7 @@ L'ensemble de ces techniques peuvent être utilisé séparément ou ensemble, se
 
 ### 4.2.2. Virtualisation
 
-Il faut comprendre que dans les débuts de l'informatique les applications étaient monolithique, is était donc difficile de les déployers rapidement et efficacement sur nos serveurs, de plus avec la monté en puissance d'internet, de plus en plus d'entreprise voit leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle, et de déployers efficacement sur leur infrastructure. 
+Avant les applications adoptées un architecture monolithique, bien que simple à déployé il été dur de gérer plusieurs applications efficacement sur nos serveurs, et nottament de pouvoir tester à l'avance l'application. De plus avec la monté en puissance d'internet, de plus en plus d'entreprise voit leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle, et de déployers efficacement sur leur infrastructure. 
 
 En 1960 la firme IBM créer le premier système de virtualisation de serveur, au cours des années 80-90 l'appararitions de l'architecture processeur x86 démocratise le principe, ce qui vient répondre aux problématiques cité ci-dessus. La virtualisation consiste, à exécuter sur une machine hôte, dans un environnement isolé, des systèmes d'exploitation, cette approche offre les avantages suivant :
 
@@ -253,12 +253,9 @@ En 1960 la firme IBM créer le premier système de virtualisation de serveur, au
 
 * Allocation dynamique de ressources allouée aux systèmes virtualisés.
 
-
-### 4.2.3. Containeurisation - Vers le service
-
 ### **4.2.4. Grappe serveur - Clusterisation**
 
-Très vite, les entreprises on du faire face à la gestion de leur parc informatique, énormément de serveur à administrer, la configuration est manuelle, la gestion compliquée. Dès la fin des année 1980 les ingénieurs développent un multi-ordinateur, l'idée est de fusionner les ressources fournit par plusieurs ordinateurs pour en former qu'un (virtuellement) c'est ce qu'on appel une grappe serveur ou un cluster...
+ Dès la fin des année 1980 les ingénieurs développent un multi-ordinateur, l'idée est de fusionner les ressources fournit par plusieurs ordinateurs pour en former qu'un (virtuellement) c'est ce qu'on appel une grappe serveur ou un cluster...
 
 Cette approche va de pair avec les techniques visant à mieux répartir la charge mais pas que. En effet Cela permet d'augmenter la disponibilité, de mieux gérer la scalabilité et facilité la gestions des ressources (processeur, mémoire vive, stockage, bande passante...).
 
@@ -277,6 +274,23 @@ La puissance de calcul qui découle du regroupement d’ordinateurs, cumulée au
 L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutées au cluster.
 
 
+### 4.2.3. Du paradigme monolithique vers le micro-service
+
+Comme expliqué précédemment les applications étaient monolithique et comme on la vue elles étaient déployée d'un seul bloc derrière un répartiteur de charge. Il y a des avantages à cette approche, en terme de :
+
+* performances : l'ensemble des éléments sont en mémoire. 
+* Simplicité : L'approche est intuitive, simple à construire, à déployer et à tester.
+
+Cependant, cette approche comprend beaucoup de points faibles, d'un point de vue développement, une erreur de programmation dans l'un des module peut la faire tomber entièrement. Dans le cas d'une mise à jour c'est l'ensemble de l'application qui doit être stoppée et être redéployer, cela prends du temps, du temps qui coûte de plus en plus cher. Le couplage entre les modules de l'application est fort ; la dette technique ne peut qu'augmenter.
+
+
+
+
+
+
+
+**Reminder :**
+
 #### **4.2.2.1. Système de fichier distribué (DFS)**
 Avec la technologie de clusteurisation vient de nouvelle oportunités comme la capacité de répartir les données sur l'ensemble du cluster. On parle alors de système de fichier distribué.
 
@@ -285,16 +299,12 @@ Avec la technologie de clusteurisation vient de nouvelle oportunités comme la c
 
 Comme sur un serveur traditionnel, on peut virtualiser au sein d'un cluster, cette approche offre les possibilités suivantes :
 
- * **Cluster de basculement** : Est une technologie permettant d'automatiser la reprise d'une application ou d'un service sur un autre serveur (nœud).
+ * **Cluster de basculement** : Est une technologie permettant d'automatiser la reprise d'une application ou d'un service sur un autre  nœud.
   
-* **La migration à chaud** : En virtualisation, la migration de machines virtuelles consiste à déplacer l'état d'une machine virtuelle, d'un hôte physique à un autre. 
+* **La migration à chaud** : En virtualisation, la migration de machines virtuelles consiste à déplacer l'état d'une machine virtuelle, c'est-à-dire les données, la mémoire, les processus en cours, etc... seront déplacer d'un nœud à l'autre du cluster sans intéruption de service.
 
 #### **4.2.2.2. Orchestration**
 
-
-
-
-**Reminder :**
 
 
 utilisation des cdn
