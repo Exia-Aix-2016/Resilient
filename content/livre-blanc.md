@@ -235,7 +235,8 @@ Tout d'abord, le proxy obtient l'adresse IP du client et analyse les information
 
 L'ensemble de ces techniques peuvent être utilisé séparément ou ensemble, sellon les besoins.
 
-### 4.2.2. Virtualisation
+### 4.2.2. virtualisation
+
 
 Avant les applications adoptées un architecture monolithique, bien que simple à déployé il été dur de gérer plusieurs applications efficacement sur nos serveurs, et nottament de pouvoir tester à l'avance l'application. De plus avec la monté en puissance d'internet, de plus en plus d'entreprise voit leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle, et de déployers efficacement sur leur infrastructure. 
 
@@ -252,6 +253,23 @@ En 1960 la firme IBM créer le premier système de virtualisation de serveur, au
 * Sécurisation des systèmes grâce à l'isolation des système hôte et des réseaux.
 
 * Allocation dynamique de ressources allouée aux systèmes virtualisés.
+
+### 4.2.3. conteneurisation 
+
+Dès le début des années 2000 le concept containeurisation se développe, l'idée n'est plus de virtualiser un système d'exploitation qui fait ensuite tourner une application métier, mais de virtualiser chaque application.
+
+![](https://i.imgur.com/UzfFTdf.png)
+
+Les conteneurs encapsulent un package applicatif qui comprends seulement le code de l'application, ses dépendances, ses fichiers de configuration. Pour fonctionner les containeurs font appel à un logiciel qui s'occupera de les executer et les gérer.
+
+les avantages :
+* Portabilité : Cette approche permet nottament de rendre chaque application portables, chaque conteneur peut être déployer autant sur une machine Linux ou windows ou même dans un système virtualisé. 
+
+* Légéreté : Les containeur partage le même noyau système, celui de la machine, il n'y a aucun système virtualiser nécessaire à les faire fonctionner, cela demande moins de ressource au serveur. De plus contrairement à une machine virtuelle standars, un conteneur mettra beaucoup moins de temps à demarrer.
+
+* 
+
+
 
 ### **4.2.4. Grappe serveur - Clusterisation**
 
@@ -276,6 +294,7 @@ L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds a
 
 ### 4.2.3. Du paradigme monolithique vers le micro-service
 
+#### **4.2.3.1. Architecture monolithique**
 Comme expliqué précédemment les applications étaient monolithique et comme on la vue elles étaient déployée d'un seul bloc derrière un répartiteur de charge. Il y a des avantages à cette approche, en terme de :
 
 * performances : l'ensemble des éléments sont en mémoire. 
@@ -283,6 +302,15 @@ Comme expliqué précédemment les applications étaient monolithique et comme o
 
 Cependant, cette approche comprend beaucoup de points faibles, d'un point de vue développement, une erreur de programmation dans l'un des module peut la faire tomber entièrement. Dans le cas d'une mise à jour c'est l'ensemble de l'application qui doit être stoppée et être redéployer, cela prends du temps, du temps qui coûte de plus en plus cher. Le couplage entre les modules de l'application est fort ; la dette technique ne peut qu'augmenter.
 
+#### **4.2.3.2. Architecture microservice**
+
+En 2011 apparait le concept d'architecture microservice, la philosophie s'inspire grandement de celle d'UNIX, "Ne faire qu'une seule chose, et la faire bien". L'idée n'est plus de structurer l'application en un seul bloc, mais de découpler ses modules en un ensemble de services, ces derniers communiquant ensemble par le biais d'API (applicaiton programming interface).
+
+![](https://i.imgur.com/yl7I48Z.png)
+
+L'approche offre des avantages conséquents, elle facilite le développement distribué, réduit les cycles de développement puisque les équipes peuvent livré chaque service indépendamment des autres, facilite le déploiement, augmente la résilience : le faible couplage entre les services permet qu'en cas de dysfonctionnement d'un des service l'application reste opérationnel.
+
+Toutefois, l'approche comporte des challenges à relever, dorénavant il faut gérer non plus une seul application mais un essaim d'application plus petite (microservice) qu'il faut être capable de gérer
 
 
 
@@ -290,6 +318,7 @@ Cependant, cette approche comprend beaucoup de points faibles, d'un point de vue
 
 
 **Reminder :**
+
 
 #### **4.2.2.1. Système de fichier distribué (DFS)**
 Avec la technologie de clusteurisation vient de nouvelle oportunités comme la capacité de répartir les données sur l'ensemble du cluster. On parle alors de système de fichier distribué.
