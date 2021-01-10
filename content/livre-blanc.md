@@ -339,11 +339,9 @@ Comme sur un serveur traditionnel, on peut virtualiser au sein d'un cluster, cet
 utilisation des cdn
 
 
- 4.2 Virtualisation 
 
- 4.2. Containeurisation
 
- 4.2 Orchestration
+
 
  4.2. Système de fichier distribué
  4.2. DevOps
