@@ -237,7 +237,6 @@ L'ensemble de ces techniques peuvent être utilisé séparément ou ensemble, se
 
 ### 4.2.2. virtualisation
 
-
 Avant les applications adoptées un architecture monolithique, bien que simple à déployé il été dur de gérer plusieurs applications efficacement sur nos serveurs, et nottament de pouvoir tester à l'avance l'application. De plus avec la monté en puissance d'internet, de plus en plus d'entreprise voit leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle, et de déployers efficacement sur leur infrastructure. 
 
 En 1960 la firme IBM créer le premier système de virtualisation de serveur, au cours des années 80-90 l'appararitions de l'architecture processeur x86 démocratise le principe, ce qui vient répondre aux problématiques cité ci-dessus. La virtualisation consiste, à exécuter sur une machine hôte, dans un environnement isolé, des systèmes d'exploitation, cette approche offre les avantages suivant :
@@ -254,7 +253,7 @@ En 1960 la firme IBM créer le premier système de virtualisation de serveur, au
 
 * Allocation dynamique de ressources allouée aux systèmes virtualisés.
 
-### 4.2.3. conteneurisation 
+### 4.2.3. Conteneurisation 
 
 Dès le début des années 2000 le concept containeurisation se développe, l'idée n'est plus de virtualiser un système d'exploitation qui fait ensuite tourner une application métier, mais de virtualiser chaque application.
 
@@ -269,8 +268,19 @@ les avantages :
 
 * **Scalable** : La Scalabilité est facilité, puisqu'il facile de dupliquer un container.
 
-* **Sécurisé** : Les applications sont isolé les unes des autres, ce qui empêche en principe l
+* **Sécurisé** : Les applications sont isolé les unes des autres, ce qui empêche en principe la transmission d'un code malveillant à un autre conteneur ou à l'hôte. 
 
+#### **4.2.3. Orchestration**
+
+L'orchestration permet d'automatiser le déploiement et la gestion de la mise à l'échelle (scalability) et la mise en réseau des conteneurs.
+
+L'orchestrateur va s'occuper de répartir les conteneurs sur les différents serveurs selon les besoins en matière de mémoire et CPU. Il va nottament s'occuper de surveiller l'activité des conteneurs pour connaitre à tout instant leur état de santé. En cas de mise en défaut d'un conteneur l'orchestrateur peut le redemarrer voir le supprimer et en recréer un. Si un des serveurs est indisponible, il peu redémarrer les conteneurs sur un autre serveur.
+
+L'orchestrateur permet d'assurer la mise à jour des conteneurs de manière successive sans induire d'indisponibilité, c'est ce que l'on nomme le rolling update. Il peut aussi revenir en arrière en cas de problème.
+
+Les conteneur étant par nature volatile, les informations réseau de chaque conteneur (ex: addresse ip) est variable, L’orchestrateur offre un niveau d’abstraction permettant de regrouper un ou plusieurs conteneurs, de leur allouer une adresse IP fixe et de l’exposer à d’autres conteneurs.
+
+C'est fonction confère à l'infrastructure un niveau de résilience accru.
 
 ### **4.2.4. Grappe serveur - Clusterisation**
 
@@ -292,9 +302,18 @@ La puissance de calcul qui découle du regroupement d’ordinateurs, cumulée au
 
 L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutées au cluster.
 
+#### **4.2.2.1. Système de fichier distribué (DFS)**
+Avec la technologie de clusteurisation vient de nouvelle oportunités comme la capacité de répartir les données sur l'ensemble du cluster. On parle alors de système de fichier distribué.
+
+#### **4.2.2.2. La virtualisation et conteneurisation dans un cluster**
+
+Comme sur un serveur traditionnel, on peut virtualiser ou conteneuriser au sein d'un cluster, cette approche offre les possibilités suivantes :
+
+* **La migration à chaud** :  La migration à chaud consiste à déplacer l'état d'une machine virtuelle ou d'un conteneur, c'est-à-dire les données, la mémoire, les processus en cours, etc... d'un noeud à l'autre.
+
+
 
 ### 4.2.3. Du paradigme monolithique vers le micro-service
-
 #### **4.2.3.1. Architecture monolithique**
 Comme expliqué précédemment les applications étaient monolithique et comme on la vue elles étaient déployée d'un seul bloc derrière un répartiteur de charge. Il y a des avantages à cette approche, en terme de :
 
@@ -305,47 +324,24 @@ Cependant, cette approche comprend beaucoup de points faibles, d'un point de vue
 
 #### **4.2.3.2. Architecture microservice**
 
-En 2011 apparait le concept d'architecture microservice, la philosophie s'inspire grandement de celle d'UNIX, "Ne faire qu'une seule chose, et la faire bien". L'idée n'est plus de structurer l'application en un seul bloc, mais de découpler ses modules en un ensemble de services, ces derniers communiquant ensemble par le biais d'API (applicaiton programming interface).
+En 2011 apparait le concept d'architecture microservice, la philosophie s'inspire grandement de celle d'UNIX, "Ne faire qu'une seule chose, et la faire bien". L'idée n'est plus de structurer l'application en un seul bloc, mais de découpler ses modules en un ensemble de services, ces derniers communiquant ensemble par le biais d'interface commun.
 
 ![](https://i.imgur.com/yl7I48Z.png)
 
 L'approche offre des avantages conséquents, elle facilite le développement distribué, réduit les cycles de développement puisque les équipes peuvent livré chaque service indépendamment des autres, facilite le déploiement, augmente la résilience : le faible couplage entre les services permet qu'en cas de dysfonctionnement d'un des service l'application reste opérationnel.
 
-Toutefois, l'approche comporte des challenges à relever, dorénavant il faut gérer non plus une seul application mais un essaim d'application plus petite (microservice) qu'il faut être capable de gérer
+Toutefois, l'approche comporte des challenges à relever, dorénavant il faut gérer non plus une seul application mais un essaim d'application plus petite (microservice) qu'il faut être capable de gérer. 
 
-
-
+Grâce à l'utilisation de conteneur et d'orchestrateur, il devient facile pour l'organisation du déployer selon ses besoins l'ensemble des microservices sur son infrastructure.
 
 
 
 **Reminder :**
 
-
-#### **4.2.2.1. Système de fichier distribué (DFS)**
-Avec la technologie de clusteurisation vient de nouvelle oportunités comme la capacité de répartir les données sur l'ensemble du cluster. On parle alors de système de fichier distribué.
-
-
-#### **4.2.2.2. La virtualisation dans un cluster**
-
-Comme sur un serveur traditionnel, on peut virtualiser au sein d'un cluster, cette approche offre les possibilités suivantes :
-
- * **Cluster de basculement** : Est une technologie permettant d'automatiser la reprise d'une application ou d'un service sur un autre  nœud.
-  
-* **La migration à chaud** : En virtualisation, la migration de machines virtuelles consiste à déplacer l'état d'une machine virtuelle, c'est-à-dire les données, la mémoire, les processus en cours, etc... seront déplacer d'un nœud à l'autre du cluster sans intéruption de service.
-
-#### **4.2.2.2. Orchestration**
-
-
-
 utilisation des cdn
 
 
-
-
-
-
- 4.2. Système de fichier distribué
- 4.2. DevOps
+Devops :
  Déploiement continue & intégration continue
  Infrastructure as code
 
