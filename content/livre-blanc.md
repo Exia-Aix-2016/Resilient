@@ -303,13 +303,11 @@ La puissance de calcul qui découle du regroupement d’ordinateurs, cumulée au
 L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutées au cluster.
 
 #### **4.2.2.1. Système de fichier distribué (DFS)**
-Avec la technologie de clusteurisation vient de nouvelle oportunités comme la capacité de répartir les données sur l'ensemble du cluster. On parle alors de système de fichier distribué.
+Avec la technologie de clusteurisation vient de nouvelle oportunités comme la capacité de répartir les données sur l'ensemble du cluster. On parle alors de système de fichier distribué. Les système de fichier distribué garantisse que les données ne soit pas corrompu ou perdu.
 
 #### **4.2.2.2. La virtualisation et conteneurisation dans un cluster**
 
-Comme sur un serveur traditionnel, on peut virtualiser ou conteneuriser au sein d'un cluster, cette approche offre les possibilités suivantes :
-
-* **La migration à chaud** :  La migration à chaud consiste à déplacer l'état d'une machine virtuelle ou d'un conteneur, c'est-à-dire les données, la mémoire, les processus en cours, etc... d'un noeud à l'autre.
+Comme sur un serveur traditionnel, on peut virtualiser ou conteneuriser au sein d'un cluster, mais permet par exemple la migration à chaud d'une machine virtuelle ou d'un container, cela consiste à déplacer l'état d'une machine virtuelle ou d'un conteneur, c'est-à-dire les données, la mémoire, les processus en cours, etc... d'un noeud à l'autre.
 
 
 
@@ -335,23 +333,33 @@ Toutefois, l'approche comporte des challenges à relever, dorénavant il faut g�
 Grâce à l'utilisation de conteneur et d'orchestrateur, il devient facile pour l'organisation du déployer selon ses besoins l'ensemble des microservices sur son infrastructure.
 
 
+### Réseau de diffusion de contenu - cdn
 
-**Reminder :**
+Vers la fin des années 90' la technologie de réseau de diffusion de contenu est créé, constituée d'ordinateur en réseau, reliés à travers internet il coopère afin de mettre à disposition le contenu d'un serveur principal.
 
-utilisation des cdn
+![](https://i.imgur.com/KrjBDxZ.png)
+
+Les clients récupère le contenu auprès du serveur leur étant le plus proche. De leur côté les serveurs cdn se charge de rester à jours vis-à-vis du serveur principal.
+
+## 4.3. Aujourd'hui
+
+Dans la partie 4.2, nous avons vue les grandes technologies développées à fin d'assurer de répondre à cette demande grandissante en même temps que les exigeances en matière de résilience. 
+
+Dans un environnement d'application monolithique, il trop risqué d'avoir qu'une instance de cette application face aux événements ou conditions perturbatrice, alors la redondance fût la première des solutions.
+
+Au fil du temps, à mesure que les exigences en matière de résilience ont accrus les technologies ont suivi le pas. La virtualisation à permi de mutualiser son infrastructure et de garantir un niveau d'exigence en terme de sécurité, cependant la virtualisation est un processus lourd et coûteux en ressource. Là où la conteneurisation apporte des solutions aux problèmes de ressources et nottament rendent les applications portables et facilement scalable au sein de l'infrastructure.
+
+L'apparition des infrastructures clusterisées à permis de faciliter la gestion, la scalabilité et la tolérence aux pannes de l'infrastructure.
+
+Avec les technologies d'orchestration la mise à l'echelle des composants logiciel de l'architecture du SI est automatisée et rend à son tour la partie système tolérente aux pannes. Les mises à jours non plus d'impacte sur l'applicatif et en cas de problème le retour en arrière est possible.
+
+Le changement de paradigme monolithique vers microservice épouse parfaitement les technologies citées précedemment, en découplant les modules de l'application cette dernière devient à sont tour résiliente, Grâce à l'orchestration la scalabilité devient plus fine, c'est-à-dire qu'il est possible de mettre à l'échelle certains services mais pas d'autre...
 
 
-Devops :
- Déploiement continue & intégration continue
- Infrastructure as code
-
-**end reminder**
 
 
 
 
-
-## 4.3. Le cloud
 
 
 
