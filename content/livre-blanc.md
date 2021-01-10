@@ -263,12 +263,13 @@ Dès le début des années 2000 le concept containeurisation se développe, l'id
 Les conteneurs encapsulent un package applicatif qui comprends seulement le code de l'application, ses dépendances, ses fichiers de configuration. Pour fonctionner les containeurs font appel à un logiciel qui s'occupera de les executer et les gérer.
 
 les avantages :
-* Portabilité : Cette approche permet nottament de rendre chaque application portables, chaque conteneur peut être déployer autant sur une machine Linux ou windows ou même dans un système virtualisé. 
+* **Portabilité** : Cette approche permet nottament de rendre chaque application portables, chaque conteneur peut être déployer autant sur une machine Linux ou windows ou même dans un système virtualisé. 
 
-* Légéreté : Les containeur partage le même noyau système, celui de la machine, il n'y a aucun système virtualiser nécessaire à les faire fonctionner, cela demande moins de ressource au serveur. De plus contrairement à une machine virtuelle standars, un conteneur mettra beaucoup moins de temps à demarrer.
+* **Légéreté** : Les containeur partage le même noyau système, celui de la machine, il n'y a aucun système virtualiser nécessaire à les faire fonctionner, cela demande moins de ressource au serveur. De plus contrairement à une machine virtuelle standars, un conteneur mettra beaucoup moins de temps à demarrer.
 
-* 
+* **Scalable** : La Scalabilité est facilité, puisqu'il facile de dupliquer un container.
 
+* **Sécurisé** : Les applications sont isolé les unes des autres, ce qui empêche en principe l
 
 
 ### **4.2.4. Grappe serveur - Clusterisation**
