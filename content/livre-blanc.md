@@ -126,10 +126,16 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 
 # 4. la résilience à l'ère du cloud computing
 
+Au cours de l'évolution d'internet les organisations on fait face à un nombre grandissant d'utilisateurs, internet s'est très vite démocratiser à tout les secteurs, de l'industrie, au service, le médicale, le bancaire, et on peu l'affirmer sans crainte tous les autres secteurs on été transformés par cette fabuleuse technologie.
+
+Aujourd'hui internet au delà d'un réseau de million de kilomètre de câble et de millier de routeur et commutateur c'est aussi énormément de service fourni par des millions d'organisation via en grande partie par les datacenters à travers le monde. Cela est rendu possible grâce au travail formidable des chercheurs et ingénieurs qui on relevé le défi de rendre ces services le plus accessible possible, le plus sécurisé possible, leur travail à permi non seulement de propager internet au monde entier mais aussi de le rendre plus résilient et plus accessible.
+
+Dans les chapitres suivant nous allons voir l'histoire de la création d'internet mais aussi découvrir les technologies importantes qui on fait d'internet ce qui l'ai aujourd'hui. Des architectures monolithique aux architecture en microservice, des park informatiques assurant la redondance d'un service aux grappes serveurs ces technologies sont le socle de ce que l'on nomme communément, le cloud.
+
 ## 4.1 l'histoire d'internet
 **Début d'une grande histoire**
 
-Le point de départ d'internet fut la naissance d'Arpanet en 1969, après plusieurs années de recherche. Ce réseau comprenait quatre ordinateur mis en service à l'université de Los Angeles en Californie. Dans les années qui ont suivi de plus en plus d'université et d'institut de recherche ont rejoints le réseau.
+Le point de départ d'internet fût la naissance d'Arpanet en 1969, après plusieurs années de recherche. Ce réseau comprenait quatre ordinateur mis en service à l'université de Los Angeles en Californie. Dans les années qui ont suivi de plus en plus d'université et d'institut de recherche ont rejoints le réseau.
 
 Entre 1972 et 1976 sont réalisées les premières spécifications des protocoles internet (TCP, Telnet, UCP, FTP).
 
