@@ -13,15 +13,28 @@ header_button_cta:
 
 
 # Table des matières
-- [Introduction à la résilience](#1-introduction-à-la-résilience)
-- [La résilience d’une ville](#2-la-résilience-dune-ville)
+- [Introduction à la résilience](#-1-introduction-à-la-résilience)
+- [La résilience d’une ville](#-2-la-résilience-dune-ville)
   * [Les différents axes](#21-les-différents-axes)
   * [Vers une résilience informatique](#22.-vers-une-résilience-informatique)
 - [Description des usages communs de l’informatique](#3-description-des-usages-communs-de-linformatique)
-- [Explication de la pseudo résilience de l’infrastructure type cloud](#4-explication-de-la-pseudo-résilience-de-linfrastructure-type-cloud)
-  * [L’histoire d’internet](41-lhistoire-dinternet)
-  * [Les Technologies et techniques](42-les-technologies-et-techniques)
-  * [Aujourd’hui](43-aujourdhui)
+- [la résilience à l'ère du cloud computing](#-4.-la-résilience-à-l'ère-du-cloud-computing)
+  * [L’histoire d’internet](#-4.1-l'histoire-d'internet)
+  * [Les Technologies et techniques](##-4.2.-Les-Technologies-et-techniques)
+    * [Répondre à la demande](###-4.2.1.-Répondre-à-la-demande)
+      * [Scalabilité](####-**4.2.1.1.-Scalabilité**)
+      * [Répartition de charge](####-**4.2.1.2.-répartition-de-charge-de-charge---loadbalancing**)
+    * [Virtualisation](###-4.2.2.-virtualisation)
+    * [containerisation](###-4.2.3.-containerisation)
+      * [Orchestration](####-4.2.3.1.-Orchestration)
+    * [Grappe de serveur - Cluster](###-4.2.4.-Grappe-serveur---Clusterisation)
+      * [Système de fichier distribué](####-**4.2.4.1.-Système-de-fichier-distribué-(DFS)**)
+      * [Virtualisation et containerisation dans un cluster](####-**4.2.4.2.-La-virtualisation-et-conteneurisation-dans-un-cluster**)
+    * [Du paradigme monolithique vers le micro-service](###-4.2.5.-Du-paradigme-monolithique-vers-le-micro-service)
+      * [Architecture monolithique](####-**4.2.5.1.-Architecture-monolithique**)
+      * [Architecture micro service](####-**4.2.5.2.-Architecture-micro-service**)
+    * [Réseau de diffusion de contenu - cdn](###-4.2.6.-Réseau-de-diffusion-de-contenu---cdn)
+  * [Aujourd’hui](##-4.3.-Aujourd'hui)
 - [Mise en avant du ou des problèmes que cela soulève](#5-mise-en-avant-du-ou-des-problèmes-que-cela-soulève)
 - [Une solution : la décentralisation](#6-une-solution-la-décentralisation)
 - [Proposition : l’informatique hébergé au niveau la ville ou de la région](#7-proposition-linformatique-hébergé-au-niveau-la-ville-ou-de-la-région)
@@ -207,6 +220,7 @@ Dans un premier temps, les entreprises abordaient le problème via la première 
 Après avoir multiplié ses serveurs, pour soutenir la charge, il faut qu'ils soient tous accessibles pour les utilisateurs, pour ce faire ils existent plusieurs approches pour répartir les utilisateurs entre les différents serveurs.
 
 **Utiliser les DNS**
+
 Pour rappel le DNS est un système permettant de traduire une adresse IP en un nom de domaine. Example :
 ```
 google.com -> 172.217.18.206
@@ -216,6 +230,7 @@ Le DNS est simplement un fichier texte qui contient des entrées noms de "domain
 La première approche consiste à faire correspondre le nom du serveur avec plusieurs ordinateurs en modifiant continuellement les tables de correspondance du service DNS. La distribution par le DNS ne tient cependant pas compte de l'état des serveurs, en particulier de la disponibilité et des pannes éventuelles. Les demandes peuvent alors être envoyées à des serveurs qui sont déjà 100 % occupés, ou à des serveurs en panne.
 
 **Utiliser un proxy**
+
 Un proxy est un composant logiciel informatique qui joue le rôle d'intermédiaire entre deux hôtes. Dans ce cas-ci, on souhaite rendre accessible nos serveurs via internet par le biais d'un proxy (qui s'occupera aussi de répartir la charge) :
 
 ![](https://i.imgur.com/BNQAC2I.png)
@@ -276,7 +291,7 @@ les avantages :
 
 * **Sécurisé** : Les applications sont isolées les unes des autres, ce qui empêche en principe la transmission d'un code malveillant à un autre conteneur ou à l'hôte.
 
-#### **4.2.3. Orchestration**
+#### 4.2.3.1. Orchestration
 
 L'orchestration permet d'automatiser le déploiement et la gestion de la mise à l'échelle (scalabilité) et la mise en réseau des conteneurs.
 
@@ -288,7 +303,7 @@ Les conteneurs étant par nature volatile, les informations réseau de chaque co
 
 Ces fonctions confèrent à l'infrastructure un niveau de résilience accru.
 
-### **4.2.4. Grappe serveur - Clusterisation**
+### 4.2.4. Grappe serveur - Clusterisation
 
 Dès la fin des années 1980 les ingénieurs développent un multi-ordinateur, l'idée est de fusionner les ressources fournis par plusieurs ordinateurs pour en former qu'un (virtuellement) c'est ce qu'on appel une grappe serveur ou un cluster...
 
@@ -308,18 +323,18 @@ La puissance de calcul qui découle du regroupement d'ordinateurs, cumulée aux 
 
 L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutées au cluster.
 
-#### **4.2.2.1. Système de fichier distribué (DFS)**
+#### **4.2.4.1. Système de fichier distribué (DFS)**
 
 Avec la technologie de clusteurisation vient de nouvelles opportunités comme la capacité de répartir les données sur l'ensemble du cluster. On parle alors de système de fichier distribué. Les systèmes de fichier distribué garantisse que les données ne soient pas corrompue ou perdue.
 
-#### **4.2.2.2. La virtualisation et conteneurisation dans un cluster**
+#### **4.2.4.2. La virtualisation et conteneurisation dans un cluster**
 
 Comme sur un serveur traditionnel, on peut virtualiser ou conteneuriser au sein d'un cluster, mais permet par exemple la migration à chaud d'une machine virtuelle ou d'un container, cela consiste à déplacer l'état d'une machine virtuelle ou d'un conteneur, c'est-à-dire les données, la mémoire, les processus en cours, etc... d'un nœud à l'autre.
 
 
 
-### 4.2.3. Du paradigme monolithique vers le micro-service
-#### **4.2.3.1. Architecture monolithique**
+### 4.2.5. Du paradigme monolithique vers le micro-service
+#### **4.2.5.1. Architecture monolithique**
 
 Tel que montré précédemment, les applications étaient monolithique et comme on la vue elles étaient déployées d'un seul bloc derrière un répartiteur de charge. Il y a des avantages à cette approche, en terme de :
 
@@ -328,7 +343,7 @@ Tel que montré précédemment, les applications étaient monolithique et comme 
 
 Toutefois, cette approche comprend beaucoup de points faibles, d'un point de vue développement, une erreur de programmation dans l'un des modules peut la faire tomber entièrement. Dans le cas d'une mise à jour c'est l'ensemble de l'application qui doit être stoppée et être redéployée, cela prend du temps, du temps qui coûte de plus en plus cher. Le couplage entre les modules de l'application est fort ; la dette technique ne peut qu'augmenter.
 
-#### **4.2.3.2. Architecture micro-service**
+#### **4.2.5.2. Architecture micro-service**
 
 En 2011 apparait le concept d'architecture micro-service, la philosophie s'inspire grandement de celle d'UNIX, "Ne faire qu'une seule chose et la faire bien". L'idée n'est plus de structurer l'application en un seul bloc, mais de découpler ses modules en un ensemble de services, ces derniers communiquant ensemble par le biais d'interfaces commun.
 
@@ -341,7 +356,7 @@ Néanmoins, l'approche comporte des challenges à relever, dorénavant il faut g
 Grâce à l'utilisation de conteneur et d'orchestrateur, il devient facile pour l'organisme de déployer, selon ses besoins l'ensemble des micro-services sur son infrastructure.
 
 
-### Réseau de diffusion de contenu - cdn
+### 4.2.6. Réseau de diffusion de contenu - cdn
 
 Vers la fin des années 90' la technologie de réseau de diffusion de contenu est créé, constituée d'ordinateur en réseau, reliés à travers internet il coopère afin de mettre à disposition le contenu d'un serveur principal.
 
