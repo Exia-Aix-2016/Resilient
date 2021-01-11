@@ -353,7 +353,7 @@ L'apparition des infrastructures clusterisées à permis de faciliter la gestion
 
 Avec les technologies d'orchestration la mise à l'echelle des composants logiciel de l'architecture du SI est automatisée et rend à son tour la partie système tolérente aux pannes. Les mises à jours non plus d'impacte sur l'applicatif et en cas de problème le retour en arrière est possible.
 
-Le changement de paradigme monolithique vers microservice épouse parfaitement les technologies citées précedemment, en découplant les modules de l'application cette dernière devient à sont tour résiliente, Grâce à l'orchestration la scalabilité devient plus fine, c'est-à-dire qu'il est possible de mettre à l'échelle certains services mais pas d'autre...
+Le changement de paradigme monolithique vers microservice épouse parfaitement les technologies citées précedemment, en découplant les modules de l'application cette dernière devient à sont tour résiliente. Grâce à l'orchestration la scalabilité devient plus fine, c'est-à-dire qu'il est possible de mettre à l'échelle certains services mais pas d'autre...
 
 
 
@@ -373,6 +373,15 @@ Le changement de paradigme monolithique vers microservice épouse parfaitement l
 
 # 5. Mise en avant du ou des problèmes que cela soulève
 
+## 5.1. Les problèmes liés au cloud
+
+
+
+## 5.2. L'histoire des échecs de la centralisation
+
+Le 14 décembre 2020, Google a connu une panne mondiale. Les services tels que Youtube, Gmail ou Google Cloud Platform n'étaient pas accessibles pour plusieurs milliards d'utilisateurs. Durant une cinquantaine de mainutes, les entreprises utilisants ces services à travers le monde se sont retrouvés dans l'incapacité de travailler. 
+
+Le géant du cloud, Amazon Web Service a connu en 2019 une panne d'électricité sur un serveur en Virginie. Cette panne a causé l'arrêt des générateurs de sauvegarde de ce centre de données. Durant cet incident, 7,5% des instances EC2 (hébergement d'application web) et EBS (stockage) sont restées indisponibles. Une fois la panne terminée, une partie des données stockées sur le serveur endommagé ont été définitivement perdues. 
 
 # 6. Une solution : la décentralisation
 
