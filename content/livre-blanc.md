@@ -18,7 +18,7 @@ header_button_cta:
   * [Les différents axes](#21-les-différents-axes)
   * [Vers une résilience informatique](#22.-vers-une-résilience-informatique)
 - [Description des usages communs de l’informatique](#3-description-des-usages-communs-de-linformatique)
-- [la résilience à l'ère du cloud computing](#-4.-la-résilience-à-l'ère-du-cloud-computing)
+- [Les technologies résilientes du cloud computing](#-4.-Les-technologies-résilientes-du-cloud-computing)
   * [L’histoire d’internet](#-4.1-l'histoire-d'internet)
   * [Les Technologies et techniques](##-4.2.-Les-Technologies-et-techniques)
     * [Répondre à la demande](###-4.2.1.-Répondre-à-la-demande)
@@ -129,7 +129,7 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 # 3. Description des usages communs de l’informatique
 
 
-# 4. la résilience à l'ère du cloud computing
+# 4. Les technologies résilientes du cloud computing
 
 Au cours de l'évolution d'internet les organisations on fait face à un nombre grandissant d'utilisateur, internet s'est très vite démocratisé à tous les secteurs, de l'industrie, aux services, le médical, le bancaire et on peut l'affirmer sans crainte tous les autres secteurs ont été transformés par cette fabuleuse technologie.
 
