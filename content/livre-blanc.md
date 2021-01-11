@@ -16,20 +16,19 @@ header_button_cta:
 - [Introduction à la résilience](#1-introduction-à-la-résilience)
 - [La résilience d’une ville](#2-la-résilience-dune-ville)
   * [Les différents axes](#21-les-différents-axes)
-    - [Urbanisation](#211-urbanisation)
-    - [Alimentation](#212-alimentation)
-    - [Energies](#213-energies)
-    - [Transport](#214-transport)
   * [Vers une résilience informatique](#22.-vers-une-résilience-informatique)
 - [Description des usages communs de l’informatique](#3-description-des-usages-communs-de-linformatique)
 - [Explication de la pseudo résilience de l’infrastructure type cloud](#4-explication-de-la-pseudo-résilience-de-linfrastructure-type-cloud)
+  * [L’histoire d’internet](41-lhistoire-dinternet)
+  * [Les Technologies et techniques](42-les-technologies-et-techniques)
+  * [Aujourd’hui](43-aujourdhui)
 - [Mise en avant du ou des problèmes que cela soulève](#5-mise-en-avant-du-ou-des-problèmes-que-cela-soulève)
 - [Une solution : la décentralisation](#6-une-solution-la-décentralisation)
 - [Proposition : l’informatique hébergé au niveau la ville ou de la région](#7-proposition-linformatique-hébergé-au-niveau-la-ville-ou-de-la-région)
   * [Solution maisons](71-solution-maisons)
   * [Pour nos villes](72-pour-nos-villes)
-  * [Assodev](73-assodev)
-  * [Chatons](74-chatons)
+  * [Chatons](73-chatons)
+  * [Assodev](74-assodev)
 - [Conclusion](#8-conclusion)
 
 
@@ -126,8 +125,6 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 
 
 # 4. la résilience à l'ère du cloud computing
-
-
 
 ## 4.1 l'histoire d'internet
 **Début d'une grande histoire**
@@ -356,21 +353,6 @@ Avec les technologies d'orchestration la mise à l'echelle des composants logici
 Le changement de paradigme monolithique vers microservice épouse parfaitement les technologies citées précedemment, en découplant les modules de l'application cette dernière devient à sont tour résiliente, Grâce à l'orchestration la scalabilité devient plus fine, c'est-à-dire qu'il est possible de mettre à l'échelle certains services mais pas d'autre...
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 5. Mise en avant du ou des problèmes que cela soulève
 
 
@@ -379,27 +361,29 @@ Le changement de paradigme monolithique vers microservice épouse parfaitement l
 
 # 7. Proposition : l’informatique hébergé au niveau la ville ou de la région
 
-Pour vous utilisateur, la localisation en France de votre hébergement de données à proximité vous assure de bénéficier d’une infrastructure réseau en excellent état, à la fiabilité maximale.
-
-Elle se traduit aussi par une meilleure circulation de votre trafic informatique, avec une nette amélioration de la latence (le temps de réponse) et une diminution importante du risque de perte de fichiers. La faible distance entre le datacenter et les différents sites de votre entreprise rend en effet inutile de passer par de longues liaisons internationales (à la qualité plus aléatoire que celles à caractère local) pour convoyer vos données.
-
-Grâce à un hébergement local domicilié en France, vous êtes certain que les dispositions contractuelles signées avec votre prestataire relèvent entièrement des législations hexagonales : la garantie d’une bien moindre incertitude juridique que lorsque vos données se trouvent sauvegardées à l’étranger. Vous pouvez en effet vous appuyer sur des démarches claires et bien balisées en cas de litige. Et si celui-ci se poursuit devant les tribunaux, vous avez la capacité de réellement faire valoir vos droits en choisissant librement vos conseils ou vos avocats.
-La solution de la proximité vous assure aussi que vos données et vos applications ne se voient pas exposées à des réglementations intrusives (« Patriot Act » américain…) qui peuvent entraîner la confiscation et l’analyse de vos informations sensibles par des autorités étrangères. Avec un hébergement de données en Nouvelle-Aquitaine ou dans le reste de la France, vous bénéficiez de la protection de la réglementation européenne, qui interdit le transfert du contenu de vos serveurs ou de votre cloud hors de l’UE. Un argument de poids – notamment en termes de respect de la vie privée.
-
-Et ces pour cela que dans cette partie nous allons vous proposer différents exemples de solution que nous trouvons intéressant.
+Dans les parties precedente nous vous avons presenter les usage commun de l'informatique et quelles sont les architectures utiliser pour nos service informatiques telles que nos mail, la metéo et autre. Juste aprés nous vous avons expliquer que la decentralisation etait pour nous la solutions par definition, mais comment pouvez la mettre en place a la au niveaux de la regions et de la ville.
 
 ## 7.1. Solution maisons
+
+En tant que solution pour vous particulier il serait interessant d'avoir un serveur a la maison qui permet d'heberger vos données. Cette solution est difficile a installé pour un particulier et couteuse. Pour cette solution il faudrait payer le materiel pour creé un serveur, cela reviendrai aux alentour de 400€. De plus il faudrait du temps pour se former sur des technologies telles que Yuno Host et de l'administration de serveur. De plus pour decentraliser sont serveur créer a l'aide de YunoHost on a la possibilité de créer un chaton lui permetant de rendre son serveur et service plus ethique et decentralisés accessible a d'autre personne 
+
+### YunoHost
+{{< img_float url="/images/livre-blanc/Yunohost.png" alt="Logo, YunoHost" title="YunoHost" class="float-right pl-4 ">}}
+YunoHost est une distribution dérivée de debian initialement destinée à l'auto-hébergement de particulier. Son objectif premier est de démocratiser la pratique de l'auto-hébergement en simplifiant la gestion d'un serveur le plus possible, de sorte que des personnes, à l'aise avec leur ordinateur personnel mais sans grandes connaissances, puissent réussir à déployer et maintenir des services.(si cela vous interresse voir les etapes d'installation [Ici: Créer son chaton avec YunoHost](https://wiki.chatons.org/doku.php/yunohost))
+
+Pour les personne qui veulent cette outils mais sans avoir a prendre du temps pour l'administrer il existe un boitier du nom de LOLA qui se rapproche de notre proposition.
 
 ### LOLA
 {{< img_float url="/images/livre-blanc/lola.jpg" alt="Lola, Mon datacenter a la maison" title="Lola" class="float-right pl-4">}}
 Stocker ses données chez-soi, plutôt que sur le nuage de données, exploité par les géants de l’internet, tout en réduisant l’impact environnemental et en louant les espaces inutilisés, c’est l’idée de la startup Sonora Labs installée au sein de la pépinière d’entreprises « Cleantech »  à Aix en Provence. Une idée qui fait l’objet d’une triple innovation comme le rappelle Julien Tournier, son fondateur : «  elle libère les données des datacenters, préserve l’environnement et rémunère celui qui met à disposition son espace inutilisé ». Le principe même de l’économie collaborative appliquée à l’informatique, qui permet au passage de rendre internet plus vertueux.
 
-LOLA ™, c'est une solution de stockage de données innovante et révolutionnaire à domicile. Totalement sécurisée, cette box offre des services de pointe (Cloud personnel, media center et pilotage vocal.) Il s’agit d'un datacenter décentralisé dédié au stockage permettant de réduire la consommation énergétique d’Internet. 
-En devenant fournisseur de services informatiques, il va alors être possible de gagner jusqu’à 50 € par mois ou encore d’obtenir des avantages (réductions) sur des services (VOD, plateformes musicales etc.)
 
 
 ## 7.2. Pour nos villes
-En plus des solutions possible a la maison il existe des solutions mis a disposition par les villes pour les entreprise et les particulier qui voudrait avoir leur donné hebergé en france sans avoir a si connaitre en informatique.
+La solution proposé dans la partie d'avant et une solution technique et pour des personnes ayant le temps d'apprendre a admistrer un serveur. 
+
+La proposition la plus interresante a metre en place pour notre solution serait que la ville ou la region puisse mettre en place des Data Center administrer. Cela serait possible si la ville a un service informatique competant ou l'aide d'association ou de collectif comme la fait Paris.
+
 
 ### Paris
 La Mairie de Paris a décidé de reprendre la souveraineté des données des Parisiens. Pour ce faire, elle a ouvert en 2019 son propre Data Center situé en sous-sol dans le 18ème arrondissement.
@@ -408,11 +392,42 @@ Pour réduire l’empreinte environnementale du Data Center, plusieurs mesures o
 De plus la ville de Paris compte laisser d’autres services publics et des particuliers payer pour y installer leurs serveurs, et donc avoir un hebergement plus proche et decentraliser.
 
 
-## 7.3. Assodev
+## 7.3. Chatons
+{{< img_float url="/images/livre-blanc/logo_chatons_v2.png" alt="Logo, Les Chatons" title="Chatons" class="float-right pl-4 max-w-md">}}
+Ce que a fait Paris est possible puisque la mairie de Paris a une equipe technique competante et les moyens de payer cette infrastructure. Pour les villes, regions et particulier qui cherche a realiser un hébergement alternatif, transparents et de bonne qualité il peuvent essayer de devenir un Chatons.
 
-### Marsnet
+Donc un chatons c'est quoi : 
+- C'est un collectif regroupant des petites structures proposant des services en ligne (par exemple du mail, de l'hébergement de sites web, des outils collaboratifs, des outils de communication, etc.).
 
-## 7.4. Chatons
+On appelle "hébergeurs" ces structures pour plusieurs raisons : 
+
+- elles gèrent des serveurs (ordinateurs sur lesquels sont installés des programmes permettant de faire fonctionner des services en ligne),
+- elles proposent aux internautes le stockage de leurs données et leur diffusion sur le web.
+
+La particularité de CHATONS est que les membres de ce collectif s'engagent notamment :
+
+- à n'utiliser que des logiciels libres ;
+- à ne pas exploiter les données des bénéficiaires de leurs services (= ne pas transmettre ou exploiter vos données) ;
+- à ne pas utiliser de régies publicitaires (ou autres services de pistage) ;
+- à proposer régulièrement des rencontres "physiques" avec leurs bénéficiaires, afin de réduire la fracture numérique.
+
+[Pour en savoir plus](https://chatons.org/fr)
+
+
+Il existe differente association qui héberge des services dans notre regions: 
+
+- Assodev Marsnet
+[Pour en savoir plus](https://chatons.org/fr/page/assodev-marsnet)
+
+- ImmaeEu
+[Pour en savoir plus](https://chatons.org/fr/page/immaeeu)
+
+- Outils-Conviviaux
+[Pour en savoir plus](https://chatons.org/fr/page/outils-conviviaux)
+
+- TuxFamily.org
+[Pour en savoir plus](https://chatons.org/fr/page/tuxfamilyorg)
+
 
 # 8. Conclusion
 
