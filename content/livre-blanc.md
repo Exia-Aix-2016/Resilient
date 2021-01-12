@@ -144,6 +144,7 @@ Dans les chapitres qui suivent nous allons voir l'histoire de la création d'int
 Avec sa capacité de stockage théoriquement infinie, le Cloud rebat les cartes dans le domaine de l'hébergement er permet aux organisations qui ne disposent pas d’un de datacenter de mettre en place leur solutions applicatives facilement, à moindre coût tout en garantissant la sécurité et la continuité de leur activité.
 
 ## 4.1 l'histoire d'internet
+
 **Début d'une grande histoire**
 
 Le point de départ d'internet fût la naissance d'Arpanet en 1969, après plusieurs années de recherche. Ce réseau comprenait quatre ordinateurs mis en service à l'université de Los Angeles en Californie. Dans les années qui ont suivi de plus en plus d'université et d'institut de recherche ont rejoints le réseau.
