@@ -381,8 +381,25 @@ Le changement de paradigme monolithique vers micro-service épouse parfaitement 
 
 # 5. Mise en avant du ou des problèmes que cela soulève
 
+## 5.1. Les problèmes liés au cloud
+
+
+
+## 5.2. L'histoire des échecs de la centralisation
+
+Le 14 décembre 2020, Google a connu une panne mondiale. Les services tels que Youtube, Gmail ou Google Cloud Platform n'étaient pas accessibles pour plusieurs milliards d'utilisateurs. Durant une cinquantaine de mainutes, les entreprises utilisants ces services à travers le monde se sont retrouvés dans l'incapacité de travailler. 
+
+Le géant du cloud, Amazon Web Service a connu en 2019 une panne d'électricité sur un serveur en Virginie. Cette panne a causé l'arrêt des générateurs de sauvegarde de ce centre de données. Durant cet incident, 7,5% des instances EC2 (hébergement d'application web) et EBS (stockage) sont restées indisponibles. Une fois la panne terminée, une partie des données stockées sur le serveur endommagé ont été définitivement perdues. 
+
+
 
 # 6. Une solution : la décentralisation
+
+### Paris
+La Mairie de Paris a décidé de reprendre la souveraineté des données des Parisiens. Pour ce faire, elle a ouvert en 2019 son propre Data Center situé en sous-sol dans le 18ème arrondissement.
+Pour réduire l’empreinte environnementale du Data Center, plusieurs mesures ont été prises par la Mairie de Paris. Ainsi, la chaleur dégagée par le centre sera utilisée pour alimenter le réseau de chauffage des bâtiments aux alentours. Une initiative similaire à celle prise par la ville de Bordeaux, où des HLM sont chauffés grâce aux données.
+
+De plus la ville de Paris compte laisser d’autres services publics et des particuliers payer pour y installer leurs serveurs, et donc avoir un hebergement plus proche et decentraliser.
 
 
 # 7. Proposition : l’informatique hébergé au niveau la ville ou de la région
@@ -409,27 +426,6 @@ Stocker ses données chez-soi, plutôt que sur le nuage de données, exploité p
 La solution proposé dans la partie d'avant et une solution technique et pour des personnes ayant le temps d'apprendre a admistrer un serveur. 
 
 La proposition la plus interresante a metre en place pour notre solution serait que la ville ou la region puisse mettre en place des Data Center administrer. Cela serait possible si la ville a un service informatique competant ou l'aide d'association ou de collectif comme la fait Paris.
-
-# 5. Mise en avant du ou des problèmes que cela soulève
-
-## 5.1. Les problèmes liés au cloud
-
-
-
-## 5.2. L'histoire des échecs de la centralisation
-
-Le 14 décembre 2020, Google a connu une panne mondiale. Les services tels que Youtube, Gmail ou Google Cloud Platform n'étaient pas accessibles pour plusieurs milliards d'utilisateurs. Durant une cinquantaine de mainutes, les entreprises utilisants ces services à travers le monde se sont retrouvés dans l'incapacité de travailler. 
-
-Le géant du cloud, Amazon Web Service a connu en 2019 une panne d'électricité sur un serveur en Virginie. Cette panne a causé l'arrêt des générateurs de sauvegarde de ce centre de données. Durant cet incident, 7,5% des instances EC2 (hébergement d'application web) et EBS (stockage) sont restées indisponibles. Une fois la panne terminée, une partie des données stockées sur le serveur endommagé ont été définitivement perdues. 
-
-# 6. Une solution : la décentralisation
-
-### Paris
-La Mairie de Paris a décidé de reprendre la souveraineté des données des Parisiens. Pour ce faire, elle a ouvert en 2019 son propre Data Center situé en sous-sol dans le 18ème arrondissement.
-Pour réduire l’empreinte environnementale du Data Center, plusieurs mesures ont été prises par la Mairie de Paris. Ainsi, la chaleur dégagée par le centre sera utilisée pour alimenter le réseau de chauffage des bâtiments aux alentours. Une initiative similaire à celle prise par la ville de Bordeaux, où des HLM sont chauffés grâce aux données.
-
-De plus la ville de Paris compte laisser d’autres services publics et des particuliers payer pour y installer leurs serveurs, et donc avoir un hebergement plus proche et decentraliser.
-
 
 ## 7.3. Chatons
 {{< img_float url="/images/livre-blanc/logo_chatons_v2.png" alt="Logo, Les Chatons" title="Chatons" class="float-right pl-4 max-w-md">}}
