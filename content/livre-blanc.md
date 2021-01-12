@@ -36,6 +36,24 @@ header_button_cta:
       - [Architecture micro service](#4252-architecture-micro-service)
     - [Réseau de diffusion de contenu - cdn](#426-réseau-de-diffusion-de-contenu---cdn)
   - [Aujourd’hui](#43-aujourdhui)
+- [Les technologies résilientes du cloud computing](#-4.-Les-technologies-résilientes-du-cloud-computing)
+  * [L’histoire d’internet](#-4.1-l'histoire-d'internet)
+  * [Les Technologies et techniques](##-4.2.-Les-Technologies-et-techniques)
+    * [Répondre à la demande](###-4.2.1.-Répondre-à-la-demande)
+      * [Scalabilité](####-**4.2.1.1.-Scalabilité**)
+      * [Répartition de charge](####-**4.2.1.2.-répartition-de-charge-de-charge---loadbalancing**)
+    * [Virtualisation](###-4.2.2.-virtualisation)
+    * [containerisation](###-4.2.3.-containerisation)
+      * [Orchestration](####-4.2.3.1.-Orchestration)
+    * [Grappe de serveur - Cluster](###-4.2.4.-Grappe-serveur---Clusterisation)
+    * [Du paradigme monolithique vers le micro-service](###-4.2.5.-Du-paradigme-monolithique-vers-le-micro-service)
+      * [Architecture monolithique](####-**4.2.5.1.-Architecture-monolithique**)
+      * [Architecture micro service](####-**4.2.5.2.-Architecture-micro-service**)
+    * [Réseau de diffusion de contenu - cdn](###-4.2.6.-Réseau-de-diffusion-de-contenu---cdn)
+    * [L'hyper-convergence](###-4.2.7.-L'Hyper-convergence)
+      * [Système de fichier distribué](####-**4.2.7.1.-Système-de-fichier-distribué-(DFS)**)
+  * [Aujourd’hui](##-4.3.-Aujourd'hui)
+
 - [Mise en avant du ou des problèmes que cela soulève](#5-mise-en-avant-du-ou-des-problèmes-que-cela-soulève)
   - [Les problèmes liés au cloud](#51-les-problèmes-liés-au-cloud)
   - [L’histoire des échecs de la centralisation](#52-lhistoire-des-échecs-de-la-centralisation)
@@ -137,12 +155,15 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 
 Au cours de l'évolution d'internet les organisations on fait face à un nombre grandissant d'utilisateur, internet s'est très vite démocratisé à tous les secteurs, de l'industrie, aux services, le médical, le bancaire et on peut l'affirmer sans crainte tous les autres secteurs ont été transformés par cette fabuleuse technologie.
 
-Aujourd'hui internet au-delà d'un réseau de million de kilomètre de câble et de millier de routeur et commutateur c'est aussi énormément de service fourni par des millions d'organisation, via en grande partie par les centres de données à travers le monde. Cela est rendu possible grâce au travail formidable des chercheurs et ingénieurs qui ont relevé le défi de rendre ces services le plus accessible possible, le plus sécurisé possible, leur travail à permit non seulement de propager internet au monde entier, mais aussi de le rendre plus résilient et plus accessible.
+Aujourd'hui internet au-delà d'un réseau de million de kilomètre de câble et de million de routeur et commutateur c'est aussi énormément de service fourni par des millions d'organisations, via en grande partie par les centres de données à travers le monde. Cela est rendu possible grâce au travail formidable des chercheurs et ingénieurs qui ont relevé le défi de rendre ces services le plus accessible possible, le plus sécurisé possible, leur travail à permit non seulement de propager internet au monde entier, mais aussi de le rendre plus résilient et plus accessible.
 
 Dans les chapitres qui suivent nous allons voir l'histoire de la création d'internet, mais aussi découvrir les technologies importantes qui ont fait d'internet ce qui l'ait aujourd'hui. Des architectures monolithiques aux architectures en micro-service, des parcs informatiques assurant la redondance d'un service aux grappes serveurs ces technologies sont le socle de ce que l'on nomme communément, le cloud.
 
 ### 4.1 l'histoire d'internet
 
+Avec sa capacité de stockage théoriquement infinie, le Cloud rebat les cartes dans le domaine de l’archivage mais surtout il permet aux organisations qui ne disposent pas d’un de datacenter de mettre en place une réplication de données et se doter d’un plan de continuité d’activité.
+
+## 4.1 l'histoire d'internet
 **Début d'une grande histoire**
 
 Le point de départ d'internet fût la naissance d'Arpanet en 1969, après plusieurs années de recherche. Ce réseau comprenait quatre ordinateurs mis en service à l'université de Los Angeles en Californie. Dans les années qui ont suivi de plus en plus d'université et d'institut de recherche ont rejoints le réseau.
@@ -332,7 +353,7 @@ L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds a
 
 ##### **4.2.4.1. Système de fichier distribué (DFS)**
 
-Avec la technologie de clusteurisation vient de nouvelles opportunités comme la capacité de répartir les données sur l'ensemble du cluster. On parle alors de système de fichier distribué. Les systèmes de fichier distribué garantisse que les données ne soient pas corrompue ou perdue.
+**La virtualisation et conteneurisation dans un cluster**
 
 ##### **4.2.4.2. La virtualisation et conteneurisation dans un cluster**
 
@@ -370,6 +391,17 @@ Vers la fin des années 90' la technologie de réseau de diffusion de contenu es
 Les clients récupère le contenu auprès du serveur leur étant le plus proche. De leur côté les serveurs cdn se charge de rester à jour vis-à-vis du serveur principal.
 
 ### 4.3. Aujourd'hui
+### 4.2.7. L'Hyper-convergence
+
+En 2012 apparait le terme d'Hyper-convergence, l'idée est de pousser à son paroxysme le principe de cluster, d'unicité, et de découpler drastiquement le matériel (serveur, routeur, commutateur, etc...) de la partie logicielle, dans le but d'accroitre l'évolutivité et de réduire la complexité. 
+
+#### **4.2.7.1. Système de fichier distribué (DFS)**
+
+Dans cette optique, le système utilise directement le stockage présent dans les serveurs afin d’en faire un pool de stockage partagé.
+
+On parle alors de système de fichier distribué. Les systèmes de fichier distribué garantisse que les données ne soient pas corrompue ou perdue.
+
+## 4.3. Aujourd'hui
 
 Dans la partie 4.2, nous avons vu les grandes technologies développées afin d'assurer de répondre à cette demande grandissante en même temps que les exigences en matière de résilience.
 
