@@ -159,8 +159,6 @@ Aujourd'hui internet au-delà d'un réseau de million de kilomètre de câble et
 
 Dans les chapitres qui suivent nous allons voir l'histoire de la création d'internet, mais aussi découvrir les technologies importantes qui ont fait d'internet ce qui l'ait aujourd'hui. Des architectures monolithiques aux architectures en micro-service, des parcs informatiques assurant la redondance d'un service aux grappes serveurs ces technologies sont le socle de ce que l'on nomme communément, le cloud.
 
-### 4.1 l'histoire d'internet
-
 Avec sa capacité de stockage théoriquement infinie, le Cloud rebat les cartes dans le domaine de l’archivage mais surtout il permet aux organisations qui ne disposent pas d’un de datacenter de mettre en place une réplication de données et se doter d’un plan de continuité d’activité.
 
 ## 4.1 l'histoire d'internet
