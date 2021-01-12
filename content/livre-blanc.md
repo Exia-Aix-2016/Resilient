@@ -402,7 +402,7 @@ Le changement de paradigme monolithique vers micro-service épouse parfaitement 
 
 ### 5.2. L'histoire des échecs de la centralisation
 
-Le 14 décembre 2020, Google a connu une panne mondiale. Les services tels que Youtube, Gmail ou Google Cloud Platform n'étaient pas accessibles pour plusieurs milliards d'utilisateurs. Durant une cinquantaine de mainutes, les entreprises utilisants ces services à travers le monde se sont retrouvés dans l'incapacité de travailler. 
+Le 14 décembre 2020, Google a connu une panne mondiale. Les services tels que Youtube, Gmail ou Google Cloud Platform n'étaient pas accessibles pour plusieurs milliards d'utilisateurs. Durant une cinquantaine de minutes, les entreprises utilisants ces services à travers le monde se sont retrouvées dans l'incapacité de travailler. 
 
 Le géant du cloud, Amazon Web Service a connu en 2019 une panne d'électricité sur un serveur en Virginie. Cette panne a causé l'arrêt des générateurs de sauvegarde de ce centre de données. Durant cet incident, 7,5% des instances EC2 (hébergement d'application web) et EBS (stockage) sont restées indisponibles. Une fois la panne terminée, une partie des données stockées sur le serveur endommagé ont été définitivement perdues.
 
@@ -410,43 +410,43 @@ Le géant du cloud, Amazon Web Service a connu en 2019 une panne d'électricité
 
 ## 7. Proposition : l’informatique hébergé au niveau la ville ou de la région
 
-Dans les parties precedente nous vous avons presenter les usage commun de l'informatique et quelles sont les architectures utiliser pour nos service informatiques telles que nos mail, la metéo et autre. Juste aprés nous vous avons expliquer que la decentralisation etait pour nous la solutions par definition, mais comment pouvez la mettre en place a la au niveaux de la regions et de la ville.
+Dans les parties précédentes nous vous avons présenté les usages communs de l'informatique et quelles sont les architectures utilisées pour nos service informatiques, tel que nos mail, la météo et autres. Juste après, nous vous avons expliqué que la décentralisation etait pour nous la solutions par definition, mais il reste la question de sa mise en place niveaux de la régions et de la ville.
 
-### 7.1. Solution maisons
+### 7.1. Solutions maisons
 
-En tant que solution pour vous particulier il serait interessant d'avoir un serveur a la maison qui permet d'heberger vos données. Cette solution est difficile a installé pour un particulier et couteuse. Pour cette solution il faudrait payer le materiel pour creé un serveur, cela reviendrai aux alentour de 400€. De plus il faudrait du temps pour se former sur des technologies telles que Yuno Host et de l'administration de serveur. De plus pour decentraliser sont serveur créer a l'aide de YunoHost on a la possibilité de créer un chaton lui permetant de rendre son serveur et service plus ethique et decentralisés accessible a d'autre personne 
+En tant que solution pour particuliers, il serait interessant de posséder un serveur à la maison qui permet d'heberger ses données. Cette solution est difficile et coûteuse a installer pour un particulier. Pour cette solution, il faudrait acheter le materiel pour chaque domicile, ce qui reviendrait à environs 400€ par foyer. De plus, il faut aussi prendre en compte le temps pour se former sur des technologies d'auto-hébergement et d'administration de serveur. On peut aussi, à l'aide de ce serveur décentralisé, créer un chaton qui permet de rendre ce serveur et les services hébergés, plus éthiques et accessibles à d'autres personnes. 
 
 #### YunoHost
 
 {{< img_float url="/images/livre-blanc/Yunohost.png" alt="Logo, YunoHost" title="YunoHost" class="float-right pl-4 ">}}
 YunoHost est une distribution dérivée de debian initialement destinée à l'auto-hébergement de particulier. Son objectif premier est de démocratiser la pratique de l'auto-hébergement en simplifiant la gestion d'un serveur le plus possible, de sorte que des personnes, à l'aise avec leur ordinateur personnel mais sans grandes connaissances, puissent réussir à déployer et maintenir des services.(si cela vous interresse voir les etapes d'installation [Ici: Créer son chaton avec YunoHost](https://wiki.chatons.org/doku.php/yunohost))
 
-Pour les personne qui veulent cette outils mais sans avoir a prendre du temps pour l'administrer il existe un boitier du nom de LOLA qui se rapproche de notre proposition.
+Il existe aussi des solutions pour les personnes qui désirent cet outil mais qui ne désirent pas l'administrer : un boitier du nom de LOLA permet de gérer son instalation YunoHost de manière simplifiée.
 
 #### LOLA
 
 {{< img_float url="/images/livre-blanc/lola.jpg" alt="Lola, Mon datacenter a la maison" title="Lola" class="float-right pl-4">}}
-Stocker ses données chez-soi, plutôt que sur le nuage de données, exploité par les géants de l’internet, tout en réduisant l’impact environnemental et en louant les espaces inutilisés, c’est l’idée de la startup Sonora Labs installée au sein de la pépinière d’entreprises « Cleantech »  à Aix en Provence. Une idée qui fait l’objet d’une triple innovation comme le rappelle Julien Tournier, son fondateur : «  elle libère les données des datacenters, préserve l’environnement et rémunère celui qui met à disposition son espace inutilisé ». Le principe même de l’économie collaborative appliquée à l’informatique, qui permet au passage de rendre internet plus vertueux.
+Stocker ses données chez-soi, plutôt que sur le nuage de données, exploitées par les géants de l’internet, tout en réduisant l’impact environnemental et en louant les espaces inutilisés, c’est l’idée de la startup Sonora Labs installée au sein de la pépinière d’entreprises « Cleantech »  à Aix en Provence. Une idée qui fait l’objet d’une triple innovation comme le rappelle Julien Tournier, son fondateur : «  elle libère les données des datacenters, préserve l’environnement et rémunère celui qui met à disposition son espace inutilisé ». Le principe même de l’économie collaborative appliquée à l’informatique, qui permet au passage de rendre internet plus vertueux.
 
 ### 7.2. Pour nos villes
 
-La solution proposé dans la partie d'avant et une solution technique et pour des personnes ayant le temps d'apprendre a admistrer un serveur.
+La solution proposée dans la partie précédente est une solution technique pour des personnes ayant le temps d'apprendre à administrer un serveur.
 
-La proposition la plus interresante a metre en place pour notre solution serait que la ville ou la region puisse mettre en place des Data Center administrer. Cela serait possible si la ville a un service informatique competant ou l'aide d'association ou de collectif comme la fait Paris.
+La proposition la plus interresante a mettre en place pour notre solution serait que la ville ou la region puisse mettre en place des Data Center administrés. Cela serait possible si la ville posséde un service informatique compétant ou l'aide d'associations, de collectifs comme l'a fait Paris.
 
 #### Paris
 
-La Mairie de Paris a décidé de reprendre la souveraineté des données des Parisiens. Pour ce faire, elle a ouvert en 2019 son propre Data Center situé en sous-sol dans le 18ème arrondissement.
-Pour réduire l’empreinte environnementale du Data Center, plusieurs mesures ont été prises par la Mairie de Paris. Ainsi, la chaleur dégagée par le centre sera utilisée pour alimenter le réseau de chauffage des bâtiments aux alentours. Une initiative similaire à celle prise par la ville de Bordeaux, où des HLM sont chauffés grâce aux données.
+La Mairie de Paris a décidé de reprendre la souveraineté des données des Parisiens. Pour se faire, elle a ouvert en 2019 son propre Data Center situé en sous-sol dans le 18ème arrondissement.
+Pour réduire l’empreinte environnementale du Data Center, plusieurs mesures ont été prises par la mairie de Paris. Ainsi, la chaleur dégagée par le centre sera utilisée pour alimenter le réseau de chauffage des bâtiments aux alentours. Une initiative similaire à celle prise par la ville de Bordeaux, où des HLM sont chauffés grâce aux données.
 
-De plus la ville de Paris compte laisser d’autres services publics et des particuliers payer pour y installer leurs serveurs, et donc avoir un hebergement plus proche et decentraliser.
+De plus la ville de Paris compte laisser d’autres services publics et des particuliers payer pour y installer leurs serveurs, et donc avoir un hebergement plus proche et decentralisé.
 
-### 7.3. Chatons
+### 7.3. CHATONS
 
 {{< img_float url="/images/livre-blanc/logo_chatons_v2.png" alt="Logo, Les Chatons" title="Chatons" class="float-right pl-4 max-w-md">}}
-Ce que a fait Paris est possible puisque la mairie de Paris a une equipe technique competante et les moyens de payer cette infrastructure. Pour les villes, regions et particulier qui cherche a realiser un hébergement alternatif, transparents et de bonne qualité il peuvent essayer de devenir un Chatons.
+Ce qu'a fait Paris est possible puisque la mairie de Paris a une equipe technique compétante et les moyens de payer cette infrastructure. Pour les villes, regions et particuliers qui cherchent a realiser un hébergement alternatif, transparents et de bonne qualité ils peuvent essayer de devenir un CHATON.
 
-Donc un chatons c'est quoi :
+Un CHATON posséde les caractéristiques suivantes :
 
 - C'est un collectif regroupant des petites structures proposant des services en ligne (par exemple du mail, de l'hébergement de sites web, des outils collaboratifs, des outils de communication, etc.).
 
