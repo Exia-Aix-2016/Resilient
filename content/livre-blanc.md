@@ -135,19 +135,19 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 
 ## 4. Les technologies résilientes du cloud computing
 
-Au cours de l'évolution d'internet les organisations on fait face à un nombre grandissant d'utilisateur, internet s'est très vite démocratisé à tous les secteurs, de l'industrie, aux services, le médical, le bancaire et on peut l'affirmer sans crainte tous les autres secteurs ont été transformés par cette fabuleuse technologie.
+Au cours de l'évolution d'internet, les organisations on fait face à un nombre grandissant d'utilisateurs. Internet s'est très vite démocratisé à tous les secteurs, de l'industrie, aux services, le médical, le bancaire et on peut l'affirmer sans crainte, tous les autres secteurs ont été transformés par cette fabuleuse technologie.
 
-Aujourd'hui internet au-delà d'un réseau de million de kilomètre de câble et de million de routeur et commutateur c'est aussi énormément de service fourni par des millions d'organisations, via en grande partie par les centres de données à travers le monde. Cela est rendu possible grâce au travail formidable des chercheurs et ingénieurs qui ont relevé le défi de rendre ces services le plus accessible possible, le plus sécurisé possible, leur travail à permit non seulement de propager internet au monde entier, mais aussi de le rendre plus résilient et plus accessible.
+Aujourd'hui, internet est composé d'un réseau de million de kilomètres de câbles et de million de routeurs et commutateurs. Mais c'est aussi énormément de services fournit par des millions d'organisations, via en grande partie par les centres de données à travers le monde. Cela est rendu possible grâce au travail formidable des chercheurs et ingénieurs qui ont relevé le défi de rendre ces services le plus accessible et sécurisé possible. Leur travail a permit non seulement de propager internet au monde entier, mais aussi de le rendre plus résilient et plus accessible.
 
-Dans les chapitres qui suivent nous allons voir l'histoire de la création d'internet, mais aussi découvrir les technologies importantes qui ont fait d'internet ce qui l'ait aujourd'hui. Des architectures monolithiques aux architectures en micro-service, des parcs informatiques assurant la redondance d'un service aux grappes serveurs ces technologies sont le socle de ce que l'on nomme communément, le cloud.
+Dans les chapitres qui suivent, nous allons voir l'histoire de la création d'internet, mais aussi découvrir les technologies importantes qui ont fait d'internet ce qu'il est aujourd'hui. Des architectures monolithiques aux architectures en micro-service, des parcs informatiques assurant la redondance d'un service aux grappes serveurs. Ces technologies sont le socle de ce que l'on nomme communément, le cloud.
 
-Avec sa capacité de stockage théoriquement infinie, le Cloud rebat les cartes dans le domaine de l'hébergement er permet aux organisations qui ne disposent pas d’un de datacenter de mettre en place leur solutions applicatives facilement, à moindre coût tout en garantissant la sécurité et la continuité de leur activité.
+Avec sa capacité de stockage théoriquement infinie, le Cloud redistribut les cartes dans le domaine de l'hébergement et permet aux organisations qui ne disposent pas d’un de datacenter de mettre en place leurs solutions applicatives facilement, à moindre coût tout en garantissant la sécurité et la continuité de leur activité.
 
-## 4.1 l'histoire d'internet
+## 4.1 L'histoire d'internet
 
 **Début d'une grande histoire**
 
-Le point de départ d'internet fût la naissance d'Arpanet en 1969, après plusieurs années de recherche. Ce réseau comprenait quatre ordinateurs mis en service à l'université de Los Angeles en Californie. Dans les années qui ont suivi de plus en plus d'université et d'institut de recherche ont rejoints le réseau.
+Le point de départ d'internet fût la naissance d'Arpanet en 1969, après plusieurs années de recherche. Ce réseau comprenait quatre ordinateurs mis en service à l'université de Los Angeles en Californie. Dans les années qui ont suivi, de plus en plus d'universités et d'instituts de recherche ont rejoint le réseau.
 
 Entre 1972 et 1976 sont réalisées les premières spécifications des protocoles internet (TCP, Telnet, UCP, FTP).
 
@@ -158,43 +158,43 @@ Usenet, à l'origine indépendant, a rapidement été connecté à ARPAnet.
 
 En 1973 est publié à la conférence de l'INWG la suite de protocoles TCP/IP (Transfert Control Protocol - Internet Protocol), puis en 1983 Arpanet adopte cette suite de protocoles, c'est la naissance d'internet, grâce à ces protocoles les réseaux peuvent s'interconnecter. Finalement Arpanet est intégré au NSFNET (réseau de la National Science Foundation) en 1990. Ce réseau est le point de départ d'Internet.
 
-**Un croissance fulgurante**
+**Une croissance fulgurante**
 
-Depuis 1990 des millions de particuliers et entreprises rejoignent Internet, cet afflux massif à permit aux gens à travers le monde d'échanger et aux entreprises de faire évoluer leur business. Très rapidement les besoins d'internet se multiplie :
+Depuis 1990 des million de particuliers et entreprises rejoignent Internet, cet afflux massif à permit aux gens à travers le monde d'échanger et aux entreprises de faire évoluer leur business. Très rapidement les besoins d'internet se multiplient :
 
-- La recherche d'information.
+- La recherche d'informations.
 
-- Echange d'information via mail, forum, chat.
+- Echange d'informations via mail, forum, chat.
 
 - Téléphonie.
 
-- Jeu en ligne.
+- Jeux en ligne.
 
 - Commerce électronique.
 
 - Echange boursier.
 
-- Réseau sociaux.
+- Réseaux sociaux.
 
 - et à l'avenir l'internet des objets...
 
-On le comprend plus internet grandit, plus les usages s'étendent.
+On le comprend : plus internet grandit, plus les usages s'étendent.
 
-Aujourd'hui internet est utilisé partout dans le monde par 4.39 milliards d'individu qui y passe six heures en moyenne par jour...
+Aujourd'hui internet est utilisé partout dans le monde par 4.39 milliards d'individus qui y passent six heures en moyenne par jour...
 
 **Un problème d'échelle et de criticité**
 
-Cependant, cet afflux massif d'individu que ce soit des particuliers ou des organismes et l'utilisation grandissante d'internet pour des systèmes de plus en plus critiques a mis en lumière des problématiques d'ordre technologiques des infrastructures supportant internet ou fournissant des services via celui-ci.
+Cependant, cet afflux massif d'individus, que ce soit des particuliers ou des organismes, et l'utilisation grandissante d'internet pour des systèmes de plus en plus critiques. En effet, cela a mis en lumière des problématiques d'ordre technologiques des infrastructures supportant internet ou fournissant des services via celui-ci.
 
 En effet il aura fallut aux ingénieurs et aux chercheurs, trouver des solutions pour rendre les systèmes capables de répondre d'une part à cette demande intense et d'une autre part, puisque Internet s'utilisait de plus en plus pour des utilisations critiques, rendre ces systèmes plus robuste face à des événements perturbateurs.
 
-### 4.2. Les Technologies et techniques
+### 4.2. Les technologies et techniques
 
-Au cours des années qui ont suivi la création d'internet, les entreprises on fait face à des obstacles quand il s'agissait de répondre à la demande grandissante ou bien pour protéger efficacement leur système d'information. Au cours de ces années des technologies plus innovantes les unes que les autres ont vu le jour dans le but de répondre à des problèmes d'ordre de résilience :
+Au cours des années qui ont suivi la création d'internet, les entreprises on fait face à des obstacles : qu'il s'agisse de répondre à la demande grandissante ou bien protéger efficacement leur système d'information. Au cours de ces années, des technologies plus innovantes les unes que les autres ont vu le jour dans le but de répondre à des problèmes d'ordre de résilience :
 
 ![Systeme](https://i.imgur.com/590o6Zi.png)
 
-On distingue deux parties les conditions et les événements :
+On distingue deux parties :
 
 - Les conditions défavorables sont des états internes ou externes aux systèmes qui peuvent perturber ou conduire à la perturbation des capacités critiques.
 
@@ -204,31 +204,31 @@ Les différentes technologies présentées ci-dessous permettent de répondre à
 
 #### 4.2.1. Répondre à la demande
 
-la première approche utilisée par les entreprises, consistait à centraliser le stockage et le traitement des données dans un serveur central. Un des premiers obstacle rencontré était de répondre à la demande grandissante pour un service donné, pensez aux moteurs de recherche, aux sites d'achat, de streaming, le nombre d'utilisateur n'a cessé d'augmenter, cette augmentation implique d'utiliser de plus en plus de ressource pour y répondre. Un seul serveur ne suffisait plus...
+la première approche utilisée par les entreprises, consistait à centraliser le stockage et le traitement des données dans un serveur central. Un des premiers obstacles rencontré était de répondre à la demande grandissante pour un service donné, pensez aux moteurs de recherche, aux sites d'achat, de streaming, le nombre d'utilisateurs n'a cessé d'augmenter, cette augmentation implique d'utiliser de plus en plus de ressources pour y répondre. Un seul serveur ne suffisait plus...
 
 ##### **4.2.1.1. Scalabilité**
 
-La première notion à aborder lorsqu'on parle de "répondre à la demande" et le principe de scalabilité, (mise à l'échelle), cette notion regroupe les techniques utilisées pour faire en sorte qu'un système d'information ait les ressources nécessaires afin de répondre efficacement à un nombre d'utilisateur donné.
+La première notion à aborder lorsqu'on parle de "répondre à la demande" est le principe de scalabilité (mise à l'échelle). Cette notion regroupe les techniques utilisées pour faire en sorte qu'un système d'information ait les ressources nécessaires afin de répondre efficacement à un nombre d'utilisateurs donné.
 
 Il existe deux types de scalabilité, l'horizontal et la vertical.
 
 **Scalabilité horizontal**
 
-La scalabilité horizontale, est de multiplier les nœuds de calcul au niveau le plus bas de l'infrastructure, c'est-à-dire l'ajout pure et simple de nouveau serveur ou d'une instance applicatif. Cela coûte financièrement.
+La scalabilité horizontale correspond à la multiplication les nœuds de calcul au niveau le plus bas de l'infrastructure, c'est-à-dire l'ajout pur et simple d'un nouveau serveur ou d'une instance applicatif. Cela représente un investissement important.
 
 **Scalabilité vertical**
 
-Cette fois-ci l'idée est d'augmenter la capacité de calcul d'un nœud, c'est-à-dire ajouté de la mémoire, un meilleur processeur, etc.... à un serveur ou bien multiplié les modules d'une application.
+Cette fois-ci, l'idée est d'augmenter la capacité de calcul d'un nœud, c'est-à-dire ajouter de la mémoire, un meilleur processeur, etc.... à un serveur ou bien multiplier les modules d'une application.
 
 Dans un premier temps, les entreprises abordaient le problème via la première approche, multiplier les serveurs et chaque serveur disposait d'une instance de l'application, cette approche n'est pas faisable sans l'utilisation de ce que l'on nomme un "loadbalancer", un répartiteur de charge.
 
-##### **4.2.1.2. répartition de charge de charge - loadbalancing**
+##### **4.2.1.2. Répartition de charge : le load balancing**
 
-Après avoir multiplié ses serveurs, pour soutenir la charge, il faut qu'ils soient tous accessibles pour les utilisateurs, pour ce faire ils existent plusieurs approches pour répartir les utilisateurs entre les différents serveurs.
+Après avoir multiplié ses serveurs, pour soutenir la charge, il faut qu'ils soient tous accessibles pour les utilisateurs. Pour se faire, il existe plusieurs approches pour répartir les utilisateurs entre les différents serveurs.
 
 **Utiliser les DNS**
 
-Pour rappel le DNS est un système permettant de traduire une adresse IP en un nom de domaine. Example :
+Pour rappel, le DNS est un système permettant de traduire une adresse IP en un nom de domaine. Example :
 
 ```text
 google.com -> 172.217.18.206
@@ -250,15 +250,15 @@ Cette technique permet de mieux répartir la charge, car le proxy à connaissanc
 
 **Geographic load balancing**
 
-Bien que les latences aient été drastiquement diminuées au fil des années via notamment la démocratisation de la fibre optique, on ne peut pas défier les lois de la physique, un signal qu'il soit guidé (câble, fibre optique) ou non-guidé (sans fils) à une vitesse propre :
+Bien que les latences aient été drastiquement diminuées au fil des années via notamment la démocratisation de la fibre optique, on ne peut pas défier les lois de la physique, un signal qu'il soit guidé (câble, fibre optique) ou non-guidé (sans fils) a une vitesse propre :
 
 - Dans l'air cette vitesse sera de 299 700 km/s
 
 - Dans une fibre optique ou câble ce sera 70 à 75% de la vitesse de la lumière dans le vide.
 
-à cela il faut rajouter les temps de traitement du signal à chaque nœud du réseau. Par exemple la latence entre l'est des Etats-Unis l'ouest de l'Europe est de ~80 millisecondes (pour chaque Packet de données, une page web par exemple va nécessité des centaines d'échange pour être affichée).
+Il faut aussi rajouter les temps de traitement du signal à chaque nœud du réseau. Par exemple, la latence entre l'Est des Etats-Unis et l'Ouest de l'Europe est de ~80 millisecondes (pour chaque paquet de données, une page web par exemple va nécessiter des centaines d'échanges pour être affichée).
 
-Rapidement les entreprises on fait face à cette problématique, il fallait donc avoir des serveurs proches des clients, tout en étant accessible via le même nom de domaine. Pour cela ils utilisent des techniques d'équilibrage basé sur la géolocalisation.
+Les entreprises ont rapidement fait face à cette problématique : il fallait donc avoir des serveurs proches des clients, tout en étant accessible via le même nom de domaine. Pour cela ils utilisent des techniques d'équilibrage basé sur la géolocalisation.
 
 Tout d'abord, le proxy obtient l'adresse IP du client et analyse les informations sur l'emplacement du client. Simultanément, le serveur effectue des contrôles de santé pour évaluer les performances et la réactivité des serveurs en temps réel. Enfin, le serveur maître transmet la demande au serveur local le plus proche géographiquement ou ayant le temps de réponse le plus court.
 
@@ -266,9 +266,9 @@ L'ensemble de ces techniques peuvent être utilisées séparément ou ensemble, 
 
 #### 4.2.2. virtualisation
 
-Avant les applications adoptées une architecture monolithique, bien que simple à déployer c'était compliqué de gérer plusieurs applications efficacement sur nos serveurs et notamment de pouvoir les tester. De plus, avec la montée en puissance d'internet, de plus en plus d'entreprise voit leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle et de déployer efficacement sur leur infrastructure.
+Avant, les applications adoptaient une architecture monolithique qui, bien que simple à déployer, était compliquée à gérer quand déployées sur le même serveur. De plus, avec la montée en puissance d'internet, de plus en plus d'entreprises voient leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle et de déployer efficacement sur leur infrastructure.
 
-En 1960 la firme IBM créer le premier système de virtualisation de serveur, au cours des années 80-90 l'apparition de l'architecture processeur x86 démocratise le principe, ce qui vient répondre aux problématiques cité ci-dessus. La virtualisation consiste, à exécuter sur une machine hôte, dans un environnement isolé, des systèmes d'exploitation, cette approche offre les avantages suivants :
+En 1960 la firme IBM créé le premier système de virtualisation de serveur, au cours des années 80-90 l'apparition de l'architecture processeur x86 démocratise le principe, ce qui vient répondre aux problématiques citées ci-dessus. La virtualisation consiste à exécuter sur une machine hôte, dans un environnement isolé, des systèmes d'exploitation. Cette approche offre les avantages suivants :
 
 - Utilisation optimale des ressources du parc informatique.
 
@@ -276,27 +276,27 @@ En 1960 la firme IBM créer le premier système de virtualisation de serveur, au
 
 - Economie matériel et énergétique en mutualisant les ressources.
 
-- Permet de mettre en place des environnement de tests pour les équipes de développement, ce qui améliore la qualité.
+- Permet de mettre en place des environnements de testes pour les équipes de développement, ce qui améliore la qualité.
 
-- Sécurisation des systèmes grâce à l'isolation des système hôte et des réseaux.
+- Sécurisation des systèmes grâce à l'isolation des systèmes hôte et des réseaux.
 
-- Allocation dynamique de ressources allouée aux systèmes virtualisés.
+- Allocation dynamique des ressources allouées aux systèmes virtualisés.
 
-#### 4.2.3. containerisation
+#### 4.2.3. Containeurisation
 
-Dès le début des années 2000 le concept containerisation se développe, l'idée n'est plus de virtualiser un système d'exploitation qui fait ensuite tourner une application métier, mais de virtualiser chaque application.
+Dès le début des années 2000, le concept de containeurisation se développe, l'idée n'est plus de virtualiser un système d'exploitation qui fait ensuite tourner une application métier, mais de virtualiser chaque application.
 
 ![Conteneur](https://i.imgur.com/UzfFTdf.png)
 
-Les conteneurs encapsulent un package applicatif qui comprends seulement le code de l'application, ses dépendances, ses fichiers de configuration. Pour fonctionner les containeurs font appel à un logiciel qui s'occupera de les exécuter et les gérer.
+Les conteneurs encapsulent un package applicatif qui comprends seulement le code de l'application, ses dépendances et ses fichiers de configuration. Pour fonctionner les conteneurs font appel à un logiciel qui s'occupera de les exécuter et les gérer.
 
 les avantages :
 
-- **Portabilité** : Cette approche permet notamment de rendre chaque application portables, chaque conteneur peut être déployé autant sur une machine Linux ou Windows ou même dans un système virtualisé.
+- **Portabilité** : Cette approche permet notamment de rendre chaque application portable, chaque conteneur peut être déployé autant sur une machine Linux ou Windows ou même dans un système virtualisé.
 
-- **Légèreté** : Les containeurs partagent le même noyau système, celui de la machine, il n'y a aucun système virtualiser nécessaire à les faire fonctionner, cela demande moins de ressource au serveur. De plus, contrairement à une machine virtuelle standards, un conteneur mettra beaucoup moins de temps à démarrer.
+- **Légèreté** : Les conteneurs  partagent le même noyau système, celui de la machine, il n'y a aucun système virtualisé nécessaire à les faire fonctionner, cela demande moins de ressources au serveur. De plus, contrairement à une machine virtuelle standard, un conteneur mettra beaucoup moins de temps à démarrer.
 
-- **Scalable** : La Scalabilité est facilitée, puisqu'il facile de dupliquer un container.
+- **Scalable** : La scalabilité est facilitée, puisqu'il est facile de dupliquer un conteneur.
 
 - **Sécurisé** : Les applications sont isolées les unes des autres, ce qui empêche en principe la transmission d'un code malveillant à un autre conteneur ou à l'hôte.
 
@@ -304,21 +304,21 @@ les avantages :
 
 L'orchestration permet d'automatiser le déploiement et la gestion de la mise à l'échelle (scalabilité) et la mise en réseau des conteneurs.
 
-L'orchestrateur va s'occuper de répartir les conteneurs sur les différents serveurs, selon les besoins en matière de mémoire et CPU. Il va notamment s'occuper de surveiller l'activité des conteneurs pour connaitre à tout instant leur état de santé. En cas de mise en défaut d'un conteneur l'orchestrateur peut le redémarrer voir le supprimer et en recréer un. Si un des serveurs est indisponible, il peut redémarrer les conteneurs sur un autre serveur.
+L'orchestrateur va s'occuper de répartir les conteneurs sur les différents serveurs, selon les besoins en matière de mémoire et de CPU. Il va notamment s'occuper de surveiller l'activité des conteneurs pour connaitre à tout instant leur état de santé. En cas de mise en défaut d'un conteneur, l'orchestrateur peut le redémarrer voir le supprimer et en recréer un. Si un des serveurs est indisponible, il peut redémarrer les conteneurs sur un autre serveur.
 
 L'orchestrateur permet d'assurer la mise à jour des conteneurs de manière successive sans induire d'indisponibilité, c'est ce que l'on nomme le rolling update. Il peut aussi revenir en arrière en cas de problème.
 
-Les conteneurs étant par nature volatile, les informations réseau de chaque conteneur (ex: adresse ip) est variable, L'orchestrateur offre un niveau d'abstraction permettant de regrouper un ou plusieurs conteneurs, de leur allouer une adresse IP fixe et de l'exposer à d'autres conteneurs.
+Les conteneurs étant par nature volatile, les informations réseau de chaque conteneur (ex: adresse IP) est variable. L'orchestrateur offre un niveau d'abstraction permettant de regrouper un ou plusieurs conteneurs, de leur allouer une adresse IP fixe et de l'exposer à d'autres conteneurs.
 
 Ces fonctions confèrent à l'infrastructure un niveau de résilience accru.
 
 #### 4.2.4. Grappe serveur - Clusterisation
 
-Dès la fin des années 1980 les ingénieurs développent un multi-ordinateur, l'idée est de fusionner les ressources fournis par plusieurs ordinateurs pour en former qu'un (virtuellement) c'est ce qu'on appel une grappe serveur ou un cluster...
+Dès la fin des années 1980, les ingénieurs développent un multi-ordinateur : l'idée est de fusionner les ressources fournit par plusieurs ordinateurs pour en former un nouveau qui sera virtuel. C'est ce qu'on appel une grappe serveur ou un cluster.
 
-Cette approche va de pair avec les techniques visant à mieux répartir la charge, mais pas que. En effet Cela permet d'augmenter la disponibilité, de mieux gérer la scalabilité et facilité la gestion des ressources (processeur, mémoire vive, stockage, bande passante...).
+Cette approche va de pair avec les techniques visant à mieux répartir la charge, mais pas que. En effet, cela permet d'augmenter la disponibilité, de mieux gérer la scalabilité et de faciliter la gestion des ressources (processeur, mémoire vive, stockage, bande passante...).
 
-Ici on change de paradigme, les serveurs ne répondent pas individuellement aux requêtes, mais forme un tout, qui y répondra, le calcule est divisé entre les nœuds du cluster.
+Ici, on change de paradigme : les serveurs ne répondent pas individuellement aux requêtes, mais forment un tout, qui y répondra, où le calcule y est divisé entre les nœuds du cluster.
 
 Les avantages sont multiples :
 
@@ -326,11 +326,11 @@ Les avantages sont multiples :
 
 - **La scalabilité horizontale** : Le regroupement d’ordinateurs en architecture distribuée possède une caractéristique très intéressante sur les clusters : la scalabilité horizontale. L’ajout d’un ordinateur supplémentaire dans un cluster augmente de façon plus que proportionnelle la performance du cluster.
 
-- **La haute disponibilité ou tolérance aux pannes** : Le regroupement d’ordinateurs en clusters permet de distribuer le traitement entre ceux-ci, ce qui offre la capacité au système de continuer à fonctionner malgré les défaillances, ce qui n’est pas le cas dans les architectures centralisées dans lesquelles la disponibilité de tout le système repose entièrement sur un point : le serveur central (Single point of Failure)
+- **La haute disponibilité ou tolérance aux pannes** : Le regroupement d’ordinateurs en clusters permet de distribuer le traitement entre ceux-ci, ce qui offre la capacité au système de continuer à fonctionner malgré les défaillances, ce qui n’est pas le cas dans les architectures centralisées dans lesquelles la disponibilité de tout le système repose entièrement sur un point : le serveur central (Single Point of Failure)
 
-La puissance de calcul qui découle du regroupement d'ordinateurs, cumulée aux effets d'échelles massifs engendrés par ces avantages, font des architectures distribuées, le moteur infrastructurel parfait pour la gestion de la plupart des problèmes de calcul intensif ou des problèmes de traitement massivement parallèle.
+La puissance de calcul qui découle du regroupement d'ordinateurs, cumulée aux effets d'échelles massives engendrés par ces avantages, font des architectures distribuées le moteur infrastructurel parfait pour la gestion de la plupart des problèmes de calcul intensif ou des problèmes de traitement massivement parallèle.
 
-L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutées au cluster.
+L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutés au cluster.
 
 ##### **4.2.4.1. Système de fichier distribué (DFS)**
 
@@ -338,63 +338,63 @@ L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds a
 
 ##### **4.2.4.2. La virtualisation et conteneurisation dans un cluster**
 
-Comme sur un serveur traditionnel, on peut virtualiser ou conteneuriser au sein d'un cluster, mais permet par exemple la migration à chaud d'une machine virtuelle ou d'un container, cela consiste à déplacer l'état d'une machine virtuelle ou d'un conteneur, c'est-à-dire les données, la mémoire, les processus en cours, etc... d'un nœud à l'autre.
+Comme sur un serveur traditionnel, on peut virtualiser ou conteneuriser au sein d'un cluster : cela permet par exemple la migration à chaud d'une machine virtuelle ou d'un container. Cette manipulation consiste à déplacer l'état d'une machine virtuelle ou d'un conteneur, c'est-à-dire les données, la mémoire, les processus en cours, etc... d'un nœud à l'autre.
 
 #### 4.2.5. Du paradigme monolithique vers le micro-service
 
 ##### **4.2.5.1. Architecture monolithique**
 
-Tel que montré précédemment, les applications étaient monolithique et comme on la vue elles étaient déployées d'un seul bloc derrière un répartiteur de charge. Il y a des avantages à cette approche, en terme de :
+Tel que montré précédemment, les applications étaient monolithique et déployées d'un seul bloc derrière un répartiteur de charge. Il y a des avantages à cette approche, en terme de :
 
 - performances : l'ensemble des éléments sont en mémoire.
 - Simplicité : L'approche est intuitive, simple à construire, à déployer et à tester.
 
-Toutefois, cette approche comprend beaucoup de points faibles, d'un point de vue développement, une erreur de programmation dans l'un des modules peut la faire tomber entièrement. Dans le cas d'une mise à jour c'est l'ensemble de l'application qui doit être stoppée et être redéployée, cela prend du temps, du temps qui coûte de plus en plus cher. Le couplage entre les modules de l'application est fort ; la dette technique ne peut qu'augmenter.
+Toutefois, cette approche comprend beaucoup de points faibles. D'un point de vue développement, une erreur de programmation dans l'un des modules peut la faire tomber entièrement. Dans le cas d'une mise à jour, c'est l'ensemble de l'application qui doit être stoppée et être redéployée, cela prend du temps, du temps qui coûte de plus en plus cher. Le couplage entre les modules de l'application est fort, ce qui entraine l'augmentation de la dette technique.
 
 ##### **4.2.5.2. Architecture micro-service**
 
-En 2011 apparait le concept d'architecture micro-service, la philosophie s'inspire grandement de celle d'UNIX, "Ne faire qu'une seule chose et la faire bien". L'idée n'est plus de structurer l'application en un seul bloc, mais de découpler ses modules en un ensemble de services, ces derniers communiquant ensemble par le biais d'interfaces commun.
+En 2011 apparait le concept d'architecture micro-service, la philosophie s'inspire grandement de celle d'UNIX : "Ne faire qu'une seule chose et la faire bien". L'idée n'est plus de structurer l'application en un seul bloc, mais de découpler ses modules en un ensemble de services, ces derniers communiquant ensemble par le biais d'interfaces commun.
 
 ![Architecture](https://i.imgur.com/yl7I48Z.png)
 
-L'approche offre des avantages conséquents, elle facilite le développement distribué, réduit les cycles de développement puisque les équipes peuvent livrer chaque service indépendamment des autres, facilite le déploiement, augmente la résilience : le faible couplage entre les services permet qu'en cas de dysfonctionnement d'un des services l'application reste opérationnel.
+L'approche offre des avantages conséquents, elle facilite le développement distribué, réduit les cycles de développement puisque les équipes peuvent livrer chaque service indépendamment des autres, facilite le déploiement, augmente la résilience : le faible couplage entre les services permet qu'en cas de dysfonctionnement d'un des services que l'application reste opérationnel.
 
-Néanmoins, l'approche comporte des challenges à relever, dorénavant il faut gérer non plus une seule application, mais un essaim d'application plus petite (micro-service) qu'il faut être capable de gérer.
+Néanmoins, l'approche comporte des challenges à relever : dorénavant il faut gérer non plus une seule application, mais un essaim d'applications plus petite (micro-service) qu'il faut être capable de gérer.
 
-Grâce à l'utilisation de conteneur et d'orchestrateur, il devient facile pour l'organisme de déployer, selon ses besoins l'ensemble des micro-services sur son infrastructure.
+Grâce à l'utilisation de conteneurs et d'orchestrateurs, il devient facile pour l'organisme de déployer selon ses besoins, l'ensemble des micro-services sur son infrastructure.
 
 #### 4.2.6. Réseau de diffusion de contenu - cdn
 
-Vers la fin des années 90' la technologie de réseau de diffusion de contenu est créé, constituée d'ordinateur en réseau, reliés à travers internet il coopère afin de mettre à disposition le contenu d'un serveur principal.
+Vers la fin des années 90' la technologie de réseau de diffusion de contenu est créé, constituée d'ordinateur en réseau, reliés à travers internet ils coopèrent afin de mettre à disposition le contenu d'un serveur principal.
 
 ![cdn](https://i.imgur.com/KrjBDxZ.png)
 
-Les clients récupère le contenu auprès du serveur leur étant le plus proche. De leur côté les serveurs cdn se charge de rester à jour vis-à-vis du serveur principal.
+Les clients récupèrent le contenu auprès du serveur leur étant le plus proche. De leur côté, les serveurs cdn se chargent de rester à jour vis-à-vis du serveur principal.
 
 ### 4.3. Aujourd'hui
 ### 4.2.7. L'Hyper-convergence
 
 En 2012 apparait le terme d'Hyper-convergence, l'idée est de pousser à son paroxysme le principe de cluster, d'unicité, et de découpler drastiquement le matériel (serveur, routeur, commutateur, etc...) de la partie logicielle, dans le but d'accroitre l'évolutivité et de réduire la complexité. 
 
-#### **4.2.7.1. Système de fichier distribué (DFS)**
+#### **4.2.7.1. Système de fichiers distribué (DFS)**
 
 Dans cette optique, le système utilise directement le stockage présent dans les serveurs afin d’en faire un pool de stockage partagé.
 
-On parle alors de système de fichier distribué. Les systèmes de fichier distribué garantisse que les données ne soient pas corrompue ou perdue.
+On parle alors de système de fichiers distribué. Les systèmes de fichiers distribué garantissent que les données ne soient pas corrompues ou perdues.
 
 ## 4.3. Aujourd'hui
 
 Dans la partie 4.2, nous avons vu les grandes technologies développées afin d'assurer de répondre à cette demande grandissante en même temps que les exigences en matière de résilience.
 
-Dans un environnement d'application monolithique, il est trop risqué d'avoir qu'une instance de cette application face aux événements ou conditions perturbatrice, alors la redondance fût la première des solutions.
+Dans un environnement d'application monolithique, il est trop risqué de n'avoir qu'une instance de cette application face aux événements ou conditions perturbatrice, alors la redondance fût la première des solutions.
 
-Au fil du temps, à mesure que les exigences en matière de résilience ont accrus les technologies ont suivi le pas. La virtualisation à permit de mutualiser son infrastructure et de garantir un niveau d'exigence en terme de sécurité, cependant la virtualisation est un processus lourd et coûteux en ressource. Là où la conteneurisation apporte des solutions aux problèmes de ressources et notamment rendent les applications portables et facilement scalable au sein de l'infrastructure.
+Au fil du temps, à mesure que les exigences en matière de résilience ont accru, les technologies ont suivi le pas. La virtualisation a permit de mutualiser son infrastructure et de garantir un niveau d'exigence en terme de sécurité. Cependant, la virtualisation est un processus lourd et coûteux en ressources. Là où la conteneurisation apporte des solutions aux problèmes de ressources et notamment rendent les applications portables et facilement scalable au sein de l'infrastructure.
 
 L'apparition des infrastructures clusterisées à permit de faciliter la gestion, la scalabilité et la tolérance aux pannes de l'infrastructure.
 
-Avec les technologies d'orchestration la mise à l'échelle des composants logiciels de l'architecture du SI est automatisée et rend à son tour la partie système tolérante aux pannes. Les mises à jour non plus d'impacte sur l'applicatif et en cas de problème le retour en arrière est possible.
+Avec les technologies d'orchestration, la mise à l'échelle des composants logiciels de l'architecture du SI est automatisée et rend à son tour la partie système tolérante aux pannes. Les mises à jour n'ont plus d'impact sur l'applicatif et en cas de problème le retour en arrière est possible.
 
-Le changement de paradigme monolithique vers micro-service épouse parfaitement les technologies citées précédemment, en découplant les modules de l'application, cette dernière devient à son tour résiliente. Grâce à l'orchestration la scalabilité devient plus fine, c'est-à-dire qu'il est possible de mettre à l'échelle certain services mais pas d'autre...
+Le changement de paradigme monolithique vers micro-service épouse parfaitement les technologies citées précédemment, et en découplant les modules de l'application, cette dernière devient à son tour résiliente. Grâce à l'orchestration, la scalabilité devient plus fine, il est alors possible de mettre à l'échelle certains services mais pas d'autre...
 
 ## 5. Mise en avant du ou des problèmes que cela soulève
 
