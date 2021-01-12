@@ -282,11 +282,11 @@ En 1960 la firme IBM créé le premier système de virtualisation de serveur, au
 
 - Allocation dynamique des ressources allouées aux systèmes virtualisés.
 
-#### 4.2.3. Containeurisation
+#### 4.2.3. Conteneurisation
 
-Dès le début des années 2000, le concept de containeurisation se développe, l'idée n'est plus de virtualiser un système d'exploitation qui fait ensuite tourner une application métier, mais de virtualiser chaque application.
+Dès le début des années 2000, le concept de Conteneurisation se développe, l'idée n'est plus de virtualiser un système d'exploitation qui fait ensuite tourner une application métier, mais de virtualiser chaque application.
 
-![Conteneur](https://i.imgur.com/UzfFTdf.png)
+![Conteneurisation](https://i.imgur.com/UTPuR9u.png)
 
 Les conteneurs encapsulent un package applicatif qui comprends seulement le code de l'application, ses dépendances et ses fichiers de configuration. Pour fonctionner les conteneurs font appel à un logiciel qui s'occupera de les exécuter et les gérer.
 
@@ -306,6 +306,8 @@ L'orchestration permet d'automatiser le déploiement et la gestion de la mise à
 
 L'orchestrateur va s'occuper de répartir les conteneurs sur les différents serveurs, selon les besoins en matière de mémoire et de CPU. Il va notamment s'occuper de surveiller l'activité des conteneurs pour connaitre à tout instant leur état de santé. En cas de mise en défaut d'un conteneur, l'orchestrateur peut le redémarrer voir le supprimer et en recréer un. Si un des serveurs est indisponible, il peut redémarrer les conteneurs sur un autre serveur.
 
+![Orchestration](https://i.imgur.com/YuumlRN.png)
+
 L'orchestrateur permet d'assurer la mise à jour des conteneurs de manière successive sans induire d'indisponibilité, c'est ce que l'on nomme le rolling update. Il peut aussi revenir en arrière en cas de problème.
 
 Les conteneurs étant par nature volatile, les informations réseau de chaque conteneur (ex: adresse IP) est variable. L'orchestrateur offre un niveau d'abstraction permettant de regrouper un ou plusieurs conteneurs, de leur allouer une adresse IP fixe et de l'exposer à d'autres conteneurs.
@@ -317,6 +319,9 @@ Ces fonctions confèrent à l'infrastructure un niveau de résilience accru.
 Dès la fin des années 1980, les ingénieurs développent un multi-ordinateur : l'idée est de fusionner les ressources fournit par plusieurs ordinateurs pour en former un nouveau qui sera virtuel. C'est ce qu'on appel une grappe serveur ou un cluster.
 
 Cette approche va de pair avec les techniques visant à mieux répartir la charge, mais pas que. En effet, cela permet d'augmenter la disponibilité, de mieux gérer la scalabilité et de faciliter la gestion des ressources (processeur, mémoire vive, stockage, bande passante...).
+
+![Cluster](https://i.imgur.com/nJyb6az.png)
+
 
 Ici, on change de paradigme : les serveurs ne répondent pas individuellement aux requêtes, mais forment un tout, qui y répondra, où le calcule y est divisé entre les nœuds du cluster.
 
@@ -332,7 +337,7 @@ La puissance de calcul qui découle du regroupement d'ordinateurs, cumulée aux 
 
 L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutés au cluster.
 
-##### **4.2.4.1. La virtualisation et conteneurisation dans un cluster**
+##### **4.2.4.. La virtualisation et conteneurisation dans un cluster**
 
 Comme sur un serveur traditionnel, on peut virtualiser ou conteneuriser au sein d'un cluster : cela permet par exemple la migration à chaud d'une machine virtuelle ou d'un container. Cette manipulation consiste à déplacer l'état d'une machine virtuelle ou d'un conteneur, c'est-à-dire les données, la mémoire, les processus en cours, etc... d'un nœud à l'autre.
 
@@ -351,7 +356,7 @@ Toutefois, cette approche comprend beaucoup de points faibles. D'un point de vue
 
 En 2011 apparait le concept d'architecture micro-service, la philosophie s'inspire grandement de celle d'UNIX : "Ne faire qu'une seule chose et la faire bien". L'idée n'est plus de structurer l'application en un seul bloc, mais de découpler ses modules en un ensemble de services, ces derniers communiquant ensemble par le biais d'interfaces commun.
 
-![Architecture](https://i.imgur.com/yl7I48Z.png)
+![Architecture](https://i.imgur.com/n1JIwbj.png)
 
 L'approche offre des avantages conséquents, elle facilite le développement distribué, réduit les cycles de développement puisque les équipes peuvent livrer chaque service indépendamment des autres, facilite le déploiement, augmente la résilience : le faible couplage entre les services permet qu'en cas de dysfonctionnement d'un des services que l'application reste opérationnel.
 
@@ -363,7 +368,7 @@ Grâce à l'utilisation de conteneurs et d'orchestrateurs, il devient facile pou
 
 Vers la fin des années 90' la technologie de réseau de diffusion de contenu est créé, constituée d'ordinateur en réseau, reliés à travers internet ils coopèrent afin de mettre à disposition le contenu d'un serveur principal.
 
-![cdn](https://i.imgur.com/KrjBDxZ.png)
+![cdn](https://i.imgur.com/Ix7wpvx.png)
 
 Les clients récupèrent le contenu auprès du serveur leur étant le plus proche. De leur côté, les serveurs cdn se chargent de rester à jour vis-à-vis du serveur principal.
 
