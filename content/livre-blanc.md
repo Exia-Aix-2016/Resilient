@@ -332,11 +332,7 @@ La puissance de calcul qui découle du regroupement d'ordinateurs, cumulée aux 
 
 L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutés au cluster.
 
-##### **4.2.4.1. Système de fichier distribué (DFS)**
-
-**La virtualisation et conteneurisation dans un cluster**
-
-##### **4.2.4.2. La virtualisation et conteneurisation dans un cluster**
+##### **4.2.4.1. La virtualisation et conteneurisation dans un cluster**
 
 Comme sur un serveur traditionnel, on peut virtualiser ou conteneuriser au sein d'un cluster : cela permet par exemple la migration à chaud d'une machine virtuelle ou d'un container. Cette manipulation consiste à déplacer l'état d'une machine virtuelle ou d'un conteneur, c'est-à-dire les données, la mémoire, les processus en cours, etc... d'un nœud à l'autre.
 
