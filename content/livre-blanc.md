@@ -133,6 +133,25 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 
 ## 3. Description des usages communs de l’informatique
 
+Est-ce si important de garder d’avoir un réseau informatique résilient ?
+Ne serait-ce qu’à but professionnel, personne ne peut s’en passer, ou presque. Mais même, ou plutôt surtout, personnellement, nous en avons besoin, et beaucoup en devienne dépendant. 
+Mais à quel point sommes-nous dépendant de ces technologies ? 
+
+### 3.1 Communication
+
+Une grande majorité possède un compte sur un réseau social. Si ce n’est pas Twitter, Facebook ou Instagram, peut-être est-ce LinkedIn ou Pinterest ? Ces solutions répondent à un besoin de communication. Mais il n’y a pas que les réseaux sociaux, avec leur notifications omni-présentent afin de nous faire rester le plus longtemps dessus qui nous permettent de communiquer. Il y a aussi des messageries, comme des email, qui permettent de communiquer à la fois professionnellement et personnellement. WhatsApp, Outlook ou encore Skype et Microsoft Teams ! Autant de solutions, toutes informatiques qui nous permettent de discuter entre nous. 
+
+On peut aussi noter les différentes sources d’informations, telle que les journaux, en format numérique, ou les émissions journalière, telle que le JT de TF1, ou le 19-45 de M6. Bien que majoritairement visionnés sur la télé, il est possible de regarder en replay sur son ordinateur, ainsi que toute les émissions de ladite chaine.  
+Une autre chose que l’on peut compter comme communication, sont les déclarations en ligne, ou toute les procédures en ligne en général. Les dossiers médicaux, et la carte vitale sont accessible en ligne. Les communications avec les services bancaires sont aussi à prendre en compte. L’accès aux compte, le payement en carte bleu, et le payement en ligne. 
+
+Du côté professionnel, on peut compter sur les agendas partagés, sur les documentations partagés, documents partagés aussi, et les workflow, principalement. Pour généraliser, tout ce qui est gestion d’équipe, et travail en commun. On peut citer GitHub par exemple, pour la gestion de version de logiciel et le travail collaboratif. Il y a aussi des forums, tel StackOverflow, qui sont un registre de connaissance couplé a une communauté volontaire et prêt à aider n’importe qui, débutant ou professionnel, pour résoudre leurs problèmes.
+
+Il ne faut pas oublier non plus le téléphone et les SMS. Moyen de communication par défaut, ils sont soumis à usage de l’informatique très important. La majorité des français ont un smartphone et non plus de téléphone leur servant uniquement à téléphoner. Et déjà avec les anciens modèles, il y avait des fonctions obligatoires, tels que le répertoire. Personne ne s’embête a noter sur papier les numéros de tout le monde, ni de les apprendre par cœur, a l’exception des numéros d’urgences, et même eux, un certain nombre de personnes ne les connaissent pas.
+
+Mais il y a beaucoup d’autres utilités à nos smartphones. On peut les utiliser pour prendre des photos ou des vidéos par exemple. Une fois prises, ces médias sont stockés dans la mémoire du téléphone pour les visionner ou les partager. Mais en plus de les stocker simplement sur le téléphone, il y a une nouvelle option de disponible. Le stockage sur le cloud. Une solution relativement nouvelle qui permet le stockage infini de données. Et de n’importe quel type de données. Photo et vidéo par exemple, principalement avec Apple. Mais aussi des documents, professionnels ou personnels. Il existe énormément de solution sur le marché, les plus connus étant dropbox, iCloud et google Drive.
+
+
+
 ## 4. Les technologies résilientes du cloud computing
 
 Au cours de l'évolution d'internet, les organisations on fait face à un nombre grandissant d'utilisateurs. Internet s'est très vite démocratisé à tous les secteurs, de l'industrie, aux services, le médical, le bancaire et on peut l'affirmer sans crainte, tous les autres secteurs ont été transformés par cette fabuleuse technologie.
