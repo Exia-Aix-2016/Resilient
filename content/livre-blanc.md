@@ -119,7 +119,7 @@ Au niveau technologique, et à une échelle plus réduite, on a un autre projet,
 
 #### 2.1.3. Energies
 
-Une solution innovatrice face au problème d'énergie est le projet Smart Grid. C'est un nouveau modèle de réseau qui émerge récemment, qui est en opposition avec le modèle dit traditionnel, celui utilisé historiquement. Le principe du modèle directionnel est très simple : il est centralisé autour du producteur, qui n'a que peu d'informations sur les consommateurs, et va donc leur donner toujours le même niveau d'énergie. Il est possible d'adapter le niveau d'énergie fournit, mais pas de façon flexible, ou brusque. Par exemple, en fonction de la météo, on va changer le niveau de consommation d'énergie. Mais ce modèle ne permet pas d'adapter l'énergie fournie. Le modèle Smart Grid est un modèle réparti et bi-directionnel. C'est à dire que tout les acteurs sur le réseau, à savoir les producteurs, intermédiaires et consommateurs d'énergie, vont tous communiquer entre eux. La production d'énergie n'est plus centralisée. Il peut y avoir plusieurs sources d'énergie et le modèle fonctionnera parfaitement. Un tel changement de modèle implique de modifier la manière de concevoir et de piloter ces réseaux. Le pilotage du système électrique devient, avec ces nouvelles technologies, plus flexible. 
+Une solution innovatrice face au problème d'énergie est le projet Smart Grid. C'est un nouveau modèle de réseau qui émerge récemment, qui est en opposition avec le modèle dit traditionnel, celui utilisé historiquement. Le principe du modèle directionnel est très simple : il est centralisé autour du producteur, qui n'a que peu d'informations sur les consommateurs, et va donc leur donner toujours le même niveau d'énergie. Il est possible d'adapter le niveau d'énergie fournit, mais pas de façon flexible, ou brusque. Par exemple, en fonction de la météo, on va changer le niveau de consommation d'énergie. Mais ce modèle ne permet pas d'adapter l'énergie fournie. Le modèle Smart Grid est un modèle réparti et bi-directionnel. C'est à dire que tout les acteurs sur le réseau, à savoir les producteurs, intermédiaires et consommateurs d'énergie, vont tous communiquer entre eux. La production d'énergie n'est plus centralisée. Il peut y avoir plusieurs sources d'énergie et le modèle fonctionnera parfaitement. Un tel changement de modèle implique de modifier la manière de concevoir et de piloter ces réseaux. Le pilotage du système électrique devient, avec ces nouvelles technologies, plus flexible.
 Cette adaptation ne peut se faire qu’en intégrant de nouvelles fonctionnalités issues des nouvelles technologies de l’information. Ces fonctionnalités permettent aux producteurs de prendre en compte beaucoup plus facilement les actions de l’ensemble des acteurs présent sur le réseau. C’est le cas notamment avec les compteurs intelligents. Avec les Smart Grids, les consommateurs d’électricité communiquent des informations essentielles aux producteurs. Ces derniers peuvent dès lors ajuster plus facilement et rapidement la production d’énergie. Un tel modèle de réseau permet de faire du consommateur un véritable acteur au sein du réseau. Son rôle n’est plus passif comme il l’est avec un système électrique traditionnel.
 
 ![alt text](/images/livre-blanc/smart_grid.png  "Ferme à étages")
@@ -140,23 +140,21 @@ Comme présenté précédemment, il existe de nombreux axes et domaines qui trai
 ## 3. Description des usages communs de l’informatique
 
 Est-ce si important de garder d’avoir un réseau informatique résilient ?
-Ne serait-ce qu’à but professionnel, personne ne peut s’en passer, ou presque. Mais même, ou plutôt surtout, personnellement, nous en avons besoin, et beaucoup en deviennent dépendants. 
-Mais à quel point sommes-nous dépendants de ces technologies ? 
+Ne serait-ce qu’à but professionnel, personne ne peut s’en passer, ou presque. Mais même, ou plutôt surtout, personnellement, nous en avons besoin, et beaucoup en deviennent dépendants.
+Mais à quel point sommes-nous dépendants de ces technologies ?
 
 ### 3.1 Communication
 
-Une grande majorité possède un compte sur un réseau social. Si ce n’est pas Twitter, Facebook ou Instagram, peut-être est-ce LinkedIn ou Pinterest ? Ces solutions répondent à un besoin de communication. Mais il n’y a pas que les réseaux sociaux, avec leur notifications omni-présentent afin de nous faire rester le plus longtemps dessus qui nous permettent de communiquer. Il y a aussi des messageries, comme des emails, qui permettent de communiquer à la fois professionnellement et personnellement. WhatsApp, Outlook ou encore Skype et Microsoft Teams ! Autant de solutions, toutes informatiques qui nous permettent de discuter entre nous. 
+Une grande majorité possède un compte sur un réseau social. Si ce n’est pas Twitter, Facebook ou Instagram, peut-être est-ce LinkedIn ou Pinterest ? Ces solutions répondent à un besoin de communication. Mais il n’y a pas que les réseaux sociaux, avec leur notifications omni-présentent afin de nous faire rester le plus longtemps dessus qui nous permettent de communiquer. Il y a aussi des messageries, comme des emails, qui permettent de communiquer à la fois professionnellement et personnellement. WhatsApp, Outlook ou encore Skype et Microsoft Teams ! Autant de solutions, toutes informatiques qui nous permettent de discuter entre nous.
 
 On peut aussi noter les différentes sources d’informations, telle que les journaux, en format numérique, ou les émissions journalières, telles que le JT de TF1, ou le 19-45 de M6. Bien que majoritairement visionnés sur la télé, il est possible de regarder en replay sur son ordinateur, ainsi que toutes les émissions de ladite chaîne.  
-Une autre chose que l’on peut compter comme communication, sont les déclarations en ligne, ou toutes les procédures en ligne en général. Les dossiers médicaux et la carte vitale sont accessible en ligne. Les communications avec les services bancaires sont aussi à prendre en compte. L’accès aux comptes, le payement en carte bleu, et le payement en ligne. 
+Une autre chose que l’on peut compter comme communication, sont les déclarations en ligne, ou toutes les procédures en ligne en général. Les dossiers médicaux et la carte vitale sont accessible en ligne. Les communications avec les services bancaires sont aussi à prendre en compte. L’accès aux comptes, le payement en carte bleu, et le payement en ligne.
 
 Du côté professionnel, on peut compter sur les agendas partagés, sur les documentations partagés, documents partagés aussi, et les workflow, principalement. Pour généraliser, tout ce qui est gestion d’équipe et travail en commun. On peut citer GitHub par exemple, pour la gestion de version de logiciel et le travail collaboratif. Il y a aussi des forums, tel StackOverflow, qui sont un registre de connaissance couplé a une communauté volontaire et prête à aider n’importe qui, débutant ou professionnel, pour résoudre leurs problèmes.
 
 Il ne faut pas oublier non plus le téléphone et les SMS. Moyen de communication par défaut, ils sont soumis à un usage de l’informatique très important. La majorité des français ont un smartphone et n'ont plus de téléphone leur servant uniquement à téléphoner. Et déjà avec les anciens modèles, il y avait des fonctions obligatoires, tels que le répertoire. Personne ne s’embête a noter sur papier les numéros de tout le monde, ni de les apprendre par cœur, a l’exception des numéros d’urgences, et même eux, un certain nombre de personnes ne les connaissent pas.
 
 Mais il y a beaucoup d’autres utilités à nos smartphones. On peut les utiliser pour prendre des photos ou des vidéos par exemple. Une fois prises, ces médias sont stockés dans la mémoire du téléphone pour les visionner ou les partager. Mais en plus de les stocker simplement sur le téléphone, il y a une nouvelle option de disponible. Le stockage sur le cloud. Une solution relativement nouvelle qui permet le stockage infini de données. Et de n’importe quel type de données. Photo et vidéo par exemple, principalement avec Apple. Mais aussi des documents, professionnels ou personnels. Il existe énormément de solutions sur le marché, les plus connus étant Dropbox, iCloud et Google Drive.
-
-
 
 ## 4. Les technologies résilientes du cloud computing
 
@@ -347,7 +345,6 @@ Cette approche va de pair avec les techniques visant à mieux répartir la charg
 
 ![Cluster](https://i.imgur.com/nJyb6az.png)
 
-
 Ici, on change de paradigme : les serveurs ne répondent pas individuellement aux requêtes, mais forment un tout, qui y répondra, où le calcule y est divisé entre les nœuds du cluster.
 
 Les avantages sont multiples :
@@ -399,7 +396,7 @@ Les clients récupèrent le contenu auprès du serveur leur étant le plus proch
 
 #### 4.2.7. L'Hyper-convergence
 
-En 2012 apparait le terme d'Hyper-convergence, l'idée est de pousser à son paroxysme le principe de cluster, d'unicité, et de découpler drastiquement le matériel (serveur, routeur, commutateur, etc...) de la partie logicielle, dans le but d'accroitre l'évolutivité et de réduire la complexité. 
+En 2012 apparait le terme d'Hyper-convergence, l'idée est de pousser à son paroxysme le principe de cluster, d'unicité, et de découpler drastiquement le matériel (serveur, routeur, commutateur, etc...) de la partie logicielle, dans le but d'accroitre l'évolutivité et de réduire la complexité.
 
 ##### **4.2.7.1. Système de fichiers distribué (DFS)**
 
@@ -425,7 +422,7 @@ Le changement de paradigme monolithique vers micro-service épouse parfaitement 
 
 ### 5.1. Les problèmes liés au cloud
 
-Un des sujets les plus abordés quant à l'utilisation d'un cloud centralisé est l'appartenance des données. Les données sont confiées à un tierce parti dans lequel il faut placer sa confiance. 
+Un des sujets les plus abordés quant à l'utilisation d'un cloud centralisé est l'appartenance des données. Les données sont confiées à un tierce parti dans lequel il faut placer sa confiance.
 
 L'utilisation du cloud rend dépendant à une connexion internet. Utiliser vos services qui sont hébergés sur le cloud vous rend sensibles à la perte de disponibilités dans le cas de l'absence de connexion. L'activité d'une entreprise peut être totalement paralysée par la perte de connexion.
 
@@ -433,9 +430,9 @@ Sur certains aspect techniques, une entreprise devra forcément passer par le su
 
 ### 5.2. L'histoire des échecs de la centralisation
 
-Le 14 décembre 2020, Google a connu une panne mondiale. Les services tels que Youtube, Gmail ou Google Cloud Platform n'étaient pas accessibles pour plusieurs milliards d'utilisateurs. Durant une cinquantaine de mainutes, les entreprises utilisants ces services à travers le monde se sont retrouvés dans l'incapacité de travailler. 
+Le 14 décembre 2020, Google a connu une panne mondiale. Les services tels que Youtube, Gmail ou Google Cloud Platform n'étaient pas accessibles pour plusieurs milliards d'utilisateurs. Durant une cinquantaine de mainutes, les entreprises utilisants ces services à travers le monde se sont retrouvés dans l'incapacité de travailler.
 
-Le géant du cloud, Amazon Web Service a connu en 2019 une panne d'électricité sur un serveur en Virginie. Cette panne a causé l'arrêt des générateurs de sauvegarde de ce centre de données. Durant cet incident, 7,5% des instances EC2 (hébergement d'application web) et EBS (stockage) sont restées indisponibles. Une fois la panne terminée, une partie des données stockées sur le serveur endommagé ont été définitivement perdues. 
+Le géant du cloud, Amazon Web Service a connu en 2019 une panne d'électricité sur un serveur en Virginie. Cette panne a causé l'arrêt des générateurs de sauvegarde de ce centre de données. Durant cet incident, 7,5% des instances EC2 (hébergement d'application web) et EBS (stockage) sont restées indisponibles. Une fois la panne terminée, une partie des données stockées sur le serveur endommagé ont été définitivement perdues.
 
 En 2019, les GAFAM représentaient 49% de la valeur de l'indice NASDAQ. On se rend compte assez vite que l'indisponibilité des services de l'un d'entre eux a un impact extrèmement important sur l'économie. Certaines entreprises dépendent essentiellement de leurs services et se voient donc dans l'incapacité de fonctionner en cas de panne. Même si ces incidents sont rares, l'impact économique qu'ils ont n'est pas négligeable et invite les entreprises à trouver d'autres solutions pour assurer leur pérénité. Afin de garantir une meilleure résilience, certains modèles proposent une résistance plus sûre aux incidents techniques que le cloud centralisé peut connaitre.
 
@@ -451,9 +448,9 @@ Ce concept est d'abord lié au fonctionnemnt du gouvernement. En voici sa défin
 
 En effet, par un long processus de décentralisation, la France, qui était un État unitaire très centralisé depuis la Révolution, est aujourd'hui un État déconcentré et décentralisé (loi du 6 février 1992 relative à l’administration territoriale de la République, dite "loi ATR"). Cette réalité est désormais consacrée par l’article 1er de la Constitution qui, depuis la révision constitutionnelle du 17 mars 2003, dispose que "l’organisation [de la République française] est décentralisée".
 
-![](/images/décentralisation-région.png)
+![Décentralisation](/images/décentralisation-région.png)
 
-### 6.2.	Concept appliqué à la technologie
+### 6.2. Concept appliqué à la technologie
 
 Cette idée s'applique aussi à l'informatique, notamment aux réseaux et bien sûr à internet. Nous allons ici détailler le concept de centralisation, décentralisation et de distribution appliquée au web.
 
@@ -476,9 +473,10 @@ Avec ce modèle qui présente certes de nombreux avantages expliqués précédem
 
 #### 6.2.2. Le web décentralisé
 
-La décentralisation ou redécentralisation du web car il l'était davantage à ses débuts, est en quelque sorte un réduction d'échelle : comme le gouvernement, nous allons chercher à séparer les clouds (serveurs centraux) en pleins de plus petits fournisseurs et de les rapprocher des clients. 
+La décentralisation ou redécentralisation du web car il l'était davantage à ses débuts, est en quelque sorte un réduction d'échelle : comme le gouvernement, nous allons chercher à séparer les clouds (serveurs centraux) en pleins de plus petits fournisseurs et de les rapprocher des clients.
 
 Cela impact la résilience du système internet positivement sur plusieurs critères :
+
 1. Si les fournisseurs sont répartis géographiquement sur le territoire, l'autonomie des localités est augmenté.
 2. Si les fournisseurs sont gouvernés indépendamments, les services seront beaucoup plus diversifiés.
 
@@ -488,14 +486,14 @@ La web distribué est une modèle plus radical car ici les acteurs sont majorita
 Pour trouver une ressource, un acteur va demander aux acteurs les plus proches de lui puis élargir sa recherche s’il ne trouve pas.
 
 Ce modèle est le plus résilient des trois :
+
 1. Chaque acteur est potentiellement différent d'un autre, donc énormément de diversité.
 2. L'autonomie peut être appliquée à toutes les échelles, la plus petite étant deux acteurs dans une pièce.
 3. Le système est extrêmement modulaire et interconnecté, on peut ajouter et enlever des acteurs sans perturbations.
 4. Les ressources sont redondantes à travers plusieurs acteurs sur le réseau.
 
-
-Le modèle le plus résilient est le web distribué mais il est beaucoup plus compliqué à mettre en place car en supprimant les fournisseurs, il est presque impossible d'appliquer des régulations économiques ou législatives. 
-Dans la société actuelle, il est plus réaliste pour l'instant de se diriger vers un modèle décentralisé. Cependant un phénomène négatif peut apparaitre : le manque d'interopérabilité qui est une conséquence de l'augmentation de la diversité et empêcherait des utilisateurs de différents services de communiquer correctement ensemble. 
+Le modèle le plus résilient est le web distribué mais il est beaucoup plus compliqué à mettre en place car en supprimant les fournisseurs, il est presque impossible d'appliquer des régulations économiques ou législatives.
+Dans la société actuelle, il est plus réaliste pour l'instant de se diriger vers un modèle décentralisé. Cependant un phénomène négatif peut apparaitre : le manque d'interopérabilité qui est une conséquence de l'augmentation de la diversité et empêcherait des utilisateurs de différents services de communiquer correctement ensemble.
 
 ### 6.3. Fédération
 
@@ -509,13 +507,13 @@ Ce genre de protocole existe déjà, par exemple pour tout ce qui touche aux ré
 Le [Fediverse](https://fediverse.party/en/fediverse) est utilisé par environ 1 millions d'utilisateurs répartit sur plus de 5000 instances.
 Une instance représente une application (ou service) hébergé par un fournisseur.
 
-### 6.4.	Les logiciels décentralisés
+### 6.4. Les logiciels décentralisés
 
 Voici quelques applications fédérées alternatives aux réseaux sociaux centralisés :
+
 - [Mastodon](https://joinmastodon.org/) est une alternative à Twitter
 - [Peertube](https://joinpeertube.org/) est une alternative à Youtube
 - [Mobilizon](https://joinmobilizon.org/fr/) est une alternative aux événements Facebook
-
 
 ## 7. Proposition : l’informatique hébergé au niveau la ville ou de la région
 
@@ -523,7 +521,7 @@ Dans les parties précédentes nous vous avons présenté les usages communs de 
 
 ### 7.1. Solutions maisons
 
-En tant que solution pour particuliers, il serait interessant de posséder un serveur à la maison qui permet d'heberger ses données. Cette solution est difficile et coûteuse a installer pour un particulier. Pour cette solution, il faudrait acheter le materiel pour chaque domicile, ce qui reviendrait à environs 400€ par foyer. De plus, il faut aussi prendre en compte le temps pour se former sur des technologies d'auto-hébergement et d'administration de serveur. On peut aussi, à l'aide de ce serveur décentralisé, créer un chaton qui permet de rendre ce serveur et les services hébergés, plus éthiques et accessibles à d'autres personnes. 
+En tant que solution pour particuliers, il serait interessant de posséder un serveur à la maison qui permet d'heberger ses données. Cette solution est difficile et coûteuse a installer pour un particulier. Pour cette solution, il faudrait acheter le materiel pour chaque domicile, ce qui reviendrait à environs 400€ par foyer. De plus, il faut aussi prendre en compte le temps pour se former sur des technologies d'auto-hébergement et d'administration de serveur. On peut aussi, à l'aide de ce serveur décentralisé, créer un chaton qui permet de rendre ce serveur et les services hébergés, plus éthiques et accessibles à d'autres personnes.
 
 #### YunoHost
 
@@ -599,5 +597,6 @@ Donc celon nous il faudrait rendre l'informatique plus resilient pour l'Homme, e
 Aujourd'hui il serait interressant de changer l'approche que l'on a sur l'informatique. Comme exprimmer dans la citation ci dessus **Richard Stallman** la gratuité de l'informatique a un prix telles que empreinte sur notre planète. De plus on aujourd'hui le web n'est plus q'un suport mais un outils polique pour les grandes entreprises.
 
 ***Il est donc l'heure pour vous d'agir*** et de commencé a chercher des solution plus respectueuse:
-- telles que les [CHATONS](https://chatons.org/fr) pour hebergé vos propre service ou avoir accés des services en ligne libres, éthiques et décentralisés. 
-- Il faut de plus poussé vos municipalité a s'approprié la problematique
+
+- telles que les [CHATONS](https://chatons.org/fr) pour hebergé vos propre service ou avoir accés des services en ligne libres, éthiques et décentralisés.
+- Il faut de plus poussé vos municipalité a s'approprié la problematique.
