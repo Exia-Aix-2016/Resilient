@@ -524,15 +524,13 @@ En tant que solution pour particuliers, il serait intéressant de posséder un s
 
 #### YunoHost
 
-{{< img_float url="/images/livre-blanc/Yunohost.png" alt="Logo, YunoHost" title="YunoHost" class="float-right pl-4 ">}}
-YunoHost est une distribution dérivée de Debian initialement destinée à l'auto-hébergement de particulier. Son objectif premier est de démocratiser la pratique de l'auto-hébergement en simplifiant la gestion d'un serveur le plus possible, de sorte que des personnes, à l'aise avec leur ordinateur personnel mais sans grandes connaissances, puissent réussir à déployer et maintenir des services.(si cela vous intéresse voir les étapes d'installation [Ici: Créer son chaton avec YunoHost](https://wiki.chatons.org/doku.php/yunohost))
+{{< img_float url="/images/livre-blanc/Yunohost.png" alt="Logo, YunoHost" title="YunoHost" class="float-right pl-4 ">}}YunoHost est une distribution dérivée de Debian initialement destinée à l'auto-hébergement de particulier. Son objectif premier est de démocratiser la pratique de l'auto-hébergement en simplifiant la gestion d'un serveur le plus possible, de sorte que des personnes, à l'aise avec leur ordinateur personnel mais sans grandes connaissances, puissent réussir à déployer et maintenir des services.(si cela vous intéresse voir les étapes d'installation [Ici: Créer son chaton avec YunoHost](https://wiki.chatons.org/doku.php/yunohost))
 
 Il existe aussi des solutions pour les personnes qui désirent cet outil mais qui ne désirent pas l'administrer : un boitier du nom de LOLA permet de gérer son installation YunoHost de manière simplifiée.
 
 #### LOLA
 
-{{< img_float url="/images/livre-blanc/lola.jpg" alt="Lola, Mon datacenter à la maison" title="Lola" class="float-right pl-4">}}
-Stocker ses données chez-soi, plutôt que sur le nuage de données, exploitées par les géants de l’internet, tout en réduisant l’impact environnemental et en louant les espaces inutilisés, c’est l’idée de la startup Sonora Labs installée au sein de la pépinière d’entreprises « Cleantech »  à Aix en Provence. Une idée qui fait l’objet d’une triple innovation comme le rappelle Julien Tournier, son fondateur : « elle libère les données des datacenters, préserve l’environnement et rémunère celui qui met à disposition son espace inutilisé ». Le principe même de l’économie collaborative appliquée à l’informatique, qui permet au passage de rendre internet plus vertueux.
+{{< img_float url="/images/livre-blanc/lola.jpg" alt="Lola, Mon datacenter à la maison" title="Lola" class="float-right pl-4">}}Stocker ses données chez-soi, plutôt que sur le nuage de données, exploitées par les géants de l’internet, tout en réduisant l’impact environnemental et en louant les espaces inutilisés, c’est l’idée de la startup Sonora Labs installée au sein de la pépinière d’entreprises « Cleantech »  à Aix en Provence. Une idée qui fait l’objet d’une triple innovation comme le rappelle Julien Tournier, son fondateur : « elle libère les données des datacenters, préserve l’environnement et rémunère celui qui met à disposition son espace inutilisé ». Le principe même de l’économie collaborative appliquée à l’informatique, qui permet au passage de rendre internet plus vertueux.
 
 ### 7.2. Pour nos villes
 
@@ -590,12 +588,13 @@ En conclusion on a remarqué que l'internet faisait partie de la vie courante de
 
 Donc selon nous il faudrait rendre l'informatique plus résilient pour l'Homme, et en venir a une architecture décentraliser. On peut même parler de redécentralisation puisque a la base Internet a été conçu comme un réseau de réseaux interconnectés dans lequel n'importe quel nœud du réseau peut communiquer avec tous les autres. La décentralisation ou redécentralisation du web car il l'était davantage à ses débuts, est en quelque sorte une réduction d'échelle, nous allons chercher à séparer les clouds (serveurs centraux) en pleins de plus petits fournisseurs et de les rapprocher des clients. Cela impact la résilience du système internet positivement sur plusieurs critères puisque si les fournisseurs sont répartis géographiquement et qu'ils sont gouvernés indépendamment sur le territoire, l'autonomie des localités est augmenté et les services seront beaucoup plus diversifiés et nous permettrait d'avoir de la redondance dans les services proposé.
 
->Toutes les libertés dépendent de la liberté informatique, elle n’est pas plus importante que les autres libertés fondamentales mais, au fur et à mesure que les pratiques de la vie basculent sur l’ordinateur, on en aura besoin pour maintenir les autres libertés. **de Richard Stallman**
+{{< img_float url="/images/livre-blanc/conclusion.png" alt="ecologie" title="Informatique écologique" class="float-right pl-4 max-w-md">}}Pour réussir à améliorer la résilience locale de nos systèmes d'informations, il sera nécessaire de changer notre vision de l'informatique : elle a des coûts économiques et environnementaux qu'il faut prendre en compte, et n'est pas juste une fonction support dans notre société mais bien un outil politique.
 
-{{< img_float url="/images/livre-blanc/conclusion.png" alt="ecologie" title="Informatique écologique" class="float-right pl-4 max-w-md">}}
-Aujourd'hui il serait intéressant de changer l'approche que l'on a sur l'informatique. Comme exprimmer dans la citation ci dessus de **Richard Stallman** la gratuité de l'informatique a un prix telles que empreinte sur notre planète. De plus on aujourd'hui le web n'est plus qu'un support mais un outil politique pour les grandes entreprises.
+Comme **Richard Stallman** l'a dit :
 
-***Il est donc l'heure pour vous d'agir*** et de commencé à chercher des solutions plus respectueuses :
+> Toutes les libertés dépendent de la liberté informatique, elle n’est pas plus importante que les autres libertés fondamentales mais, au fur et à mesure que les pratiques de la vie basculent sur l’ordinateur, on en aura besoin pour maintenir les autres libertés.
 
-- Tel que les [CHATONS](https://chatons.org/fr) pour héberger vos propres services ou avoir accès des services en ligne libres, éthiques et décentralisés.
-- Il faut de plus poussé vos municipalités à s'approprier la problématique.
+***Il est donc l'heure pour vous d'agir*** et de faire le choix d'un avenir plus résilient.
+
+- Rendez-vous sur [CHATONS](https://chatons.org/fr) pour trouver un hébergeur proche de chez vous.
+- Poussez vos municipalités à s'approprier cette problématique.
