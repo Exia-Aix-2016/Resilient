@@ -50,7 +50,6 @@ header_button_more:
   - [Solution maisons](#71-solution-maisons)
   - [Pour nos villes](#72-pour-nos-villes)
   - [Chatons](#73-chatons)
-  - [Assodev](#74-assodev)
 - [Conclusion](#8-conclusion)
 
 ## 1. Introduction à la résilience
