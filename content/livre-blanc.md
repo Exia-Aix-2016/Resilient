@@ -401,11 +401,19 @@ Le changement de paradigme monolithique vers micro-service épouse parfaitement 
 
 ### 5.1. Les problèmes liés au cloud
 
+Un des sujets les plus abordés quant à l'utilisation d'un cloud centralisé est l'appartenance des données. Les données sont confiées à un tierce parti dans lequel il faut placer sa confiance. 
+
+L'utilisation du cloud rend dépendant à une connexion internet. Utiliser vos services qui sont hébergés sur le cloud vous rend sensibles à la perte de disponibilités dans le cas de l'absence de connexion. L'activité d'une entreprise peut être totalement paralysée par la perte de connexion.
+
+Sur certains aspect techniques, une entreprise devra forcément passer par le support technique du cloud utilisé et sera donc plus dépendant de celui-ci.
+
 ### 5.2. L'histoire des échecs de la centralisation
 
-Le 14 décembre 2020, Google a connu une panne mondiale. Les services tels que Youtube, Gmail ou Google Cloud Platform n'étaient pas accessibles pour plusieurs milliards d'utilisateurs. Durant une cinquantaine de minutes, les entreprises utilisants ces services à travers le monde se sont retrouvées dans l'incapacité de travailler. 
+Le 14 décembre 2020, Google a connu une panne mondiale. Les services tels que Youtube, Gmail ou Google Cloud Platform n'étaient pas accessibles pour plusieurs milliards d'utilisateurs. Durant une cinquantaine de mainutes, les entreprises utilisants ces services à travers le monde se sont retrouvés dans l'incapacité de travailler. 
 
-Le géant du cloud, Amazon Web Service a connu en 2019 une panne d'électricité sur un serveur en Virginie. Cette panne a causé l'arrêt des générateurs de sauvegarde de ce centre de données. Durant cet incident, 7,5% des instances EC2 (hébergement d'application web) et EBS (stockage) sont restées indisponibles. Une fois la panne terminée, une partie des données stockées sur le serveur endommagé ont été définitivement perdues.
+Le géant du cloud, Amazon Web Service a connu en 2019 une panne d'électricité sur un serveur en Virginie. Cette panne a causé l'arrêt des générateurs de sauvegarde de ce centre de données. Durant cet incident, 7,5% des instances EC2 (hébergement d'application web) et EBS (stockage) sont restées indisponibles. Une fois la panne terminée, une partie des données stockées sur le serveur endommagé ont été définitivement perdues. 
+
+En 2019, les GAFAM représentaient 49% de la valeur de l'indice NASDAQ. On se rend compte assez vite que l'indisponibilité des services de l'un d'entre eux a un impact extrèmement important sur l'économie. Certaines entreprises dépendent essentiellement de leurs services et se voient donc dans l'incapacité de fonctionner en cas de panne. Même si ces incidents sont rares, l'impact économique qu'ils ont n'est pas négligeable et invite les entreprises à trouver d'autres solutions pour assurer leur pérénité. Afin de garantir une meilleure résilience, certains modèles proposent une résistance plus sûre aux incidents techniques que le cloud centralisé peut connaitre.
 
 ## 6. Une solution : la décentralisation
 
