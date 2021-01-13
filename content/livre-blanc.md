@@ -6,9 +6,9 @@ header_button_cta:
   url: ".."
   title: "Page d'accueil"
 
-# header_button_more:
-#   url: "/PDF/CCF20102020.pdf"
-#   title: "PDF"
+header_button_more:
+  url: "/PDF/"
+  title: "PDF"
 ---
 
 
@@ -19,27 +19,33 @@ header_button_cta:
   - [Les différents axes](#21-les-différents-axes)
   - [Vers une résilience informatique](#22-vers-une-résilience-informatique)
 - [Description des usages communs de l’informatique](#3-description-des-usages-communs-de-linformatique)
+  - [Communication](#31-communication)
 - [Les technologies résilientes du cloud computing](#4-les-technologies-résilientes-du-cloud-computing)
   - [L’histoire d’internet](#41-lhistoire-dinternet)
   - [Les Technologies et techniques](#42-les-technologies-et-techniques)
     - [Répondre à la demande](#421-répondre-à-la-demande)
       - [Scalabilité](#4211-scalabilité)
-      - [Répartition de charge](#4212-répartition-de-charge-de-charge---loadbalancing)
+      - [Répartition de charge](#4212-répartition-de-charge--le-load-balancing)
     - [Virtualisation](#422-virtualisation)
-    - [containerisation](#423-containerisation)
+    - [Containerisation](#423-conteneurisation)
       - [Orchestration](#4231-orchestration)
     - [Grappe de serveur - Cluster](#424-grappe-serveur---clusterisation)
+      - [La virtualisation et conteneurisation dans un cluster](#4241-la-virtualisation-et-conteneurisation-dans-un-cluster)
     - [Du paradigme monolithique vers le micro-service](#425-du-paradigme-monolithique-vers-le-micro-service)
       - [Architecture monolithique](#4251-architecture-monolithique)
       - [Architecture micro service](#4252-architecture-micro-service)
     - [Réseau de diffusion de contenu - cdn](#426-réseau-de-diffusion-de-contenu---cdn)
-    - [L'hyper-convergence](#-427-lhyper-convergence)
-      - [Système de fichier distribué](#4271-système-de-fichier-distribué-dfs)
+    - [L'hyper-convergence](#427-lhyper-convergence)
+      - [Système de fichier distribué](#4271-système-de-fichiers-distribué-dfs)
   - [Aujourd’hui](#43-aujourdhui)
 - [Mise en avant du ou des problèmes que cela soulève](#5-mise-en-avant-du-ou-des-problèmes-que-cela-soulève)
   - [Les problèmes liés au cloud](#51-les-problèmes-liés-au-cloud)
   - [L’histoire des échecs de la centralisation](#52-lhistoire-des-échecs-de-la-centralisation)
 - [Une solution : la décentralisation](#6-une-solution-la-décentralisation)
+  - [Concept historique](#61-concept-historique)
+  - [Concept appliqué à la technologie](#62concept-appliqué-à-la-technologie)
+  - [Fédération](#63-fédération)
+  - [Les logiciels décentralisés](#64les-logiciels-décentralisés)
 - [Proposition : l’informatique hébergé au niveau la ville ou de la région](#7-proposition-linformatique-hébergé-au-niveau-la-ville-ou-de-la-région)
   - [Solution maisons](#71-solution-maisons)
   - [Pour nos villes](#72-pour-nos-villes)
@@ -162,7 +168,7 @@ Dans les chapitres qui suivent, nous allons voir l'histoire de la création d'in
 
 Avec sa capacité de stockage théoriquement infinie, le Cloud redistribut les cartes dans le domaine de l'hébergement et permet aux organisations qui ne disposent pas d’un de datacenter de mettre en place leurs solutions applicatives facilement, à moindre coût tout en garantissant la sécurité et la continuité de leur activité.
 
-## 4.1 L'histoire d'internet
+### 4.1 L'histoire d'internet
 
 **Début d'une grande histoire**
 
@@ -356,7 +362,7 @@ La puissance de calcul qui découle du regroupement d'ordinateurs, cumulée aux 
 
 L’évolutivité du cluster se fait simplement en ajoutant de nouveaux nœuds au cluster. Il n’y’a théoriquement pas de limites au nombre de nœuds qui peuvent être ajoutés au cluster.
 
-##### **4.2.4.. La virtualisation et conteneurisation dans un cluster**
+##### **4.2.4.1. La virtualisation et conteneurisation dans un cluster**
 
 Comme sur un serveur traditionnel, on peut virtualiser ou conteneuriser au sein d'un cluster : cela permet par exemple la migration à chaud d'une machine virtuelle ou d'un container. Cette manipulation consiste à déplacer l'état d'une machine virtuelle ou d'un conteneur, c'est-à-dire les données, la mémoire, les processus en cours, etc... d'un nœud à l'autre.
 
@@ -391,18 +397,17 @@ Vers la fin des années 90' la technologie de réseau de diffusion de contenu es
 
 Les clients récupèrent le contenu auprès du serveur leur étant le plus proche. De leur côté, les serveurs cdn se chargent de rester à jour vis-à-vis du serveur principal.
 
-### 4.3. Aujourd'hui
-### 4.2.7. L'Hyper-convergence
+#### 4.2.7. L'Hyper-convergence
 
 En 2012 apparait le terme d'Hyper-convergence, l'idée est de pousser à son paroxysme le principe de cluster, d'unicité, et de découpler drastiquement le matériel (serveur, routeur, commutateur, etc...) de la partie logicielle, dans le but d'accroitre l'évolutivité et de réduire la complexité. 
 
-#### **4.2.7.1. Système de fichiers distribué (DFS)**
+##### **4.2.7.1. Système de fichiers distribué (DFS)**
 
 Dans cette optique, le système utilise directement le stockage présent dans les serveurs afin d’en faire un pool de stockage partagé.
 
 On parle alors de système de fichiers distribué. Les systèmes de fichiers distribué garantissent que les données ne soient pas corrompues ou perdues.
 
-## 4.3. Aujourd'hui
+### 4.3. Aujourd'hui
 
 Dans la partie 4.2, nous avons vu les grandes technologies développées afin d'assurer de répondre à cette demande grandissante en même temps que les exigences en matière de résilience.
 
@@ -454,7 +459,7 @@ Cette idée s'applique aussi à l'informatique, notamment aux réseaux et bien s
 
 Pour mieux comprendre ces différents concepts, il est important de comprendre le principe sur lequel la plupart des services web son basés, le modèle client-serveur.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Mod%C3%A8le-client-serveur.svg/1200px-Mod%C3%A8le-client-serveur.svg.png)
+![Client Serveur](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Mod%C3%A8le-client-serveur.svg/1200px-Mod%C3%A8le-client-serveur.svg.png)
 
 Dans ce modèle, le client à pour rôle de demander une ressource par une requête. Le serveur, quant à lui a pour rôle d'attendre les requêtes des clients et de leur envoyer les ressources demandées en réponse.
 Par exemple : votre navigateur internet (le client) demande à Wikipedia (le serveur) la page sur la *Redécentralisation d'internet* qui renvoi la page en question à votre navigateur pour qu'il l'affiche.
@@ -462,7 +467,7 @@ Aujourd'hui le rôle de serveur est le plus souvent endosser par des fournisseur
 
 Maintenant voici un schéma représentant les différents acteurs et leurs interactions selon un modèle centralisé, décentralisé et distribué.
 
-![](/images/centralized-decentralized-distributed.png)
+![Decentraliser](/images/centralized-decentralized-distributed.png)
 
 #### 6.2.1. Le web centralisé
 
@@ -499,7 +504,7 @@ L'idée est d'avoir un protocole et un format de ressource standardisé, implém
 
 Ce genre de protocole existe déjà, par exemple pour tout ce qui touche au réseaux sociaux, il existe le protocole [ActivityPub](https://fr.wikipedia.org/wiki/ActivityPub) et l'ensemble des services qui l'implémentent forme le [Fediverse](https://fr.wikipedia.org/wiki/Fediverse).
 
-![](https://upload.wikimedia.org/wikipedia/commons/9/93/Fediverse_logo_proposal.svg)
+![Fediverse logo](https://upload.wikimedia.org/wikipedia/commons/9/93/Fediverse_logo_proposal.svg)
 
 Le [Fediverse](https://fediverse.party/en/fediverse) est utilisé par environ 1 millions d'utilisateurs répartis sur plus de 5000 instances.
 Une instance, représente une application (ou service) hébergé par un fournisseur.
@@ -583,3 +588,16 @@ Il existe differente association qui héberge des services dans notre regions:
 [Pour en savoir plus](https://chatons.org/fr/page/tuxfamilyorg)
 
 ## 8. Conclusion
+
+En conclusion on as remarquer que l'internet faisait partie de la vie courante des particuliers. On peut considerer que c'est aujourd'hui un outils indispensable pour toute personne voulant regarder la television, avoir acces a des informations ou meme utiliser un telephone. Le probleme que l'on as avec cela, est que l'on se dirige vers vers une hyper centralisation de l'informatique qui est l'inverse de la nature et du concept d'Internet. Cela permet a des grand groupes tels que google de controler et de comptabiliser tous nos outils et notre utilistion de l'outils qu'est l'informatique. Le regroupement d’ordinateurs en clusters permet de distribuer le traitement entre ceux-ci, ce qui offre la capacité au système de continuer à fonctionner malgré les défaillances et donc d'avoir un taux de disponibilité haut. Il ne faut pas comfondre haute disponibilité et resilience qui sont deux chose diffrente meme si la haute disponibilité de cette architecture en cluster nous permet d'avoir acces a tous les services que l'on utilise en pemanance. Cela a un impact negatif sur la resilience puisque c'est un réseau massivement utilisé mais pour lesquels l'utilisateur doit nécessairement passer par les serveurs de la compagnie pour utiliser ce service en lui-même.Il faut donc confiées nos données a un tierce et on aurra une utilisation dependante d'un géants d'Internet comme Google, Facebook.
+
+Donc celon nous il faudrait rendre l'informatique plus resilient pour l'Homme, et en venir a une architecture decentraliser. On peut meme parler de redecentralisation puisque a la base Internet a été conçu comme un réseau de réseaux interconnectés dans lequel n'importe quel nœud du réseau peut communiquer avec tous les autres. La décentralisation ou redécentralisation du web car il l'était davantage à ses débuts, est en quelque sorte un réduction d'échelle, nous allons chercher à séparer les clouds (serveurs centraux) en pleins de plus petits fournisseurs et de les rapprocher des clients. Cela impact la résilience du système internet positivement sur plusieurs critères puisque si les fournisseurs sont répartis géographiquement et qu'il sont gouvernés indépendamment sur le territoire, l'autonomie des localités est augmenté et les services seront beaucoup plus diversifiés et nous permetrait d'avoir de la redondance dans les services proposé.
+
+>Toutes les libertés dépendent de la liberté informatique, elle n’est pas plus importante que les autres libertés fondamentales mais, au fur et à mesure que les pratiques de la vie basculent sur l’ordinateur, on en aura besoin pour maintenir les autres libertés. **de Richard Stallman**
+
+{{< img_float url="/images/livre-blanc/conclusion.png" alt="ecologie" title="Informatique écologique" class="float-right pl-4 max-w-md">}}
+Aujourd'hui il serait interressant de changer l'approche que l'on a sur l'informatique. Comme exprimmer dans la citation ci dessus **Richard Stallman** la gratuité de l'informatique a un prix telles que empreinte sur notre planète. De plus on aujourd'hui le web n'est plus q'un suport mais un outils polique pour les grandes entreprises.
+
+***Il est donc l'heure pour vous d'agir*** et de commencé a chercher des solution plus respectueuse:
+- telles que les [CHATONS](https://chatons.org/fr) pour hebergé vos propre service ou avoir accés des services en ligne libres, éthiques et décentralisés. 
+- Il faut de plus poussé vos municipalité a s'approprié la problematique
