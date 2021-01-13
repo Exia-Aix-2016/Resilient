@@ -289,7 +289,7 @@ Tout d'abord, le proxy obtient l'adresse IP du client et analyse les information
 
 L'ensemble de ces techniques peuvent être utilisées séparément ou ensemble, selon les besoins.
 
-#### 4.2.2. virtualisation
+#### 4.2.2. Virtualisation
 
 Avant, les applications adoptaient une architecture monolithique qui, bien que simple à déployer, était compliquée à gérer quand déployées sur le même serveur. De plus, avec la montée en puissance d'internet, de plus en plus d'entreprises voient leur système d'information subir des cyberattaques, pouvant endommager leur système hôte. Les organismes ont donc besoin de système sécurisé, d'être capable de migrer facilement leur solution logicielle et de déployer efficacement sur leur infrastructure.
 
