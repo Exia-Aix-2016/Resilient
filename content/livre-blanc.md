@@ -436,8 +436,8 @@ En 2019, les GAFAM représentaient 49% de la valeur de l'indice NASDAQ. On se re
 
 ## 6. Une solution : la décentralisation
 
-Une partie de ces problèmes vient d'un trop forte centralisation des services, des infrastructures, du savoir faire et de la gouvernance.
-Une solution naturelle serait de faire l'opposé de la centralisation, c'est à dire la décentralisation.
+Une partie de ces problèmes vient d'une trop forte centralisation des services, des infrastructures, du savoir faire et de la gouvernance.
+Une solution naturelle serait de faire l'opposé de la centralisation, c'est-à-dire la décentralisation.
 
 ### 6.1 Concept historique
 
@@ -450,59 +450,59 @@ En effet, par un long processus de décentralisation, la France, qui était un �
 
 ### 6.2.	Concept appliqué à la technologie
 
-Cette idée s'applique aussi à l'informatique, notamment aux réseaux et bien sûr à internet. Nous allons ici détailler le concept de centralisation, décentralisation et de distribution appliqué au web.
+Cette idée s'applique aussi à l'informatique, notamment aux réseaux et bien sûr à internet. Nous allons ici détailler le concept de centralisation, décentralisation et de distribution appliquée au web.
 
 Pour mieux comprendre ces différents concepts, il est important de comprendre le principe sur lequel la plupart des services web son basés, le modèle client-serveur.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Mod%C3%A8le-client-serveur.svg/1200px-Mod%C3%A8le-client-serveur.svg.png)
 
-Dans ce modèle, le client à pour rôle de demander une ressource par une requête. Le serveur, quant à lui a pour rôle d'attendre les requêtes des clients et de leur envoyer les ressources demandées en réponse.
-Par exemple : votre navigateur internet (le client) demande à Wikipedia (le serveur) la page sur la *Redécentralisation d'internet* qui renvoi la page en question à votre navigateur pour qu'il l'affiche.
-Aujourd'hui le rôle de serveur est le plus souvent endosser par des fournisseurs de services ou cloud.
+Dans ce modèle, le client a pour rôle de demander une ressource par une requête. Le serveur, quant à lui a pour rôle d'attendre les requêtes des clients et de leur envoyer les ressources demandées en réponse.
+Par exemple : votre navigateur internet (le client) demande à Wikipedia (le serveur) la page sur la *Redécentralisation d'internet* qui renvoit la page en question à votre navigateur pour qu'il l'affiche.
+Aujourd'hui le rôle de serveur est le plus souvent endossé par des fournisseurs de services ou cloud.
 
-Maintenant voici un schéma représentant les différents acteurs et leurs interactions selon un modèle centralisé, décentralisé et distribué.
+Maintenant voici un schéma représentant les différents acteurs et leurs intéractions selon un modèle centralisé, décentralisé et distribué.
 
 ![](/images/centralized-decentralized-distributed.png)
 
 #### 6.2.1. Le web centralisé
 
-Dans un modèle centralisé, pour interagir, les différents acteurs passent systématiquement par une poignée de méga acteurs. C'est-à-dire, les utilisateurs ont uniquement le rôle de client, et les différents "clouds" ont le rôle de serveur.
-Avec ce modèle qui présente certes de nombreux avantages expliqués précédemment, la résilience du système, d'internet est égal à la résilience des acteurs centraux plus la résilience des connections entre eux et les autres acteurs.
+Dans un modèle centralisé, pour intéragir, les différents acteurs passent systématiquement par une poignée de méga acteurs. C'est-à-dire, les utilisateurs ont uniquement le rôle de client, et les différents "clouds" ont le rôle de serveur.
+Avec ce modèle qui présente certes de nombreux avantages expliqués précédemment, la résilience du système, d'internet est égale à la résilience des acteurs centraux plus la résilience des connections entre eux et les autres acteurs.
 
 #### 6.2.2. Le web décentralisé
 
-La décentralisation ou redécentralisation du web car il l'était davantage à ses débuts, est en quelque sorte un réduction d'échelle, comme le gouvernement, nous allons chercher à séparer les clouds (serveurs centraux) en pleins de plus petits fournisseurs et de les rapprocher des clients. 
+La décentralisation ou redécentralisation du web car il l'était davantage à ses débuts, est en quelque sorte un réduction d'échelle : comme le gouvernement, nous allons chercher à séparer les clouds (serveurs centraux) en pleins de plus petits fournisseurs et de les rapprocher des clients. 
 
 Cela impact la résilience du système internet positivement sur plusieurs critères :
 1. Si les fournisseurs sont répartis géographiquement sur le territoire, l'autonomie des localités est augmenté.
-2. Si les fournisseurs sont gouvernés indépendamment, les services seront beaucoup plus diversifiés.
+2. Si les fournisseurs sont gouvernés indépendamments, les services seront beaucoup plus diversifiés.
 
 #### 6.2.3. Le web distribué
 
-La web distribué, est une modèle plus radicale car ici les acteurs sont majoritairement à la fois client et serveur. Il repose sur des technologies de communication pair à pair et de cryptographie.
+La web distribué est une modèle plus radical car ici les acteurs sont majoritairements à la fois client et serveur. Il repose sur des technologies de communication pair à pair et de cryptographie.
 Pour trouver une ressource, un acteur va demander aux acteurs les plus proches de lui puis élargir sa recherche s’il ne trouve pas.
 
 Ce modèle est le plus résilient des trois :
 1. Chaque acteur est potentiellement différent d'un autre, donc énormément de diversité.
-2. L'autonomie peut être appliquée toute échelle, la plus petite étant deux acteurs dans une pièce.
+2. L'autonomie peut être appliquée à toutes les échelles, la plus petite étant deux acteurs dans une pièce.
 3. Le système est extrêmement modulaire et interconnecté, on peut ajouter et enlever des acteurs sans perturbations.
 4. Les ressources sont redondantes à travers plusieurs acteurs sur le réseau.
 
 
-Le modèle le plus résilient est le web distribué mais il est beaucoup plus compliqué à mettre en place car en suppriment les fournisseurs, il est presque impossible d'appliquer des régulations économiques ou législatives. 
+Le modèle le plus résilient est le web distribué mais il est beaucoup plus compliqué à mettre en place car en supprimant les fournisseurs, il est presque impossible d'appliquer des régulations économiques ou législatives. 
 Dans la société actuelle, il est plus réaliste pour l'instant de se diriger vers un modèle décentralisé. Cependant un phénomène négatif peut apparaitre : le manque d'interopérabilité qui est une conséquence de l'augmentation de la diversité et empêcherait des utilisateurs de différents services de communiquer correctement ensemble. 
 
 ### 6.3. Fédération
 
 Pour résoudre cette problématique, l'ajout du concept de fédération sur nos services décentralisés suffit.
-L'idée est d'avoir un protocole et un format de ressource standardisé, implémenté par les différents services touchant aux même thématiques.
+L'idée est d'avoir un protocole et un format de ressources standardisé, implémenté par les différents services touchant aux mêmes thématiques.
 
-Ce genre de protocole existe déjà, par exemple pour tout ce qui touche au réseaux sociaux, il existe le protocole [ActivityPub](https://fr.wikipedia.org/wiki/ActivityPub) et l'ensemble des services qui l'implémentent forme le [Fediverse](https://fr.wikipedia.org/wiki/Fediverse).
+Ce genre de protocole existe déjà, par exemple pour tout ce qui touche aux réseaux sociaux, il existe le protocole [ActivityPub](https://fr.wikipedia.org/wiki/ActivityPub) et l'ensemble des services qui l'implémentent forment le [Fediverse](https://fr.wikipedia.org/wiki/Fediverse).
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/93/Fediverse_logo_proposal.svg)
 
-Le [Fediverse](https://fediverse.party/en/fediverse) est utilisé par environ 1 millions d'utilisateurs répartis sur plus de 5000 instances.
-Une instance, représente une application (ou service) hébergé par un fournisseur.
+Le [Fediverse](https://fediverse.party/en/fediverse) est utilisé par environ 1 millions d'utilisateurs répartit sur plus de 5000 instances.
+Une instance représente une application (ou service) hébergé par un fournisseur.
 
 ### 6.4.	Les logiciels décentralisés
 
