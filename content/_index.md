@@ -9,21 +9,6 @@ teaser_image: "images/teaser.jpg"
 
 ---
 
-
-
----
-# Vous Inscrire
-
-{{<subscribe>}}
-
----
-
-# Conférence
-
-{{<twitch>}}
-
----
-
 # Présentation
 
 Un des principaux objectifs de l’humanité est de rendre la ville plus durable. Pour cela nous devons obligatoirement passer par la conception d’un modèle résilient pour nos villes. Nous allons donc commencer par vous présenter le thème général de résilience.
