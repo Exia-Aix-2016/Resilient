@@ -1,23 +1,10 @@
 ---
 header_brand: "Une ville et une technologie résiliente pour un avenir durable au service de tous."
 header_tagline_paragraph: "Pour commencer à se poser les bonnes questions sur notre avenir, nous vous invitons à venir nous écouter parler de la résilience urbaine, assistée par la technologie. Notre but, vous sensibiliser et vous orienter dans la construction d’un avenir plus durable."
-
+header_button_cta:
+  url: "/livre-blanc"
+  title: "Livre Blanc"
 teaser_image: "images/teaser.jpg"
-
----
-
-
-
----
-# Vous Inscrire
-
-{{<subscribe>}}
-
----
-
-# Conférence
-
-{{<twitch>}}
 
 ---
 

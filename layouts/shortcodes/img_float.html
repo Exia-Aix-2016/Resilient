@@ -1,0 +1,6 @@
+<img 
+    src="{{ with .Get "url" }}{{ . }}{{ else }}Name{{ end }}"
+    alt="{{ with .Get "alt" }}{{ . }}{{ else }}Name{{ end }}"
+    title="{{ with .Get "title" }}{{ . }}{{ else }}Name{{ end }}"
+    class="{{ with .Get "class" }}{{ . }}{{ else }}Name{{ end }}"
+>
