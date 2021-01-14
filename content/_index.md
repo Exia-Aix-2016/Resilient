@@ -4,7 +4,6 @@ header_tagline_paragraph: "Pour commencer à se poser les bonnes questions sur n
 header_button_cta:
   url: "/livre-blanc"
   title: "Livre Blanc"
-
 teaser_image: "images/teaser.jpg"
 
 ---
